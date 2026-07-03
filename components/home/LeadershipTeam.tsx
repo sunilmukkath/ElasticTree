@@ -1,11 +1,11 @@
 "use client";
 
 import Link from "next/link";
-import { ArrowRight } from "lucide-react";
+import { ArrowRight, MapPin } from "lucide-react";
 import SpaceSection from "@/components/ui/SpaceSection";
 import SectionBlock from "@/components/ui/SectionBlock";
 import TeamGrid from "@/components/team/TeamGrid";
-import { teamMembers } from "@/lib/team";
+import { teamMembers, offices } from "@/lib/team";
 
 const pedigree = [
   "Nielsen IQ", "Kantar Worldpanel", "IMRB International", "Ipsos India",
@@ -17,14 +17,9 @@ export default function LeadershipTeam() {
     <SpaceSection flow="teal" spacing="loose">
       <div className="section-stack">
         <SectionBlock
-          label="The Team"
+          label="Meet The Team"
           title={<>Built by <span className="text-gradient-amber">Practitioners</span></>}
           subtitle="Senior researchers from the world's top insights firms — now working for you directly."
-          action={
-            <Link href="/about" className="btn-secondary text-sm">
-              About Us <ArrowRight size={15} />
-            </Link>
-          }
         >
           <TeamGrid members={teamMembers} columns={4} />
         </SectionBlock>
@@ -39,6 +34,27 @@ export default function LeadershipTeam() {
             ))}
           </div>
         </div>
+
+        <hr className="divider-subtle" />
+
+        <SectionBlock
+          label="Our Offices"
+          title="Chennai & Bengaluru"
+          titleSize="md"
+          gap="md"
+        >
+          <div className="content-grid-2 max-w-3xl">
+            {offices.map((office) => (
+              <div key={office.city} className="flex gap-3">
+                <MapPin size={18} className="text-[var(--amber)] mt-1 flex-shrink-0 opacity-80" aria-hidden />
+                <div>
+                  <p className="text-title mb-1">{office.city}</p>
+                  <p className="text-body-sm">{office.address}</p>
+                </div>
+              </div>
+            ))}
+          </div>
+        </SectionBlock>
 
         <div className="cta-glow max-w-2xl section-stack-sm">
           <p className="eyebrow-text relative z-10">Start a Project</p>

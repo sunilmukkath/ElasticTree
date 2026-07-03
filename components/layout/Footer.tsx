@@ -5,7 +5,7 @@ import ETLogo from "./ETLogo";
 import { LinkedInIcon, InstagramIcon, XIcon } from "@/components/ui/SocialIcons";
 
 const nav = [
-  { label: "About", href: "/about" },
+  { label: "About", href: "/#about" },
   { label: "Capabilities", href: "/capabilities" },
   { label: "Table Share", href: "/table-share" },
   { label: "Case Studies", href: "/casestudies" },
