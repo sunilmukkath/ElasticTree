@@ -7,11 +7,11 @@ import SectionBlock from "@/components/ui/SectionBlock";
 
 const features = [
   { Icon: Database, title: "Table Share®", tag: "Syndicated", desc: "3,468 households tracked dish-by-dish across 16 cities.", accent: "#8b5cf6" },
-  { Icon: LineChart, title: "Brand Analytics", tag: "Quant", desc: "MaxDiff, conjoint, segmentation, and driver analysis in decision-ready dashboards.", accent: "#34d399" },
+  { Icon: LineChart, title: "Brand Analytics", tag: "Quant", desc: "MaxDiff, conjoint, segmentation, and driver analysis in decision-ready dashboards.", accent: "#5eead4" },
   { Icon: ScanEye, title: "Sensory Science", tag: "FMCG & F&B", desc: "Trained panels with TDS, CATA, and affective testing for product development.", accent: "#2dd4bf" },
   { Icon: Layers, title: "Impact & CSR", tag: "Social", desc: "Baseline-to-endline frameworks with donor-grade reporting.", accent: "#fb923c" },
   { Icon: Brain, title: "AI Gaze™", tag: "Select projects", desc: "Eye-tracking simulation for packaging, shelf, and ad pre-testing.", accent: "#e8a820" },
-  { Icon: Zap, title: "Agile Research", tag: "Rapid", desc: "Online qual and quant with rigorous QC — insights in days, not weeks.", accent: "#f472b6" },
+  { Icon: Zap, title: "Agile Research", tag: "Rapid", desc: "Online qual and quant with rigorous QC — insights in days, not weeks.", accent: "#8b5cf6" },
 ];
 
 export default function AIPoweredStrip() {

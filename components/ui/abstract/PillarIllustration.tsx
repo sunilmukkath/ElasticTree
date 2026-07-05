@@ -10,9 +10,9 @@ const COLORS: Record<Variant, string> = {
   analytics:   "#e8a820",
   sensory:     "#2dd4bf",
   syndicated:  "#8b5cf6",
-  qualitative: "#34d399",
+  qualitative: "#5eead4",
   impact:      "#fb923c",
-  "ai-gaze":   "#f472b6",
+  "ai-gaze":   "#8b5cf6",
 };
 
 export default function PillarIllustration({

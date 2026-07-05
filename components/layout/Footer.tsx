@@ -5,7 +5,6 @@ import ETLogo from "./ETLogo";
 import { LinkedInIcon, InstagramIcon, XIcon } from "@/components/ui/SocialIcons";
 
 const nav = [
-  { label: "About", href: "/#about" },
   { label: "Capabilities", href: "/capabilities" },
   { label: "Table Share", href: "/table-share" },
   { label: "Case Studies", href: "/casestudies" },
@@ -63,13 +62,13 @@ export default function Footer() {
             <div className="space-y-3">
               <div>
                 <p className="text-caption normal-case mb-1">Email</p>
-                <a href="mailto:research@elastictree.com" className="text-body-sm text-slate-300 hover:text-[var(--amber)] transition-colors">
-                  research@elastictree.com
+                <a href="mailto:info@elastictree.com" className="text-body-sm text-slate-300 hover:text-[var(--amber)] transition-colors">
+                  info@elastictree.com
                 </a>
               </div>
               <div>
                 <p className="text-caption normal-case mb-1">HQ</p>
-                <p className="text-body-sm text-slate-300">Bengaluru, India</p>
+                <p className="text-body-sm text-slate-300">Chennai, India</p>
               </div>
             </div>
           </div>

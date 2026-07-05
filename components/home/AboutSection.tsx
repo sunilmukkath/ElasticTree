@@ -7,7 +7,7 @@ export default function AboutSection() {
     <SpaceSection flow="blue" id="about" className="scroll-mt-24">
       <SectionBlock
         label="About Us"
-        title={<>Research Practitioners Since <span className="text-gradient-amber">2014</span></>}
+        title={<>A Trusted Research Partner Since <span className="text-gradient-amber">2014</span></>}
         subtitle={companyIntro.lead}
       >
         <div className="max-w-3xl copy-flow">

@@ -14,7 +14,7 @@ const ACCENT: Record<OccasionVariant, string> = {
   "morning-snack": "#38bdf8",
   lunch:         "#2dd4bf",
   "evening-snack": "#a78bfa",
-  dinner:        "#f472b6",
+  dinner:        "#7c3aed",
   "late-night":  "#94a3b8",
   celebration:   "#f5c842",
 };

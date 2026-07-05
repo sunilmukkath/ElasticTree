@@ -13,7 +13,7 @@ const TRACES = [
   { d: "M 150 0 V 55 H 280 V 30 H 450",     color: "#0f766e", dur: 3.0, delay: 2.0 },
   { d: "M 450 50 H 350 V 110 H 180 V 150",  color: "#f0b429", dur: 4.2, delay: 0.5 },
   { d: "M 80 150 H 220 V 100 H 380",        color: "#0ea5e9", dur: 2.6, delay: 1.8 },
-  { d: "M 0 140 H 100 V 80 H 260",          color: "#16a34a", dur: 3.6, delay: 3.0 },
+  { d: "M 0 140 H 100 V 80 H 260",          color: "#14b8a6", dur: 3.6, delay: 3.0 },
   { d: "M 420 150 V 90 H 310 V 40 H 200",   color: "#2563eb", dur: 3.4, delay: 2.4 },
 ];
 

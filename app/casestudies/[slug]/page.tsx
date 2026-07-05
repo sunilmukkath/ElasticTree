@@ -9,11 +9,11 @@ import type { Metadata } from "next";
 
 const tagColors: Record<PostTag, { bg: string; color: string }> = {
   Analytics:         { bg: "rgba(45,212,191,0.1)",  color: "#2dd4bf" },
-  "Sensory Science": { bg: "rgba(52,211,153,0.1)",  color: "#34d399" },
+  "Sensory Science": { bg: "rgba(94,234,212,0.1)",  color: "#5eead4" },
   Syndicated:        { bg: "rgba(139,92,246,0.1)",  color: "#a78bfa" },
   Impact:            { bg: "rgba(251,146,60,0.1)",  color: "#fb923c" },
   "Market Research": { bg: "rgba(232,168,32,0.1)",  color: "#e8a820" },
-  AI:                { bg: "rgba(244,114,182,0.1)", color: "#f472b6" },
+  AI:                { bg: "rgba(139,92,246,0.1)",  color: "#8b5cf6" },
 };
 
 export async function generateStaticParams() {

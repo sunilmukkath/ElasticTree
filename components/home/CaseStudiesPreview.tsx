@@ -3,7 +3,7 @@
 import { motion } from "framer-motion";
 import Link from "next/link";
 import { ArrowRight, Clock } from "lucide-react";
-import { getFeaturedPosts, posts } from "@/lib/posts";
+import { getFeaturedPosts } from "@/lib/posts";
 import SpaceSection from "@/components/ui/SpaceSection";
 import SectionBlock from "@/components/ui/SectionBlock";
 
@@ -11,11 +11,11 @@ const featured = getFeaturedPosts(6);
 
 const tagColors: Record<string, { bg: string; color: string }> = {
   Analytics:         { bg: "rgba(45,212,191,0.1)",  color: "#2dd4bf" },
-  "Sensory Science": { bg: "rgba(52,211,153,0.1)",  color: "#34d399" },
+  "Sensory Science": { bg: "rgba(94,234,212,0.1)",  color: "#5eead4" },
   Syndicated:        { bg: "rgba(139,92,246,0.1)",  color: "#a78bfa" },
   Impact:            { bg: "rgba(251,146,60,0.1)",  color: "#fb923c" },
   "Market Research": { bg: "rgba(232,168,32,0.1)",  color: "#e8a820" },
-  AI:                { bg: "rgba(244,114,182,0.1)", color: "#f472b6" },
+  AI:                { bg: "rgba(139,92,246,0.1)",  color: "#8b5cf6" },
 };
 
 export default function CaseStudiesPreview() {
@@ -27,24 +27,10 @@ export default function CaseStudiesPreview() {
         subtitle="Real projects across FMCG, food service, media, and social impact."
         action={
           <Link href="/casestudies" className="btn-secondary text-sm">
-            View All {posts.length} Studies <ArrowRight size={15} />
+            View Case Studies <ArrowRight size={15} />
           </Link>
         }
       >
-        <div className="stat-row mb-2">
-          {[
-            { val: "15+", label: "Studies", color: "#2dd4bf" },
-            { val: "6", label: "Pillars", color: "#e8a820" },
-            { val: "200+", label: "Clients", color: "#38bdf8" },
-            { val: "74%", label: "Repeat Rate", color: "#5eead4" },
-          ].map((s) => (
-            <div key={s.label}>
-              <p className="stat-value" style={{ color: s.color }}>{s.val}</p>
-              <p className="stat-label">{s.label}</p>
-            </div>
-          ))}
-        </div>
-
         <div className="content-grid-3">
           {featured.map((post, i) => {
             const style = tagColors[post.tags[0]] || tagColors["Market Research"];

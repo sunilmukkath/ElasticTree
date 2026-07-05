@@ -65,7 +65,7 @@ const pillars = [
     id: "impact",
     icon: TrendingUp,
     label: "Impact Research",
-    color: "#34d399",
+    color: "#14b8a6",
     tagline: "Measure what matters beyond profit",
     summary:
       "Specialised social research for CSR programmes, government schemes, and impact organisations — rigorous measurement of social, environmental, and community outcomes.",
@@ -149,7 +149,7 @@ const aiPillars = [
     title: "Predictive Modelling",
     subtitle: "Decision-Ready Forecasts",
     stats: [{ label: "Accuracy", val: "High" }, { label: "Models", val: "MaxDiff, Conjoint" }, { label: "Output", val: "Priority Scores" }],
-    color: "#16a34a",
+    color: "#2dd4bf",
     desc: "Advanced MaxDiff, conjoint analysis, and regression-based driver models translate consumer preference data into ranked, simulation-ready product or communication decisions.",
   },
   {

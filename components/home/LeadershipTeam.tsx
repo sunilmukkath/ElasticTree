@@ -7,33 +7,17 @@ import SectionBlock from "@/components/ui/SectionBlock";
 import TeamGrid from "@/components/team/TeamGrid";
 import { teamMembers, offices } from "@/lib/team";
 
-const pedigree = [
-  "Nielsen IQ", "Kantar Worldpanel", "IMRB International", "Ipsos India",
-  "GfK India", "Mintel", "Euromonitor",
-];
-
 export default function LeadershipTeam() {
   return (
     <SpaceSection flow="teal" spacing="loose">
       <div className="section-stack">
         <SectionBlock
           label="Meet The Team"
-          title={<>Built by <span className="text-gradient-amber">Practitioners</span></>}
-          subtitle="Senior researchers from the world's top insights firms — now working for you directly."
+          title={<>Researchers You Work With <span className="text-gradient-amber">Directly</span></>}
+          subtitle="Senior leaders across analytics, branding, strategy, and field operations — the same people who scope your study run it."
         >
           <TeamGrid members={teamMembers} columns={4} />
         </SectionBlock>
-
-        <hr className="divider-subtle" />
-
-        <div>
-          <p className="eyebrow-text mb-5">Team Pedigree</p>
-          <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-x-8 gap-y-3 max-w-3xl">
-            {pedigree.map((org) => (
-              <span key={org} className="text-body-sm">{org}</span>
-            ))}
-          </div>
-        </div>
 
         <hr className="divider-subtle" />
 
