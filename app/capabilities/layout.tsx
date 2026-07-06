@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Capabilities",
+  title: "Capabilities & Methods",
   description:
     "Elastic Tree's research capabilities: analytics, sensory science, syndicated research, impact studies, market research, AI Gaze™ eye-tracking, and predictive analytics.",
   openGraph: {

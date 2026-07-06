@@ -24,7 +24,7 @@ export const spotlightServices: SpotlightService[] = [
     title: "Table Share®",
     titleHtml: true,
     subtitle:
-      "Human behaviour intelligence — actual, dish-level eating patterns across urban India, mapped by occasion, effort, and frequency.",
+      "Dish-level eating intelligence across urban India — mapped by occasion, effort, and frequency.",
     features: tableShareFeatures,
     stats: [
       { label: "Households", accent: "#2dd4bf", to: 3468 },

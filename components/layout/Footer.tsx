@@ -26,7 +26,7 @@ export default function Footer() {
           <div className="md:col-span-5">
             <ETLogo height={30} className="mb-5" />
             <p className="text-body-sm max-w-sm mb-6">
-              Human behaviour research for FMCG and food-service brands.
+              Market research for FMCG and food-service brands.
               Smart decisions, simply made — since 2014.
             </p>
             <div className="flex gap-2">

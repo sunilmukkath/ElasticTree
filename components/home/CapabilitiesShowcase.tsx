@@ -16,7 +16,7 @@ export default function CapabilitiesShowcase() {
       <SectionBlock
         label="Products & Services"
         title={<>The Full Stack of <span className="text-gradient-amber">Behavioural Intelligence</span></>}
-        subtitle="Six integrated pillars studying real human behaviour — from what people eat to what draws their eye — inside one team."
+        subtitle="Six integrated pillars — from what people eat to what draws their eye — delivered by one specialist team."
         action={
           <Link href="/capabilities" className="btn-secondary text-sm shrink-0 hidden sm:inline-flex">
             View all <ArrowRight size={14} />

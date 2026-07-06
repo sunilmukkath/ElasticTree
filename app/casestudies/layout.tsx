@@ -1,13 +1,13 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Case Studies & Research",
+  title: "Proof in Practice",
   description:
     "Explore Elastic Tree's research case studies spanning analytics, sensory science, impact research, brand health, and more. Real projects, real results.",
   openGraph: {
     title: "Case Studies | Elastic Tree",
     description:
-      "Research, insights, and case studies from 12 years of human behaviour research.",
+      "Research, insights, and case studies from 12 years of field and syndicated research.",
   },
 };
 

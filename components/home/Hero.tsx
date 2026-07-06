@@ -34,13 +34,13 @@ export default function Hero() {
               variants={item}
               className="font-display font-black text-display-xl text-white mb-6"
             >
-              Research Into{" "}
-              <span className="text-gradient-amber text-shimmer">Human Behaviour</span>
+              See What People{" "}
+              <span className="text-gradient-amber text-shimmer">Actually Do</span>
             </motion.h1>
 
             <motion.p variants={item} className="text-lead mb-10">
-              We study how people really eat, choose, and act — sensory science,
-              syndicated panels, and behavioural expertise that FMCG and food-service brands act on.
+              Sensory science, syndicated panels, and field research that reveal how
+              people eat, choose, and act — insight FMCG and food-service brands can move on.
             </motion.p>
 
             <motion.div variants={item} className="flex flex-wrap gap-3">

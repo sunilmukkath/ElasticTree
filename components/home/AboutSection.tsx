@@ -22,7 +22,7 @@ export default function AboutSection() {
     <SpaceSection flow="blue" id="about" className="scroll-mt-24">
       <div className="section-stack">
         <SectionBlock
-          label="About Us"
+          label="Who We Are"
           title={<>A Trusted Research Partner Since <span className="text-gradient-amber">2014</span></>}
           subtitle={companyIntro.lead}
         >

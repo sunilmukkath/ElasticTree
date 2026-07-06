@@ -20,21 +20,21 @@ const siteCopy = {
     siteUrl: "https://www.elastictree.com",
     defaultTitle: "Elastic Tree | Market Research — Smart Decisions, Simply Made.",
     defaultDescription:
-      "Elastic Tree is an AI-powered market research firm with 12 years of experience serving 200+ brands. Specialising in human behaviour research, analytics, sensory science, syndicated research (Table Share®), and impact studies — India & global.",
+      "Elastic Tree is an AI-powered market research firm with 12 years of experience serving 200+ brands. Analytics, sensory science, syndicated research (Table Share®), impact studies, and AI Gaze™ — India & global.",
   },
-  nav: ["Home", "About", "Capabilities", "Table Share", "Case Studies", "Contact"],
+  nav: ["Home", "Capabilities", "Table Share", "Case Studies", "Contact"],
   home: {
     hero: {
       eyebrow: "Market Research · Since 2014",
-      title: "Research Into Human Behaviour",
+      title: "See What People Actually Do",
       subtitle:
-        "We study how people really eat, choose, and act — sensory science, syndicated panels, and behavioural expertise FMCG and food-service brands act on.",
+        "Sensory science, syndicated panels, and field research that reveal how people eat, choose, and act — insight FMCG and food-service brands can move on.",
       buttons: ["Explore Capabilities", "Book a Consultation"],
       scrollCue: "Scroll to explore",
       stats: ["12 Years", "200+ Brands", "800+ Projects", "74% Repeat"],
     },
     marquee:
-      "Human Behaviour Research · Analytics · Sensory Science · Table Share® · Syndicated Research · Impact & CSR · AI Gaze™ · 200+ Brands · 74% Repeat Rate",
+      "Field Research · Analytics · Sensory Science · Table Share® · Syndicated Research · Impact & CSR · AI Gaze™ · 200+ Brands · 74% Repeat Rate",
     servicePillars: {
       label: "Capabilities",
       title: "Six Research Pillars",

@@ -44,7 +44,7 @@ export const metadata: Metadata = {
     template: "%s | Elastic Tree",
   },
   description:
-    "Elastic Tree is an AI-powered market research firm with 12 years of experience serving 200+ brands. Specialising in human behaviour research, analytics, sensory science, syndicated research (Table Share®), and impact studies — India & global.",
+    "Elastic Tree is an AI-powered market research firm with 12 years of experience serving 200+ brands. Analytics, sensory science, syndicated research (Table Share®), impact studies, and AI Gaze™ — India & global.",
   applicationName: "Elastic Tree",
   authors: [{ name: "Elastic Tree Research", url: SITE_URL }],
   creator: "Elastic Tree",
@@ -57,7 +57,6 @@ export const metadata: Metadata = {
   keywords: [
     "market research India",
     "AI market research",
-    "human behaviour research",
     "behavioural research India",
     "consumer insights",
     "sensory science research",
@@ -85,7 +84,7 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     title: "Elastic Tree | AI-Powered Market Research",
-    description: "Smart Decisions, Simply Made. Human behaviour research and AI-powered insights from India's specialist research firm.",
+    description: "Smart Decisions, Simply Made. AI-powered market research from India's specialist FMCG and food-service research firm.",
     creator: "@elastictree",
   },
   robots: {

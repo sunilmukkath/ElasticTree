@@ -28,7 +28,7 @@ export default function CaseStudiesPage() {
     <>
       <PageHero
         eyebrow="Our Work"
-        title={<>Research & <span className="text-gradient-amber">Case Studies</span></>}
+        title={<>Proof in <span className="text-gradient-amber">Practice</span></>}
         subtitle={`${postSummaries.length} published studies across analytics, sensory science, syndicated research, AI, and impact.`}
         toolbar={
           <div className="relative w-full">

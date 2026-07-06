@@ -1,7 +1,7 @@
 "use client";
 
 const items = [
-  "Human Behaviour Research",
+  "Field Research",
   "Analytics",
   "Sensory Science",
   "Table Share®",

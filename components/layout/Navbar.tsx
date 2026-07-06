@@ -8,7 +8,6 @@ import { Menu, X } from "lucide-react";
 
 const links = [
   { href: "/", label: "Home" },
-  { href: "/#about", label: "About" },
   { href: "/capabilities", label: "Capabilities" },
   { href: "/table-share", label: "Table Share" },
   { href: "/casestudies", label: "Case Studies" },
@@ -49,9 +48,7 @@ export default function Navbar() {
         <ul className="hidden lg:flex items-center gap-1">
           {links.map((l) => {
             const active =
-              l.href === "/#about"
-                ? pathname === "/" || pathname === "/about"
-                : pathname === l.href || (l.href !== "/" && !l.href.includes("#") && pathname.startsWith(l.href));
+              pathname === l.href || (l.href !== "/" && pathname.startsWith(l.href));
             return (
               <li key={l.href}>
                 <Link
@@ -95,9 +92,7 @@ export default function Navbar() {
             <ul className="page-content py-3">
               {links.map((l) => {
                 const active =
-                  l.href === "/#about"
-                    ? pathname === "/" || pathname === "/about"
-                    : pathname === l.href || (l.href !== "/" && !l.href.includes("#") && pathname.startsWith(l.href));
+                  pathname === l.href || (l.href !== "/" && pathname.startsWith(l.href));
                 return (
                   <li key={l.href}>
                     <Link

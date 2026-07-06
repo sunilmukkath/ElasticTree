@@ -172,8 +172,8 @@ export default function CapabilitiesPage() {
     <>
       <PageHero
         eyebrow="Capabilities"
-        title={<>Research Rooted in <span className="text-gradient-amber">Human Behaviour</span></>}
-        subtitle="A comprehensive range of custom marketing research services — from product optimisation and brand health to AI-powered visual attention testing — designed to uncover how people really think, choose, and act."
+        title={<>Six Pillars. <span className="text-gradient-amber">One Team.</span></>}
+        subtitle="Custom marketing research — from product optimisation and brand health to AI-powered visual attention — built to show how people think, choose, and act in the real world."
       />
 
       <div className="sticky top-16 z-40 border-b border-white/[0.06] bg-[rgba(10,31,74,0.94)] backdrop-blur-xl">

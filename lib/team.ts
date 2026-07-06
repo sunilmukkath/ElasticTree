@@ -45,7 +45,7 @@ export const aboutStats = [
 ];
 
 export const companyIntro = {
-  lead: "Elastic Tree is a market research firm that studies human behaviour — how people eat, choose, and act — to help brands make decisions grounded in reality, not just survey responses.",
+  lead: "Elastic Tree studies how people eat, choose, and act — helping brands make decisions grounded in reality, not just survey responses.",
   body: "Formed by a group of experienced researchers in 2014, the company has been servicing clients across industries and has established itself as a credible MR partner to several leading brands, in India and overseas.",
 };
 
