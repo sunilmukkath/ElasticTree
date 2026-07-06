@@ -24,7 +24,7 @@ const contactDetails = [
     icon: MapPin,
     label: "Office",
     value: "Chennai, India",
-    sub: "Field operations pan-India",
+    sub: "Servicing clients globally",
     href: null,
   },
 ];

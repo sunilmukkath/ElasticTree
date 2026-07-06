@@ -17,13 +17,13 @@ export const teamMembers: TeamMember[] = [
   {
     id: "ambika",
     name: "Ambika Chandrasekar",
-    role: "Head of Branding and Insights",
+    role: "Branding & Insights Head",
     image: "/team/ambika-chandrasekar.jpg",
     linkedin: "https://www.linkedin.com/in/ambika-chandrasekar-259a585a/",
   },
   {
     id: "ravikumar",
-    name: "Ravikumar Jayaprakash",
+    name: "Ravikumar Narayanan",
     role: "Director Strategy & Insights",
     image: "/team/ravikumar-jayaprakash.jpg",
     linkedin: "https://www.linkedin.com/in/ravikumar-narayanan/",
@@ -38,9 +38,9 @@ export const teamMembers: TeamMember[] = [
 ];
 
 export const aboutStats = [
-  { value: "100K+", label: "Responses Surveyed", desc: "Surveyed and analysed more than 1 lakh responses", accent: "#2dd4bf" },
+  { value: "100,000+", label: "Responses Surveyed", desc: "Surveyed and analysed more than 1 lakh responses", accent: "#2dd4bf" },
   { value: "800+", label: "Projects Delivered", desc: "Successfully handled more than 800 projects", accent: "#e8a820" },
-  { value: "250+", label: "Clients Worldwide", desc: "Worked with clients across India and overseas", accent: "#38bdf8" },
+  { value: "200+", label: "Clients Worldwide", desc: "Worked with clients across India and overseas", accent: "#38bdf8" },
   { value: "74%", label: "Repeat Business", desc: "7 out of 10 projects are from repeat clients", accent: "#5eead4" },
 ];
 

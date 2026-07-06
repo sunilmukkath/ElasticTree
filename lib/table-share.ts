@@ -5,7 +5,7 @@ export const tableShareStats = [
   { val: "3,468", label: "Households", accent: "#2dd4bf" },
   { val: "16", label: "Cities", accent: "#38bdf8" },
   { val: "400+", label: "Dishes", accent: "#5eead4" },
-  { val: "Day-After", label: "Recall", accent: "#e8a820" },
+  { val: "1-day", label: "Recall", accent: "#e8a820" },
 ] as const;
 
 export const tableShareInsights = [

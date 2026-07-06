@@ -1,0 +1,878 @@
+{
+  "siteCopy": {
+    "global": {
+      "siteName": "Elastic Tree",
+      "tagline": "Smart Decisions, Simply Made.",
+      "siteUrl": "https://www.elastictree.com",
+      "defaultTitle": "Elastic Tree | Market Research — Smart Decisions, Simply Made.",
+      "defaultDescription": "Elastic Tree is an AI-powered market research firm with 12 years of experience serving 200+ brands. Specialising in analytics, sensory science, syndicated research (Table Share®), impact research, and consumer insights — India & global."
+    },
+    "nav": [
+      "Home",
+      "About",
+      "Capabilities",
+      "Table Share",
+      "Work",
+      "Contact"
+    ],
+    "home": {
+      "hero": {
+        "eyebrow": "Market Research · Since 2014",
+        "title": "Navigate the Consumer Universe",
+        "subtitle": "Sensory science, syndicated intelligence, and deep domain expertise — insights FMCG and food-service brands act on, not just read.",
+        "buttons": [
+          "Explore Capabilities",
+          "Book a Consultation"
+        ],
+        "scrollCue": "Scroll to explore",
+        "stats": [
+          "12+ Years",
+          "200+ Brands",
+          "800+ Projects",
+          "74% Repeat"
+        ]
+      },
+      "marquee": "Analytics · Sensory Science · Table Share® · Syndicated Research · Impact & CSR · AI Gaze™ · 200+ Brands · 74% Repeat Rate",
+      "servicePillars": {
+        "label": "Capabilities",
+        "title": "Six Research Pillars",
+        "subtitle": "End-to-end capabilities — from field to findings — inside one team.",
+        "pillars": [
+          {
+            "title": "Analytics & Brand Research",
+            "desc": "Brand tracking, NPS, U&A, MaxDiff, conjoint, segmentation."
+          },
+          {
+            "title": "Sensory Science",
+            "desc": "QDA, TDS, CATA, and affective testing for FMCG & F&B."
+          },
+          {
+            "title": "Syndicated Research",
+            "desc": "Table Share® — continuous food-consumption tracking across 16 cities."
+          },
+          {
+            "title": "Qualitative & Ethnography",
+            "desc": "IDIs, focus groups, online communities, ZMET."
+          },
+          {
+            "title": "Impact & CSR Research",
+            "desc": "Baseline, mid-line, and end-line studies with donor-grade reporting."
+          },
+          {
+            "title": "Visual Attention Testing",
+            "desc": "AI Gaze™ for packaging and shelf studies."
+          }
+        ]
+      },
+      "aiStrip": {
+        "label": "Capabilities",
+        "title": "Research Tools That Scale With You",
+        "subtitle": "Sensory science and syndicated panels first — intelligent methods where they add clarity.",
+        "tools": [
+          {
+            "title": "Table Share®",
+            "tag": "Syndicated",
+            "desc": "3,468 households tracked dish-by-dish across 16 cities."
+          },
+          {
+            "title": "Brand Analytics",
+            "tag": "Quant",
+            "desc": "MaxDiff, conjoint, segmentation, and driver analysis in decision-ready dashboards."
+          },
+          {
+            "title": "Sensory Science",
+            "tag": "FMCG & F&B",
+            "desc": "Trained panels with TDS, CATA, and affective testing for product development."
+          },
+          {
+            "title": "Impact & CSR",
+            "tag": "Social",
+            "desc": "Baseline-to-endline frameworks with donor-grade reporting."
+          },
+          {
+            "title": "AI Gaze™",
+            "tag": "Select projects",
+            "desc": "Eye-tracking simulation for packaging, shelf, and ad pre-testing."
+          },
+          {
+            "title": "Agile Research",
+            "tag": "Rapid",
+            "desc": "Online qual and quant with rigorous QC — insights in days, not weeks."
+          }
+        ]
+      },
+      "tableShare": {
+        "label": "Syndicated Platform",
+        "title": "Table Share®",
+        "subtitle": "Food consumption intelligence capturing actual, dish-level eating behaviour across urban India — mapped by occasion, effort, and frequency.",
+        "buttons": [
+          "Explore Demo",
+          "Book a Demo",
+          "Know More"
+        ]
+      },
+      "caseStudiesPreview": {
+        "label": "Case Studies",
+        "title": "Research That Delivers Results",
+        "subtitle": "Real projects across FMCG, food service, media, and social impact.",
+        "button": "View Case Studies"
+      },
+      "clients": {
+        "eyebrow": "Trusted by",
+        "title": "200+ Brands Worldwide"
+      },
+      "testimonials": {
+        "label": "Client Voices",
+        "title": "What Clients Say"
+      },
+      "team": {
+        "label": "Meet The Team",
+        "title": "Built by Practitioners",
+        "subtitle": "Senior researchers from the world's top insights firms — now working for you directly.",
+        "pedigree": [
+          "Nielsen IQ",
+          "Kantar Worldpanel",
+          "IMRB International",
+          "Ipsos India",
+          "GfK India",
+          "Mintel",
+          "Euromonitor"
+        ],
+        "ctaTitle": "Ready to Turn Data Into Decisions?",
+        "ctaBody": "Whether you need a quick consumer pulse or a full-year tracker — let's design the right study for your brief.",
+        "ctaButtons": [
+          "Talk to an Expert",
+          "See All Capabilities"
+        ]
+      }
+    },
+    "capabilities": {
+      "hero": {
+        "eyebrow": "Capabilities",
+        "title": "Research That Drives Strategic Growth",
+        "subtitle": "A comprehensive range of custom marketing research services — from product optimisation and brand health to AI-powered visual attention testing — designed to uncover actionable insights for every business question."
+      },
+      "stickyNav": [
+        "Analytics",
+        "Sensory Science",
+        "Syndicated Research",
+        "Impact Research",
+        "Market Research",
+        "Advanced Methods"
+      ],
+      "pillars": [
+        {
+          "label": "Analytics",
+          "tagline": "Transform complexity into clarity",
+          "summary": "Advanced quantitative analytics that uncover the 'why' behind consumer choices, enabling data-driven product and communication decisions.",
+          "usedFor": [
+            "Product development",
+            "Portfolio optimisation",
+            "Ad claim testing",
+            "Pricing research"
+          ],
+          "methods": [
+            "MaxDiff (Best-Worst Scaling) for feature & claim prioritisation",
+            "Conjoint & TURF analysis for product configuration",
+            "Segmentation & cluster analysis — psychographic & behavioural",
+            "Regression-based driver analysis for KPI improvement",
+            "Key driver analysis (KDA) for brand equity and CX",
+            "Volumetric forecasting and adoption modelling"
+          ]
+        },
+        {
+          "label": "Sensory Science",
+          "tagline": "Science of taste, texture, and perception",
+          "summary": "Specialist sensory evaluation using trained panels and affective consumer testing — purpose-built for FMCG, food & beverage, personal care, and fragrance categories.",
+          "usedFor": [
+            "Recipe reformulation",
+            "Product launch",
+            "NPD screening",
+            "Shelf-life testing"
+          ],
+          "methods": [
+            "Trained descriptive analysis (QDA / Spectrum method)",
+            "Affective testing — central location and home-use tests (HUT)",
+            "Temporal methods: TDS (Temporal Dominance of Sensations)",
+            "CATA / RATA (Check-All-That-Apply / Rate-All-That-Apply)",
+            "Sensory shelf-life and stability evaluation",
+            "Fragrance / flavour optimisation in partnership with ingredient suppliers"
+          ]
+        },
+        {
+          "label": "Syndicated Research",
+          "tagline": "Ready intelligence, shared cost",
+          "summary": "Proprietary multi-client trackers and panels that deliver continuous, cost-efficient intelligence across food-service, media, and FMCG categories.",
+          "usedFor": [
+            "Market sizing",
+            "Category trends",
+            "Competitive benchmarking",
+            "Entry decisions"
+          ],
+          "methods": [
+            "Table Share® — India's dedicated out-of-home food-service panel (16 cities)",
+            "Monthly FMCG consumer sentiment tracker",
+            "Annual media consumption & OTT habits study",
+            "Quarterly brand health monitor (sector-specific)",
+            "Category trend reports with year-on-year benchmarks"
+          ]
+        },
+        {
+          "label": "Impact Research",
+          "tagline": "Measure what matters beyond profit",
+          "summary": "Specialised social research for CSR programmes, government schemes, and impact organisations — rigorous measurement of social, environmental, and community outcomes.",
+          "usedFor": [
+            "CSR reporting",
+            "ESG disclosures",
+            "Government schemes",
+            "NGO impact measurement"
+          ],
+          "methods": [
+            "Community baseline surveys and needs assessments",
+            "Government programme evaluation and reach studies",
+            "ESG outcome mapping and stakeholder interviews",
+            "Beneficiary satisfaction & perception tracking",
+            "Social return on investment (SROI) frameworks",
+            "Longitudinal impact assessment panels"
+          ]
+        },
+        {
+          "label": "Market Research",
+          "tagline": "Full-spectrum consumer understanding",
+          "summary": "End-to-end primary research across B2C and B2B sectors — from quick dipstick polls to large-scale multi-market studies, delivered with analytical depth.",
+          "usedFor": [
+            "Brand strategy",
+            "New category entry",
+            "CX improvement",
+            "Campaign effectiveness"
+          ],
+          "methods": [
+            "Usage & Attitude (U&A) studies",
+            "Brand health tracking — awareness, consideration, preference, loyalty",
+            "Concept & product testing (monadic, sequential, comparative)",
+            "Customer Experience (CX) and NPS programmes",
+            "Shopper and path-to-purchase research",
+            "Qualitative: FGDs, in-depth interviews, ethnography"
+          ]
+        }
+      ],
+      "advancedMethods": {
+        "label": "Advanced Methods",
+        "title": "Tools That Support Clearer Research",
+        "subtitle": "We adopt intelligent methods — eye-tracking simulation, text coding, predictive modelling — where they genuinely sharpen insight, not as a default for every project.",
+        "tools": [
+          {
+            "title": "AI Gaze™",
+            "subtitle": "Eye-Tracking Simulation",
+            "desc": "Elastic Tree's flagship proprietary tool. Using deep learning models trained on thousands of real eye-tracking sessions, AI Gaze™ predicts consumer visual attention on any uploaded image or design with 92% accuracy — fully remote, no hardware required.",
+            "stats": "92% Accuracy · 24 hrs Turnaround · –60% Cost vs. Traditional"
+          },
+          {
+            "title": "AI-Augmented Analytics",
+            "subtitle": "Faster Insights at Scale",
+            "desc": "Machine-learning models accelerate response quality validation, open-ended text categorisation, and driver analysis — enabling our analysts to focus on interpretation rather than data cleaning.",
+            "stats": "5× Speed Gain · 100K+ Data Points · 12+ Quant Modules"
+          },
+          {
+            "title": "Predictive Modelling",
+            "subtitle": "Decision-Ready Forecasts",
+            "desc": "Advanced MaxDiff, conjoint analysis, and regression-based driver models translate consumer preference data into ranked, simulation-ready product or communication decisions.",
+            "stats": "High Accuracy · MaxDiff, Conjoint Models · Priority Scores Output"
+          },
+          {
+            "title": "NLP & Text Mining",
+            "subtitle": "Open-Ended at Scale",
+            "desc": "NLP-powered verbatim coding, sentiment classification, and theme clustering across Tamil, Hindi, English, and other Indian languages — ensuring no qualitative nuance is lost in large-scale quant surveys.",
+            "stats": "6+ Languages · Yes Auto-code · Built-in Sentiment"
+          }
+        ],
+        "gazeDeliverables": [
+          {
+            "name": "Heat Map",
+            "desc": "Colour-coded overlay showing relative attention density across the entire stimulus — instantly identifies high- and low-engagement zones."
+          },
+          {
+            "name": "Hot Spot",
+            "desc": "Isolates the single most-fixated area on the visual, helping you confirm that the primary message or pack design element is landing where intended."
+          },
+          {
+            "name": "Gaze Sequence",
+            "desc": "Frame-by-frame animation recreating the natural scan path of a consumer's eye, revealing the true order in which elements register."
+          },
+          {
+            "name": "Area of Interest (AoI)",
+            "desc": "Quantified fixation metrics per defined zone — time-to-first-fixation, total dwell time, visit count — for rigorous cross-stimulus comparison."
+          }
+        ],
+        "gazeUseCases": [
+          "Packaging design evaluation & shelf standout testing",
+          "In-store planogram and POSM optimisation",
+          "Print and digital advertising pre-testing",
+          "Website UX and landing page effectiveness",
+          "Logo and brand identity review",
+          "Menu board and food-service display testing"
+        ]
+      },
+      "cta": {
+        "title": "Have a research challenge in mind?",
+        "body": "Our team will propose the right methodology — qual, quant, or a hybrid — tailored to your timeline and budget. Send us a visual stimulus and we can run a sample AI Gaze™ analysis too.",
+        "buttons": [
+          "Discuss Your Project",
+          "Request an AI Gaze™ Demo"
+        ]
+      }
+    },
+    "tableSharePage": {
+      "hero": {
+        "eyebrow": "Food Consumption Intelligence",
+        "title": "Table Share®",
+        "subtitle": "Captures real, dish-level eating behaviour across urban India — mapped by occasion, effort, and frequency.",
+        "buttons": [
+          "Explore Demo",
+          "Book a Demo"
+        ]
+      },
+      "decisionPlatform": {
+        "label": "Decision Platform",
+        "title": "Not a static report — a living dashboard",
+        "subtitle": "Go beyond the top 15: your gateway to 400+ dishes and behaviours. From insight to impact, the Table Share® dashboard is built to elevate your strategic agility.",
+        "note": "Custom extensions available by category, market, or target group."
+      },
+      "whyConsumption": {
+        "label": "Why Consumption",
+        "title": "If you don't know what's eaten, you can't know what will grow",
+        "subtitle": "Beyond availability: inform your urban market strategy with actual consumption metrics."
+      },
+      "occasions": {
+        "label": "Occasions",
+        "title": "India eats 7 times a day",
+        "subtitle": "Each occasion has different foods, needs, and competitive sets. Table Share® maps them independently — and accurately."
+      },
+      "sourceOfPrep": {
+        "label": "Source of Preparation",
+        "title": "Where food comes from matters",
+        "subtitle": "Homemade is still dominant — but uneven across dishes. RTC / RTE / takeaway adoption is driven by effort, not category alone.",
+        "quote": "Convenience doesn't replace cooking. It replaces effort.",
+        "button": "See RTC opportunities in demo",
+        "panelTitle": "The innovation sweet spot",
+        "panelBody": "Identify white-space where effort is high but homemade share is declining — the signal for RTC and RTE innovation pipelines."
+      },
+      "volumeRelevance": {
+        "label": "Volume Relevance",
+        "title": "Why penetration isn't enough",
+        "subtitle": "Growth follows volume relevance — not just reach. Table Share® shows which dishes and occasions drive real consumption share."
+      },
+      "geographicReach": {
+        "label": "Geographic Reach",
+        "title": "16 cities covered",
+        "subtitle": "Metro, Tier 1 and Tier 2 cities — representative coverage of India's diverse urban food landscape."
+      },
+      "cta": {
+        "title": "If your product isn't winning at the table, it won't win at retail.",
+        "body": "Table Share® isn't just data — it's your roadmap to staying relevant, responsive, and ahead in India's urban food market.",
+        "buttons": [
+          "Explore Demo",
+          "Book a Demo"
+        ],
+        "note": "Opens the interactive Table Share® dashboard in a new tab"
+      }
+    },
+    "contact": {
+      "hero": {
+        "eyebrow": "Contact Us",
+        "title": "Let's Talk Research",
+        "subtitle": "Whether you have a specific brief or just want to explore what's possible, our team is happy to have a conversation."
+      },
+      "details": [
+        {
+          "label": "Email Us",
+          "value": "research@elastictree.com",
+          "sub": "We reply within 24 hours"
+        },
+        {
+          "label": "Call Us",
+          "value": "+91 98400 XXXXX",
+          "sub": "Mon–Fri, 9 AM – 6 PM IST"
+        },
+        {
+          "label": "Office",
+          "value": "Chennai, India",
+          "sub": "Field operations pan-India"
+        }
+      ],
+      "form": {
+        "fields": [
+          {
+            "label": "Your Name",
+            "placeholder": "John Doe"
+          },
+          {
+            "label": "Company",
+            "placeholder": "Acme Corp"
+          },
+          {
+            "label": "Business Email",
+            "placeholder": "john@company.com"
+          },
+          {
+            "label": "Tell us about your project",
+            "placeholder": "Describe your research objective, timeline, and any key questions you'd like answered..."
+          }
+        ],
+        "submit": "Send Message",
+        "successTitle": "Message Sent!",
+        "successBody": "Thank you for reaching out. We'll get back to you within 24 hours."
+      }
+    },
+    "caseStudiesPage": {
+      "eyebrow": "Our Work",
+      "title": "Research & Case Studies",
+      "searchPlaceholder": "Search by title, client, or topic...",
+      "filters": [
+        "All",
+        "Analytics",
+        "Sensory Science",
+        "Syndicated",
+        "Impact",
+        "Market Research",
+        "AI"
+      ],
+      "emptyState": "No results found.",
+      "clearFilters": "Clear filters",
+      "articleBack": "Back to Case Studies",
+      "articleCtaTitle": "Want similar insights for your brand?",
+      "articleCtaBody": "Tell us your business challenge and we'll design the right research approach.",
+      "articleCtaButton": "Get in Touch",
+      "relatedTitle": "Related Research"
+    },
+    "testimonials": [
+      {
+        "name": "Alok Robin",
+        "company": "Takasago",
+        "quote": "An extremely dedicated and friendly team at Elastic Tree has made us very comfortable and their approach to our each and every request has always been taken into consideration. We feel so confident and safe working with Elastic Tree."
+      },
+      {
+        "name": "Pradeep Gangadharan",
+        "company": "Waycool",
+        "quote": "There is high involvement from senior research team members, which is good and different from a larger research agency."
+      },
+      {
+        "name": "Harsh Arya",
+        "company": "ITC",
+        "quote": "Elastic Tree is well integrated with the project. Starting with the project brief to the fragrance houses, all the way to the final leg of consumer interactions."
+      },
+      {
+        "name": "Janani Kandaswamy",
+        "company": "Mangaldeep",
+        "quote": "The research I did with Elastic Tree helped in both new product development and communication positioning. The rigour of qualitative insights provided by the team has helped in arriving at suitable brand propositions."
+      },
+      {
+        "name": "Akash Jain",
+        "company": "Cosco",
+        "quote": "The granularity of research and transparency of the organisation set it apart. Was a pleasure working with them."
+      },
+      {
+        "name": "Kashyap G",
+        "company": "Star Health",
+        "quote": "They deeply immersed themselves in our brand, delving into the intricacies of both the brand and the category. The brand planning and strategic expertise they bring to the table are immeasurable. Working with Team ET has truly been a transformative experience for our brand."
+      }
+    ],
+    "clients": [
+      "Aachi",
+      "Aargee Equipments",
+      "Aisle",
+      "Amar Prakaash",
+      "Amrutanjan",
+      "Anabond",
+      "Arha Media",
+      "Asianet Star",
+      "Business Clinique",
+      "Casa Grand",
+      "Cavinkare",
+      "Cholayil",
+      "Circen",
+      "Cosco",
+      "Creamline",
+      "Dabur India",
+      "Dynata",
+      "E.I.D Parry",
+      "Enerlife",
+      "Fipola",
+      "G K Dairy",
+      "Gemini Edibles",
+      "Hatsun",
+      "Id Fresh Food",
+      "Initiative Media",
+      "ITC",
+      "K L F Nirmal",
+      "K.P. Namboodiri's",
+      "Kaleesuwari",
+      "Khazana",
+      "Lotte India",
+      "Lucas TVS",
+      "M/S RK Swamy BBDO",
+      "Maruchan Ajinomoto",
+      "MyKiki",
+      "Nabati",
+      "NoBroker",
+      "Pepsico",
+      "Percept H",
+      "Pioneer Wincon",
+      "Pothys",
+      "Prayagh Nutri",
+      "Rabbit Digital",
+      "Ram-Nath",
+      "Rubecon",
+      "Sirina Healthcare",
+      "SKM Egg Products",
+      "SPR Construction",
+      "Star Health",
+      "Sterling Holiday",
+      "Sulekha.Com",
+      "Symrise",
+      "Takasago",
+      "Tidel Park",
+      "TVS Lucas",
+      "UPL",
+      "Vaidyaratnam",
+      "Versuni",
+      "Waycool"
+    ]
+  },
+  "posts": [
+    {
+      "slug": "table-share-qsr-occasion-mapping",
+      "title": "Mapping Meal Occasions: How a QSR Chain Found Its Next Growth City",
+      "excerpt": "Using Table Share® syndicated data, a national QSR identified underserved lunch occasions in Tier-2 cities — unlocking a ₹120 Cr expansion roadmap backed by dish-level consumption evidence.",
+      "readTime": "3 min read",
+      "tags": [
+        "Syndicated",
+        "Analytics"
+      ],
+      "date": "2026-02-15",
+      "client": "National QSR Chain",
+      "industry": "Food Service",
+      "content": "**Industry:** Quick Service Restaurants (QSR)\n**Client:** A leading national QSR chain with 400+ outlets across India\n\n## The Challenge\n\nThe client was evaluating expansion into three Tier-2 cities but lacked reliable data on out-of-home eating behaviour at the dish and occasion level. Traditional U&A studies provided attitudinal data but couldn't reveal what consumers actually ate, when, and where.\n\n## Our Solution: Table Share® Syndicated Intelligence\n\nWe leveraged **Table Share®** — Elastic Tree's proprietary food consumption panel tracking 3,468 households across 16 cities — to deliver occasion-level intelligence without the cost of a bespoke study.\n\n### Key Data Layers Used\n\n- **Occasion mapping:** Breakfast, lunch, evening snack, dinner, and late-night eating patterns by city\n- **Dish-level tracking:** Specific menu categories consumed out-of-home vs. at-home\n- **Spend & frequency:** Average ticket size and visit frequency by occasion and SEC segment\n- **Competitive share:** Share of throat across QSR, casual dining, and delivery channels\n\n## Impact\n\n- Identified **two high-potential cities** where lunch occasions were underserved relative to population density\n- Recommended a **menu localisation strategy** based on regional dish preferences revealed in the panel\n- Client secured board approval for expansion with syndicated data costing **60% less** than a custom tracker\n- Table Share® subscription continues to monitor post-entry performance quarter-on-quarter\n\n*Continuous food intelligence — dish by dish, occasion by occasion.*"
+    },
+    {
+      "slug": "ai-gaze-planogram-optimisation",
+      "title": "AI Gaze™ Planogram Optimisation: 23% Uplift in Shelf Attention",
+      "excerpt": "A personal care brand used AI Gaze™ eye-tracking simulation to redesign in-store planograms — achieving 23% higher visual attention on hero SKUs without changing product assortment.",
+      "readTime": "3 min read",
+      "tags": [
+        "AI",
+        "Analytics"
+      ],
+      "date": "2026-01-20",
+      "client": "Personal Care Brand",
+      "industry": "FMCG",
+      "content": "**Industry:** Personal Care / FMCG\n**Client:** A mid-size personal care brand competing against multinational incumbents\n\n## The Challenge\n\nDespite strong product quality, the client's SKUs were consistently losing shelf attention to larger competitors in modern trade outlets. Traditional eye-tracking studies were prohibitively expensive and required lab setups with limited stimulus flexibility.\n\n## Our Solution: AI Gaze™ Remote Eye-Tracking\n\nElastic Tree deployed **AI Gaze™** — our proprietary AI-simulated eye-tracking tool with 92% accuracy — to evaluate three planogram configurations using actual shelf photography from key retail chains.\n\n### Deliverables\n\n- **Heat maps** showing relative attention density across the entire shelf bay\n- **Gaze sequence animations** revealing the scan path consumers follow left-to-right\n- **Area of Interest (AoI) metrics:** Time-to-first-fixation, dwell time, and visit count per SKU zone\n- **Hot spot analysis** confirming whether the primary brand message landed in the intended visual zone\n\n## Key Findings\n\n- Hero SKU was placed below eye level — repositioning to the **second shelf row** increased fixation time by 23%\n- Competitor's flanker product was capturing initial gaze due to high-contrast packaging in the peripheral zone\n- Recommended **facings increase** on two SKUs with high dwell time but low conversion at shelf\n\n## Impact\n\n- Planogram redesign implemented across **180 modern trade outlets** in Phase 1\n- Post-implementation sales tracking showed **14% volume uplift** on repositioned SKUs within 8 weeks\n- Total research cost was **60% lower** than traditional eye-tracking, with 24-hour turnaround per stimulus\n\n*See what consumers see — before you spend on shelf.*"
+    },
+    {
+      "slug": "her-perspective",
+      "title": "Her Perspective",
+      "excerpt": "Prevention beats policing—India needs a culture fix, not just a law enforcement fix. 3,414 women across 16 Indian cities reveal what women are telling policymakers and brands.",
+      "readTime": "1 min read",
+      "tags": [
+        "Impact"
+      ],
+      "date": "2026-03-01",
+      "hasPdf": true,
+      "pdfUrl": "/downloads/her-perspective-2026.pdf",
+      "content": "Prevention beats policing—India needs a culture fix, not just a law enforcement fix. 3,414 women across 16 Indian cities mentioned Women's Safety (39%) as the top priority. However, 56% prefer school-based gender training over enforcement.\n\nRead our \"Her Perspective 2026\" survey to see what women across 16 cities are telling policymakers and brands."
+    },
+    {
+      "slug": "why-custom-marketing-research-matters",
+      "title": "Why Custom Marketing Research Matters for Your Business",
+      "excerpt": "In today's fast-paced business environment, understanding your target market is crucial. Tailored marketing insights shaped by custom research can provide businesses with the knowledge to thrive.",
+      "readTime": "4 min read",
+      "tags": [
+        "Market Research"
+      ],
+      "date": "2025-11-01",
+      "content": "In today's fast-paced business environment, understanding your target market is crucial. Tailored marketing insights shaped by custom marketing research can provide businesses with the necessary knowledge to not only compete but also thrive.\n\n## Tailored Marketing Insights\n\nTailored marketing insights refer to the personalized data and conclusions drawn specifically for your business and its unique needs. This in-depth analysis goes beyond general market research to focus on your customers, competitors, and market trends.\n\nBusinesses can greatly benefit from these insights to allocate their resources effectively. According to a study by the American Marketing Association, companies that employ tailored insights see a 35 percent increase in ROI on marketing campaigns compared to those using generic data.\n\n## The Need for Custom Marketing Research\n\nIn an era where consumers are more informed and discerning than ever, businesses must adapt their strategies accordingly. Custom marketing research is critical for several reasons:\n\n- **Understanding Your Audience:** Tailored insights can provide a comprehensive understanding of consumer behavior, preferences, and pain points.\n- **Competitive Analysis:** Knowing who your competitors are and understanding their strategies is vital.\n- **Risk Mitigation:** By using specific data related to your target market, businesses can reduce the risk involved in launching new products.\n- **Enhanced Customer Experience:** Insights from custom marketing research can help personalize the customer journey.\n\n## What is the Meaning of Custom Marketing?\n\nCustom marketing refers to creating marketing strategies and campaigns that are tailored to the specific needs and preferences of a target audience. Unlike traditional, one-size-fits-all approaches, custom marketing utilizes data-driven insights to deliver personalized experiences to customers.\n\n## The Benefits of Tailored Insights\n\nInvesting in custom marketing research offers numerous benefits, including:\n\n- **Improved Targeting:** Tailored insights can allow businesses to segment their audience effectively.\n- **Higher Conversion Rates:** With personalized marketing, audiences are more likely to engage.\n- **Better Resource Allocation:** Understanding where to best allocate marketing budgets leads to maximized returns.\n- **Enhanced Brand Loyalty:** By meeting customer needs through personalized insights, businesses can foster long-term loyalty.\n\nData from a Nielsen report shows that brands implementing customized marketing can outperform their competitors by as much as 2.5 times.\n\n## Final Thoughts\n\nThe world of marketing is rapidly evolving; customer expectations are higher than ever. Custom marketing research is a vital component in offering tailored insights that align with these expectations. Embrace custom marketing research to uncover opportunities and ensure your business stays ahead of the curve."
+    },
+    {
+      "slug": "looking-for-her-in-the-headlines",
+      "title": "Women in Indian Media: Bridging the Gender Gap in Journalism",
+      "excerpt": "Despite growing discussions around gender equality, the lack of female representation in Indian news coverage remains a critical issue. Our study across 3,400+ pages reveals only marginal progress.",
+      "readTime": "2 min read",
+      "tags": [
+        "Impact"
+      ],
+      "date": "2025-09-01",
+      "content": "## Understanding the Challenge of Female Representation\n\nDespite growing discussions around gender equality, the lack of female representation in Indian news coverage remains a critical issue. Our examination sought to measure how women are represented in Indian newspapers—as newsmakers, sources, and contributors.\n\n## Our Research Approach\n\nElastic Tree conducted a two-wave gender representation study across Indian print media, covering two consecutive years—2023 and 2024. The research evaluated the presence and visibility of women in various roles, including newsmakers, sources, and those featured in visual content.\n\n### Methodology Overview\n\n- **Newspaper Selection:** In 2023, we selected five newspapers. In 2024, we expanded to eight newspapers, incorporating both English and Tamil language publications.\n- **Data Collection:** Each article was assessed for gender representation—identifying whether newsmakers, sources, and visually depicted individuals were male or female.\n- **Quantitative Scale:** Our team analyzed over 3,400 pages of newspaper content across both years.\n\n## Key Findings and Their Impact\n\nOur study revealed only marginal progress in gender representation. In 2024, women accounted for a mere **17% of newsmakers**. This underscores the continued prevalence of male voices in the media narrative.\n\nThe findings emphasize an urgent need for Indian media houses to take action:\n\n- **Broaden Source Networks:** Media houses should strive to include more women experts and voices.\n- **Encourage Diverse Perspectives:** Having varied viewpoints in newsrooms can foster balanced storytelling.\n- **Establish Monitoring Mechanisms:** Create institutional mechanisms that monitor gender parity consistently.\n\n## The Importance of Continuous Tracking\n\nContinuous tracking of gender representation in media is crucial. It not only provides transparency but also promotes accountability among journalists and institutions.\n\n## Conclusion: A Call to Action\n\nThis study serves as both a mirror and a motivator. Through continuous tracking and collective accountability, we hope to foster a more representative media environment in the years to come."
+    },
+    {
+      "slug": "pack-to-plate",
+      "title": "Pack to Plate: Product & Pack Performance Unwrapped",
+      "excerpt": "A wheat manufacturer looking to move into branded retail needed an objective benchmark against the category leader. Our blind in-home use study delivered the confidence to grow.",
+      "readTime": "2 min read",
+      "tags": [
+        "Sensory Science",
+        "Market Research"
+      ],
+      "date": "2025-07-01",
+      "content": "**Client background:** Client has been in wheat manufacturing business for more than 3 decades. The client is a strong supplier of Sharbati atta to private label supplier to many of the national retail chains. Client is slowly trying to move into the retail branded space. Client would like to increase their brand presence in the retail outlets.\n\n## Problem\n\nThe client was up against the leading atta brand in the market—a player with distribution muscle and strong brand saliency. The client was confident of offering a better premium product at a competitive price. The client is strong in the south market—where atta is a relatively new adoption in homes and awareness of different quality is also low.\n\nIn order to get an objective third-party rating of performance, there was a need to benchmark against industry leader in blind in-home use.\n\n## Research Methodology\n\nQuantitative study among **120 consumers** were conducted—sequential monadic test wherein consumers tested client's product and one competition in blind form. Evaluation of the atta was done in all the stages:\n\n- Visual evaluation of the atta\n- Prep stage — kneading the dough & making rotis\n- Cooking stage & taste evaluation\n- Consumers were requested to store the cooked rotis for 3 hours to replicate the real-life scenario of 'packing the rotis in lunch boxes'\n\n## Solution\n\nStudy reassured client in their product's superior performance and as next step they can concentrate more on the other marketing mixes. Study also helped client identify key words / images in their pack which appealed to consumers more and those which they need to change/modify.\n\n**Backed by data, the brand is ready to grow and win at shelf!**"
+    },
+    {
+      "slug": "winning-the-trp-war",
+      "title": "Winning the TRP War: The Power of Listening to Viewers in Real Time",
+      "excerpt": "A Tamil television channel secured the #1 TRP position for two consecutive months by acting on real-time viewer feedback from dedicated viewer panels.",
+      "readTime": "2 min read",
+      "tags": [
+        "Market Research"
+      ],
+      "date": "2025-05-01",
+      "content": "**Client Overview:** Our client is a popular Tamil-language television channel in India, widely known for its engaging programming, including serial dramas, reality shows, talk shows, and movies.\n\nWith fierce competition from other television networks, particularly in the high-stakes prime-time slot, maintaining strong TRP (Television Rating Point) performance is critical.\n\n## The Challenge\n\nPrime-time serial dramas are a significant investment, targeting diverse viewers across various age groups. Even minor missteps in the storyline can lead to a drop in viewership and declining TRPs, impacting the channel's performance and revenue.\n\nThe client sought to regularly capture authentic viewer feedback to stay aligned with audience expectations, make quick content corrections, and benchmark their shows against competitors.\n\n## Our Approach: A Viewer-Centric Research Methodology\n\n- **Dedicated Viewer Panels:** Separate panels were set up for each serial drama under observation—including regular viewers and \"switch viewers\" who also followed competitor channels.\n- **Individual Discussions:** At the end of every week, one-on-one telephonic interviews were conducted with each panel member. Group discussions were intentionally avoided to ensure honest, unbiased opinions.\n- **In-Depth Insights:** Discussions explored opinions on the storyline, appeal of key characters, and comparisons with competing serials.\n\n## Impact & Outcome\n\nWhat began as a simple feedback initiative evolved into a powerful content optimization tool. The insights helped the client understand:\n\n- Which story elements resonated most\n- Which characters enhanced or diluted viewer interest\n- Whether the storyline felt engaging, practical, predictable, or dull\n\nRegular comparative analysis with competitor serials gave the client a clear edge in refining their content strategy.\n\n**The result? With our continuous tracking and targeted recommendations, the client's prime-time serials secured the #1 TRP position continuously for two months.**"
+    },
+    {
+      "slug": "confectionery-packaging-reinvented",
+      "title": "Confectionery Packaging Reinvented",
+      "excerpt": "A leading confectionery brand combined quantitative consumer evaluation with AI-based eye-tracking to modernize lollipop packaging, driving stronger purchase intent.",
+      "readTime": "2 min read",
+      "tags": [
+        "Analytics",
+        "AI"
+      ],
+      "date": "2025-04-01",
+      "content": "**Industry:** Food and Beverage (Confectionery)\n**Client:** A Leading Confectionery Brand\n\n## The Challenge\n\nIn the highly competitive confectionery market, packaging plays a crucial role in attracting consumers and influencing purchase decisions. Our client sought to refresh its lollipop packaging designs for two key product lines. The existing packaging was perceived as outdated, potentially affecting brand awareness and purchase intent.\n\n## Our Solution\n\nTo ensure that the redesigned packaging resonated with consumers, we employed a data-driven research approach, combining quantitative evaluation with cutting-edge **AI-based eye-tracking technology**.\n\n## Research Methodology\n\n- **Quantitative Consumer Evaluation:** A structured questionnaire was administered to 300 consumers to gauge overall likeability, purchase intent, and forced preference among different packaging designs.\n- **AI-Based Eye-Tracking (Ai-Gaze):** Predictive eye-tracking technology was leveraged to analyze visual attention, identifying which packaging elements captured consumer interest and which needed enhancement.\n\n## Impact & Key Findings\n\n**1. Improved Packaging Design**\nThe study's findings directly influenced packaging revisions, optimizing the visual appeal and strengthening the communication of key brand messages. Insights into consumer reactions to specific colors, shapes, and imagery helped refine designs to maximize positive associations.\n\n**2. Data-Driven Design Recommendations**\nBy integrating consumer feedback with eye-tracking analytics, the research pinpointed areas needing improvement, such as visual clarity and hierarchy.\n\n**3. Enhanced Purchase Intent**\nThe optimized designs led to a stronger purchase intent among the target audience, reinforcing the importance of consumer-centric design strategies in product packaging.\n\n## Conclusion\n\nThrough a combination of quantitative analysis and AI-powered insights, we empowered our client to create packaging that is not only visually appealing but also strategically designed to drive consumer engagement.\n\n*Data-driven consumer insights to optimize and boost brand impact.*"
+    },
+    {
+      "slug": "decoding-chocolate-flavor",
+      "title": "Decoding Consumer Preferences to Create a Market-Winning Chocolate Flavor",
+      "excerpt": "A global flavor leader used a four-phase research methodology—from retail audit to CLT validation—to identify the ideal premium chocolate flavor for bakery, milk drinks, and nutritional supplements.",
+      "readTime": "2 min read",
+      "tags": [
+        "Sensory Science",
+        "Analytics"
+      ],
+      "date": "2025-03-01",
+      "content": "**Industry:** Food and Beverage (Flavorings)\n**Our Client:** A global leader in flavors, fragrances, and cosmetic ingredients.\n\n## The Challenge: Crafting a Premium Chocolate Flavor\n\nOur client set out to develop a premium chocolate flavor for bakery items, milk-based drinks, and nutritional supplements. The challenge: identify a chocolate flavor profile that would resonate with modern consumers and fit seamlessly into various product categories.\n\n## Our Research Approach: A Four-Phase Study\n\n### Phase 1: Exploratory Retail Audit\n\nThe research began with a deep dive into the existing market landscape. By analyzing online grocery platforms and ice cream brand websites, we created a comprehensive library of chocolate products, identifying common flavor descriptions and trends.\n\n### Phase 2: In-depth Consumer Exploration\n\nWe conducted in-depth interviews with **12 articulate consumers (SEC A1)** in Bangalore and Chennai—regular purchasers of biscuits, milk-based drinks, or ice cream—to understand their preferred chocolate flavor profiles and sensory expectations.\n\n### Phase 3: Market Central Location Test (CLT)\n\nQuantitative testing through a blind taste test across **three major cities: Mumbai, Delhi, and Chennai**. A total of **270 participants** (90 per city) were divided into three panels representing ice cream, bakery, and milk-based drink categories. Each panel evaluated four chocolate flavor samples using a sequential monadic approach, followed by a forced comparison.\n\n### Phase 4: Validation CLT\n\nA second blind product test with **165 participants** in Chennai confirmed which chocolate flavor would perform best in real-world applications.\n\n## The Impact: Data-Driven Flavor Innovation\n\nBy progressing from secondary research to qualitative exploration and rigorous quantitative testing, our approach provided a structured roadmap for flavor development. The insights enabled our client to select a chocolate flavor that aligns with evolving consumer tastes.\n\n*Delivering market-winning insights through research-driven innovation.*"
+    },
+    {
+      "slug": "brand-architecture",
+      "title": "Brand Architecture: Choosing The Right Model",
+      "excerpt": "Brand architecture is the strategic blueprint that defines how all brands within a company relate to each other. Understanding the four models is key to maximizing brand equity.",
+      "readTime": "3 min read",
+      "tags": [
+        "Market Research"
+      ],
+      "date": "2025-02-01",
+      "content": "Brand architecture is the strategic process of organizing, structuring, and relating a company's brands to achieve specific marketing and business objectives. Think of it as a family tree for your brands.\n\n## The Four Main Brand Architecture Models\n\n### 1. Branded House (Monolithic)\n\n**Description:** All products and services operate under a single, overarching brand name.\n\n**Examples:** Google, Virgin, Sony\n\n**Advantages:** High brand awareness, simplified marketing, strong brand equity.\n\n**Disadvantages:** Limited flexibility; potential damage to the overall brand if one product fails.\n\n### 2. Endorsed Brands\n\n**Description:** Individual products or services have their own distinct brand names, but are clearly linked to and endorsed by the parent brand.\n\n**Examples:** Marriott (Marriott Hotels, Courtyard by Marriott, Ritz-Carlton), Campbell Soup Company\n\n**Advantages:** Flexibility to target different market segments while leveraging parent brand equity.\n\n**Disadvantages:** Requires careful coordination to maintain consistent messaging.\n\n### 3. House of Brands (Unbranded)\n\n**Description:** Each product or service operates under a completely independent brand name with no visible connection to the parent company.\n\n**Examples:** Procter & Gamble (Tide, Pampers, Gillette), Unilever (Dove, Lipton)\n\n**Advantages:** Maximum flexibility, isolation of risk, ability to target diverse market segments.\n\n**Disadvantages:** High cost of building and maintaining multiple brands.\n\n### 4. Hybrid Models\n\n**Description:** A combination of elements from the above models, tailored to specific business needs.\n\n**Advantages:** Flexibility to adapt the architecture to different product categories and target audiences.\n\n## Choosing the Right Model\n\nThe best brand architecture model depends on:\n\n- Company size and structure\n- Product portfolio diversity\n- Target market segments\n- Marketing budget and resources\n- Risk tolerance\n\nThorough market research and a clear understanding of your business strategy are crucial to selecting the most appropriate model.\n\n**Reach out to us to know more!**"
+    },
+    {
+      "slug": "revolutionizing-baby-bottle-care",
+      "title": "Revolutionizing Baby Bottle Care: A Breakthrough Innovation",
+      "excerpt": "A pioneering smart machine for baby bottle cleaning, sterilization, and drying needed to understand consumer acceptance and price sensitivity before launch across Indian markets.",
+      "readTime": "2 min read",
+      "tags": [
+        "Sensory Science",
+        "Market Research"
+      ],
+      "date": "2025-01-01",
+      "content": "**Industry:** Baby Care\n**Client:** Medical Professional\n\n## The Challenge\n\nOur client developed a first-of-its-kind smart machine that automates baby bottle cleaning, sterilization, and drying. Going beyond conventional sterilizers, this advanced device features an integrated app that dispenses formula milk at the desired time and quantity, and tracks the baby's milk consumption.\n\nHowever, being a pioneering innovation in India, the client was concerned about consumer acceptance and pricing sensitivity. The key question: **Would parents embrace this premium solution, and what price points would they be willing to pay?**\n\n## Our Approach\n\nWe designed a two-step research methodology:\n\n**Qualitative In-Depth Interviews (IDIs):** Conducted in Chennai and Bangalore to understand current bottle-cleaning practices, sterilization methods, and the role of existing steam-based sterilizers.\n\n**Quantitative Study:** A large-scale survey across **11 Tier 1, 2, and 3 cities**, covering **300 respondents** to gauge consumer sentiment across different demographics.\n\n## Key Insights & Impact\n\n- **High Consumer Interest:** The innovative concept was well-received, with strong appeal among urban parents looking for convenience.\n- **Price Sensitivity:** The premium pricing was a hurdle, prompting the need for alternative business models.\n- **Flexible Business Models:** Exploring rental options, subscription plans, or a refundable deposit scheme could encourage adoption without a high upfront cost.\n\n## Outcome\n\nBy leveraging these insights, the client refined their market approach, considering alternative pricing structures to make the product more accessible. The study not only validated the product's appeal but also unlocked new opportunities for customer acquisition and long-term business sustainability.\n\n*Helping Innovators Understand Their Market—One Insight at a Time.*"
+    },
+    {
+      "slug": "feasibility-study-for-new-store",
+      "title": "Feasibility Study for New Store",
+      "excerpt": "A Tamil Nadu retail giant planning their third Bangalore store used GapMap area analysis and consumer interviews to validate their 'All under one roof' concept in a new market.",
+      "readTime": "2 min read",
+      "tags": [
+        "Market Research"
+      ],
+      "date": "2024-12-01",
+      "content": "**Assessing the potential of the area and understanding the attractiveness of a new store.**\n\n## Our Client\n\nClient is a retail giant offering lifestyle products, supermarket and gold jewellery. A strong player in Tamil Nadu, spreading their presence in Kerala and Karnataka. Client had their first store open in Bangalore in 2018 and second store in 2023. Client would like to open a new store in the \"All under one roof\" concept in Bangalore.\n\n## Challenge\n\nThe multi-faceted culture of Bangalore residents is the key challenge. A city which has a mix of traditional consumers who prefer traditional stores, modern consumers who prefer malls, and a huge proportion of people who prefer buying online. Client is concerned whether the concept \"All under one roof\" will work in a city like Bangalore. Additionally, the proposed area is in the outer part of the city.\n\n## Objectives\n\n- Detailed understanding of the area — kind of area/profile of people living there\n- Complete understanding of competitors & shopping areas in the catchment area\n- Understand the appeal of the concept among consumers\n\n## Methodology\n\nWe proposed a two-step research process:\n\n1. **Complete scan of the area** using GapMap tool, confirmed via physical visits\n2. **Face-to-face interviews** among consumers to understand their lifestyle & shopping habits and the appeal of the concept\n\n## Key Results & Benefits\n\n- Complete understanding of the area — population spread and demographics & affluence level\n- Studied all 3 types of market areas: local/hawkers market, traditional stores, and modern retail outlets\n- GapMap provided the concentration of modern retail stores in the catchment area — kind of stores, count, and footfall data\n- Consumer interviews threw light on shopping habits, likes & problems they face while visiting malls\n- Broad understanding of awareness and visits to competition stores in Bangalore\n- **The study showed huge potential for the store concept and high willingness from consumers to visit**\n\n## Impact\n\nThe research helped the client in reassuring their decision of property and the concept of the new store — \"All under one roof\"."
+    }
+  ],
+  "teamMembers": [
+    {
+      "id": "sunil",
+      "name": "Sunil Mukkath",
+      "role": "Founder & CEO",
+      "image": "/team/sunil-mukkath.jpg",
+      "linkedin": "https://www.linkedin.com/in/sunil-mukkath-19aba712/"
+    },
+    {
+      "id": "ambika",
+      "name": "Ambika Chandrasekar",
+      "role": "Head of Branding and Insights",
+      "image": "/team/ambika-chandrasekar.jpg",
+      "linkedin": "https://www.linkedin.com/in/ambika-chandrasekar-259a585a/"
+    },
+    {
+      "id": "ravikumar",
+      "name": "Ravikumar Jayaprakash",
+      "role": "Director Strategy & Insights",
+      "image": "/team/ravikumar-jayaprakash.jpg",
+      "linkedin": "https://www.linkedin.com/in/ravikumar-narayanan/"
+    },
+    {
+      "id": "shilaja",
+      "name": "Shilaja Balasubramanian",
+      "role": "Research Director",
+      "image": "/team/shilaja-balasubramanian.jpg",
+      "linkedin": "https://www.linkedin.com/in/shilaja-balasubramanian-5a505917/"
+    }
+  ],
+  "aboutStats": [
+    {
+      "value": "100K+",
+      "label": "Responses Surveyed",
+      "desc": "Surveyed and analysed more than 1 lakh responses",
+      "accent": "#2dd4bf"
+    },
+    {
+      "value": "800+",
+      "label": "Projects Delivered",
+      "desc": "Successfully handled more than 800 projects",
+      "accent": "#e8a820"
+    },
+    {
+      "value": "250+",
+      "label": "Clients Worldwide",
+      "desc": "Worked with clients across India and overseas",
+      "accent": "#38bdf8"
+    },
+    {
+      "value": "74%",
+      "label": "Repeat Business",
+      "desc": "7 out of 10 projects are from repeat clients",
+      "accent": "#5eead4"
+    }
+  ],
+  "companyIntro": {
+    "lead": "Elastic Tree is a market research firm that mines and interprets consumer insights to help businesses achieve their growth and marketing goals.",
+    "body": "Formed by a group of experienced researchers in 2014, the company has been servicing clients across industries and has established itself as a credible MR partner to several leading brands, in India and overseas."
+  },
+  "offices": [
+    {
+      "city": "Chennai",
+      "address": "3B, Krshnika Apartments, 1/26, Avenue Rd, Nungambakkam, Chennai, Tamil Nadu 600034"
+    },
+    {
+      "city": "Bengaluru",
+      "address": "Awfis Davanam Plaza, 3rd floor, Opp. Madivala Police Station, Hosur Road, Bengaluru 560068"
+    }
+  ],
+  "tableShareStats": [
+    {
+      "val": "3,468",
+      "label": "Households",
+      "accent": "#2dd4bf"
+    },
+    {
+      "val": "16",
+      "label": "Cities",
+      "accent": "#38bdf8"
+    },
+    {
+      "val": "400+",
+      "label": "Dishes",
+      "accent": "#5eead4"
+    },
+    {
+      "val": "Day-After",
+      "label": "Recall",
+      "accent": "#e8a820"
+    }
+  ],
+  "tableShareFeatures": [
+    "Real eating behaviour — dish-by-dish, occasion-by-occasion",
+    "Opportunity identification for RTC / RTE categories",
+    "Occasion-led growth strategy & city prioritisation",
+    "Day-after recall methodology for maximum accuracy"
+  ],
+  "tableShareOccasions": [
+    {
+      "name": "Breakfast",
+      "desc": "Morning meals at home, cafes, and hotels"
+    },
+    {
+      "name": "Morning Snack",
+      "desc": "Mid-morning bite at QSRs and kiosks"
+    },
+    {
+      "name": "Lunch",
+      "desc": "Primary meal including corporate canteens"
+    },
+    {
+      "name": "Evening Snack",
+      "desc": "Tea-time snacking and street food"
+    },
+    {
+      "name": "Dinner",
+      "desc": "Restaurants, takeaway, and food delivery"
+    },
+    {
+      "name": "Late Night",
+      "desc": "Post-event dining and late-night delivery"
+    },
+    {
+      "name": "Celebration",
+      "desc": "Special occasions, parties, and events"
+    }
+  ],
+  "tableShareCities": [
+    "Chennai",
+    "Mumbai",
+    "Delhi NCR",
+    "Bangalore",
+    "Hyderabad",
+    "Kolkata",
+    "Pune",
+    "Ahmedabad",
+    "Coimbatore",
+    "Kochi",
+    "Jaipur",
+    "Lucknow",
+    "Bhopal",
+    "Chandigarh",
+    "Vizag",
+    "Indore"
+  ],
+  "tableShareInsights": [
+    {
+      "title": "Purchase ≠ Consumption",
+      "desc": "Our data goes beyond the cart — capturing what's served and eaten at the table.",
+      "accent": "#e8a820"
+    },
+    {
+      "title": "Recall distorts reality",
+      "desc": "Monthly recall misses everyday food behaviour. Day-after recall captures what actually happened.",
+      "accent": "#38bdf8"
+    },
+    {
+      "title": "Categories hide occasions",
+      "desc": "Growth happens at the meal moment, not the shelf. Table Share® maps occasions independently.",
+      "accent": "#2dd4bf"
+    }
+  ],
+  "tableShareBusinessUses": [
+    {
+      "title": "Marketing",
+      "desc": "Occasion-led messaging & positioning",
+      "accent": "#e8a820"
+    },
+    {
+      "title": "Innovation",
+      "desc": "RTC / RTE white-space identification",
+      "accent": "#38bdf8"
+    },
+    {
+      "title": "Sales",
+      "desc": "City & channel prioritisation",
+      "accent": "#2dd4bf"
+    },
+    {
+      "title": "Strategy",
+      "desc": "Portfolio gaps & long-term bets",
+      "accent": "#5eead4"
+    }
+  ],
+  "tableShareDeliverables": [
+    "Executive overview report",
+    "Interactive dashboard",
+    "Analysis support & interpretation"
+  ]
+}

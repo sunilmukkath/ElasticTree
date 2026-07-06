@@ -140,7 +140,7 @@ const aiPillars = [
     icon: Zap,
     title: "AI-Augmented Analytics",
     subtitle: "Faster Insights at Scale",
-    stats: [{ label: "Speed Gain", val: "5×" }, { label: "Data Points", val: "100K+" }, { label: "Quant Modules", val: "12+" }],
+    stats: [{ label: "Speed Gain", val: "5×" }, { label: "Data Points", val: "100,000+" }, { label: "Quant Modules", val: "12+" }],
     color: "#0ea5e9",
     desc: "Machine-learning models accelerate response quality validation, open-ended text categorisation, and driver analysis — enabling our analysts to focus on interpretation rather than data cleaning.",
   },

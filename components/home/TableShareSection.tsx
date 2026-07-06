@@ -8,7 +8,7 @@ import SpaceSection from "@/components/ui/SpaceSection";
 import SectionBlock from "@/components/ui/SectionBlock";
 import DataVizArt from "@/components/ui/abstract/DataVizArt";
 import TableShareDemoLink from "@/components/table-share/TableShareDemoLink";
-import { tableShareFeatures, tableShareStats } from "@/lib/table-share";
+import { tableShareFeatures } from "@/lib/table-share";
 
 function Counter({ to, suffix = "" }: { to: number; suffix?: string }) {
   const [val, setVal] = useState(0);
@@ -33,10 +33,11 @@ function Counter({ to, suffix = "" }: { to: number; suffix?: string }) {
 }
 
 const statCounters = [
-  { to: 3468, label: "Households", suffix: "", accent: "#2dd4bf" },
-  { to: 16, label: "Cities", suffix: "", accent: "#38bdf8" },
-  { to: 400, label: "Dishes", suffix: "+", accent: "#5eead4" },
-];
+  { label: "Households", accent: "#2dd4bf", to: 3468, suffix: "" },
+  { label: "Cities", accent: "#38bdf8", to: 16, suffix: "" },
+  { label: "Dishes", accent: "#5eead4", to: 400, suffix: "+" },
+  { label: "Recall", accent: "#e8a820", val: "1-day" },
+] as const;
 
 export default function TableShareSection() {
   return (
@@ -74,15 +75,12 @@ export default function TableShareSection() {
               {statCounters.map((s) => (
                 <div key={s.label}>
                   <p className="stat-value" style={{ color: s.accent }}>
-                    <Counter to={s.to} suffix={s.suffix} />
+                    {"val" in s ? s.val : <Counter to={s.to} suffix={s.suffix} />}
                   </p>
                   <p className="stat-label">{s.label}</p>
                 </div>
               ))}
             </div>
-            <p className="text-caption normal-case tracking-wide">
-              {tableShareStats.map((s) => s.val).slice(0, 3).join(" · ")} · Day-after recall · Urban India
-            </p>
           </div>
         </div>
       </SectionBlock>
