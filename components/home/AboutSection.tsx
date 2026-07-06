@@ -10,7 +10,7 @@ import { aboutStats, companyIntro } from "@/lib/team";
 import { clientNames } from "@/lib/clients";
 import { testimonials } from "@/lib/testimonials";
 
-const sortedClients = [...clientNames].sort((a, b) => a.localeCompare(b));
+const doubledClients = [...clientNames, ...clientNames];
 
 export default function AboutSection() {
   const [idx, setIdx] = useState(0);
@@ -43,22 +43,23 @@ export default function AboutSection() {
           <SectionHeader
             label="Trusted by"
             title={<>200+ <span className="text-gradient-amber">Brands</span> Worldwide</>}
-            subtitle="A selection of brands we've partnered with across India and overseas."
             titleSize="md"
           />
 
-          <div className="highlight-panel p-5 sm:p-6 lg:p-8">
-            <div className="client-grid">
-              {sortedClients.map((name) => (
-                <span key={name} className="client-chip">
-                  {name}
-                </span>
-              ))}
+          {[0, 1].map((row) => (
+            <div key={row} className="ticker-mask -mx-5 sm:-mx-8">
+              <div
+                className="ticker-track"
+                style={{ animation: `ticker ${90 + row * 15}s linear infinite ${row ? "reverse" : ""}` }}
+              >
+                {(row ? [...doubledClients].reverse() : doubledClients).map((name, i) => (
+                  <span key={`${row}-${i}`} className="font-mono text-body-sm text-slate-300 px-6">
+                    {name}
+                  </span>
+                ))}
+              </div>
             </div>
-            <p className="text-caption normal-case text-center mt-6 opacity-70">
-              Representative client list — 200+ brands served since 2014
-            </p>
-          </div>
+          ))}
         </div>
 
         <div className="section-stack-md border-t border-white/[0.06] pt-12">
