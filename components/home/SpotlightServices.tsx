@@ -41,11 +41,11 @@ export default function SpotlightServices() {
   const active = spotlightServices[idx];
 
   return (
-    <SpaceSection flow="amber">
+    <SpaceSection flow="teal">
       <SectionBlock
         label="Spotlight"
         title={<>Products & Services <span className="text-gradient-amber">in Action</span></>}
-        subtitle="Flagship platforms and tools — swipe through what Elastic Tree is known for."
+        subtitle="Flagship platforms and tools — explore what Elastic Tree is known for."
         gap="md"
       >
         <div className="flex flex-wrap gap-2">

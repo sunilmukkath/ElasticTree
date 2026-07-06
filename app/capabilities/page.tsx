@@ -324,8 +324,8 @@ export default function CapabilitiesPage() {
             <Link href="/contact" className="btn-primary">
               Discuss Your Project <ArrowRight size={18} />
             </Link>
-            <Link href="/contact" className="btn-secondary">
-              Request an AI Gaze™ Demo
+            <Link href="/capabilities#advanced-methods" className="btn-secondary">
+              Explore AI Gaze™
             </Link>
           </div>
         </div>

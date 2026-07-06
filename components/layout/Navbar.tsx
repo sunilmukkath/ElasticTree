@@ -7,11 +7,12 @@ import ETLogo from "./ETLogo";
 import { Menu, X } from "lucide-react";
 
 const links = [
-  { href: "/",                label: "Home" },
-  { href: "/capabilities",    label: "Capabilities" },
-  { href: "/table-share",     label: "Table Share" },
-  { href: "/casestudies",     label: "Work" },
-  { href: "/contact",         label: "Contact" },
+  { href: "/", label: "Home" },
+  { href: "/#about", label: "About" },
+  { href: "/capabilities", label: "Capabilities" },
+  { href: "/table-share", label: "Table Share" },
+  { href: "/casestudies", label: "Case Studies" },
+  { href: "/contact", label: "Contact" },
 ];
 
 export default function Navbar() {
@@ -27,6 +28,13 @@ export default function Navbar() {
 
   useEffect(() => { setOpen(false); }, [pathname]);
 
+  useEffect(() => {
+    document.body.style.overflow = open ? "hidden" : "";
+    return () => {
+      document.body.style.overflow = "";
+    };
+  }, [open]);
+
   return (
     <header
       className={`site-header fixed inset-x-0 top-0 z-50 transition-all duration-300 ${
@@ -40,7 +48,10 @@ export default function Navbar() {
 
         <ul className="hidden lg:flex items-center gap-1">
           {links.map((l) => {
-            const active = pathname === l.href || (l.href !== "/" && pathname.startsWith(l.href));
+            const active =
+              l.href === "/#about"
+                ? pathname === "/" || pathname === "/about"
+                : pathname === l.href || (l.href !== "/" && !l.href.includes("#") && pathname.startsWith(l.href));
             return (
               <li key={l.href}>
                 <Link
@@ -63,7 +74,7 @@ export default function Navbar() {
         </div>
 
         <button
-          className="lg:hidden p-2 -mr-2 text-slate-300 hover:text-[var(--amber)] transition-colors"
+          className="lg:hidden p-2 -mr-2 text-slate-300 hover:text-[var(--amber)] transition-colors relative z-50"
           onClick={() => setOpen((v) => !v)}
           aria-label={open ? "Close menu" : "Open menu"}
           aria-expanded={open}
@@ -73,30 +84,41 @@ export default function Navbar() {
       </nav>
 
       {open && (
-        <div className="lg:hidden site-header-mobile">
-          <ul className="page-content py-3">
-            {links.map((l) => {
-              const active = pathname === l.href || (l.href !== "/" && pathname.startsWith(l.href));
-              return (
-                <li key={l.href}>
-                  <Link
-                    href={l.href}
-                    className={`block py-3 text-body-sm font-medium border-b border-white/[0.04] transition-colors ${
-                      active ? "text-[var(--amber)]" : "text-slate-200 hover:text-[var(--amber)]"
-                    }`}
-                  >
-                    {l.label}
-                  </Link>
-                </li>
-              );
-            })}
-            <li className="pt-4 pb-2">
-              <Link href="/contact" className="btn-primary w-full justify-center">
-                Get in Touch
-              </Link>
-            </li>
-          </ul>
-        </div>
+        <>
+          <button
+            type="button"
+            className="fixed inset-0 z-40 bg-[#0a1f4a]/80 backdrop-blur-sm lg:hidden"
+            aria-label="Close menu"
+            onClick={() => setOpen(false)}
+          />
+          <div className="lg:hidden site-header-mobile relative z-50">
+            <ul className="page-content py-3">
+              {links.map((l) => {
+                const active =
+                  l.href === "/#about"
+                    ? pathname === "/" || pathname === "/about"
+                    : pathname === l.href || (l.href !== "/" && !l.href.includes("#") && pathname.startsWith(l.href));
+                return (
+                  <li key={l.href}>
+                    <Link
+                      href={l.href}
+                      className={`block py-3 text-body-sm font-medium border-b border-white/[0.04] transition-colors ${
+                        active ? "text-[var(--amber)]" : "text-slate-200 hover:text-[var(--amber)]"
+                      }`}
+                    >
+                      {l.label}
+                    </Link>
+                  </li>
+                );
+              })}
+              <li className="pt-4 pb-2">
+                <Link href="/contact" className="btn-primary w-full justify-center">
+                  Get in Touch
+                </Link>
+              </li>
+            </ul>
+          </div>
+        </>
       )}
     </header>
   );

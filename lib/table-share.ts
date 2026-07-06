@@ -66,7 +66,7 @@ export const tableShareDeliverables = [
 ] as const;
 
 export const tableShareCities = [
-  "Chennai", "Mumbai", "Delhi NCR", "Bangalore", "Hyderabad",
+  "Chennai", "Mumbai", "Delhi NCR", "Bengaluru", "Hyderabad",
   "Kolkata", "Pune", "Ahmedabad", "Coimbatore", "Kochi",
   "Jaipur", "Lucknow", "Bhopal", "Chandigarh", "Vizag", "Indore",
 ] as const;

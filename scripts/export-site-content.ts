@@ -1,4 +1,5 @@
 import fs from "fs";
+import { CONTACT_EMAIL, RESPONSE_TIME } from "@/lib/contact";
 import { posts } from "../lib/posts";
 import { teamMembers, aboutStats, companyIntro, offices } from "../lib/team";
 import {
@@ -21,7 +22,7 @@ const siteCopy = {
     defaultDescription:
       "Elastic Tree is an AI-powered market research firm with 12 years of experience serving 200+ brands. Specialising in human behaviour research, analytics, sensory science, syndicated research (Table Share®), and impact studies — India & global.",
   },
-  nav: ["Home", "About", "Capabilities", "Table Share", "Work", "Contact"],
+  nav: ["Home", "About", "Capabilities", "Table Share", "Case Studies", "Contact"],
   home: {
     hero: {
       eyebrow: "Market Research · Since 2014",
@@ -271,20 +272,20 @@ const siteCopy = {
       subtitle: "Whether you have a specific brief or just want to explore what's possible, our team is happy to have a conversation.",
     },
     details: [
-      { label: "Email Us", value: "research@elastictree.com", sub: "We reply within 24 hours" },
-      { label: "Call Us", value: "+91 98400 XXXXX", sub: "Mon–Fri, 9 AM – 6 PM IST" },
-      { label: "Office", value: "Chennai, India", sub: "Field operations pan-India" },
+      { label: "Email Us", value: CONTACT_EMAIL, sub: `We reply ${RESPONSE_TIME}` },
+      { label: "Chennai", value: "Chennai", sub: offices[0]?.address ?? "" },
+      { label: "Bengaluru", value: "Bengaluru", sub: offices[1]?.address ?? "" },
     ],
     form: {
       fields: [
-        { label: "Your Name", placeholder: "John Doe" },
-        { label: "Company", placeholder: "Acme Corp" },
-        { label: "Business Email", placeholder: "john@company.com" },
+        { label: "Your Name", placeholder: "Your name" },
+        { label: "Company", placeholder: "Your company" },
+        { label: "Business Email", placeholder: "you@company.com" },
         { label: "Tell us about your project", placeholder: "Describe your research objective, timeline, and any key questions you'd like answered..." },
       ],
       submit: "Send Message",
       successTitle: "Message Sent!",
-      successBody: "Thank you for reaching out. We'll get back to you within 24 hours.",
+      successBody: `Thank you for reaching out. We'll get back to you ${RESPONSE_TIME}.`,
     },
   },
   caseStudiesPage: {

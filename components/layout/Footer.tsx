@@ -3,6 +3,7 @@
 import Link from "next/link";
 import ETLogo from "./ETLogo";
 import { LinkedInIcon, InstagramIcon, XIcon } from "@/components/ui/SocialIcons";
+import { CONTACT_EMAIL, hqSummary, officeDetails, socialLinks } from "@/lib/contact";
 
 const nav = [
   { label: "Capabilities", href: "/capabilities" },
@@ -11,11 +12,11 @@ const nav = [
   { label: "Contact", href: "/contact" },
 ];
 
-const socials = [
-  { Icon: LinkedInIcon, href: "https://www.linkedin.com/company/elastic-tree", label: "LinkedIn" },
-  { Icon: InstagramIcon, href: "https://instagram.com/elastictree", label: "Instagram" },
-  { Icon: XIcon, href: "https://twitter.com/elastictree", label: "X" },
-];
+const socialIcons = {
+  LinkedIn: LinkedInIcon,
+  Instagram: InstagramIcon,
+  "X (Twitter)": XIcon,
+} as const;
 
 export default function Footer() {
   return (
@@ -29,18 +30,21 @@ export default function Footer() {
               Smart decisions, simply made — since 2014.
             </p>
             <div className="flex gap-2">
-              {socials.map(({ Icon, href, label }) => (
-                <a
-                  key={label}
-                  href={href}
-                  target="_blank"
-                  rel="noreferrer"
-                  aria-label={label}
-                  className="w-9 h-9 rounded-lg flex items-center justify-center text-slate-400 hover:text-[var(--amber)] hover:bg-white/[0.04] transition-colors"
-                >
-                  <Icon size={17} />
-                </a>
-              ))}
+              {socialLinks.map(({ label, href }) => {
+                const Icon = socialIcons[label as keyof typeof socialIcons];
+                return (
+                  <a
+                    key={label}
+                    href={href}
+                    target="_blank"
+                    rel="noreferrer"
+                    aria-label={label}
+                    className="w-9 h-9 rounded-lg flex items-center justify-center text-slate-400 hover:text-[var(--amber)] hover:bg-white/[0.04] transition-colors"
+                  >
+                    <Icon size={17} />
+                  </a>
+                );
+              })}
             </div>
           </div>
 
@@ -62,13 +66,20 @@ export default function Footer() {
             <div className="space-y-3">
               <div>
                 <p className="text-caption normal-case mb-1">Email</p>
-                <a href="mailto:info@elastictree.com" className="text-body-sm text-slate-300 hover:text-[var(--amber)] transition-colors">
-                  info@elastictree.com
+                <a href={`mailto:${CONTACT_EMAIL}`} className="text-body-sm text-slate-300 hover:text-[var(--amber)] transition-colors">
+                  {CONTACT_EMAIL}
                 </a>
               </div>
               <div>
-                <p className="text-caption normal-case mb-1">HQ</p>
-                <p className="text-body-sm text-slate-300">Chennai, India</p>
+                <p className="text-caption normal-case mb-1">Offices</p>
+                <p className="text-body-sm text-slate-300">{hqSummary}</p>
+                <ul className="mt-2 space-y-1">
+                  {officeDetails.map((office) => (
+                    <li key={office.label} className="text-body-sm text-slate-400">
+                      {office.label}
+                    </li>
+                  ))}
+                </ul>
               </div>
             </div>
           </div>

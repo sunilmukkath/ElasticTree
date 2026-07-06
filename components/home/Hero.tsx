@@ -5,9 +5,11 @@ import { motion } from "framer-motion";
 import { ArrowRight, ChevronDown } from "lucide-react";
 import Starfield from "@/components/ui/Starfield";
 import HeroVisual from "@/components/home/HeroVisual";
-import { staggerContainer, staggerItem } from "@/lib/motion";
+import { useMotionSafeStagger } from "@/lib/motion";
 
 export default function Hero() {
+  const { container, item } = useMotionSafeStagger();
+
   return (
     <section className="relative min-h-[100svh] flex flex-col justify-center overflow-hidden hero-section">
       <Starfield density={45} />
@@ -19,29 +21,29 @@ export default function Hero() {
       <div className="relative z-10 page-content pt-24 pb-12 lg:pt-28 lg:pb-16 flex-1 flex flex-col justify-center">
         <div className="grid lg:grid-cols-2 gap-12 lg:gap-10 xl:gap-16 items-center">
           <motion.div
-            variants={staggerContainer}
+            variants={container}
             initial="initial"
             animate="animate"
             className="max-w-xl"
           >
-            <motion.p variants={staggerItem} className="eyebrow-text mb-5">
+            <motion.p variants={item} className="eyebrow-text mb-5">
               Market Research · Since 2014
             </motion.p>
 
             <motion.h1
-              variants={staggerItem}
+              variants={item}
               className="font-display font-black text-display-xl text-white mb-6"
             >
               Research Into{" "}
               <span className="text-gradient-amber text-shimmer">Human Behaviour</span>
             </motion.h1>
 
-            <motion.p variants={staggerItem} className="text-lead mb-10">
+            <motion.p variants={item} className="text-lead mb-10">
               We study how people really eat, choose, and act — sensory science,
-              syndicated panels, and behavioural expertise FMCG and food-service brands act on.
+              syndicated panels, and behavioural expertise that FMCG and food-service brands act on.
             </motion.p>
 
-            <motion.div variants={staggerItem} className="flex flex-wrap gap-3">
+            <motion.div variants={item} className="flex flex-wrap gap-3">
               <Link href="/capabilities" className="btn-primary btn-glow">
                 Explore Capabilities <ArrowRight size={16} />
               </Link>
@@ -51,7 +53,7 @@ export default function Hero() {
             </motion.div>
           </motion.div>
 
-          <div className="hidden sm:block lg:order-last">
+          <div className="order-first lg:order-last max-w-sm mx-auto sm:max-w-none w-full aspect-square sm:aspect-auto sm:h-[min(280px,50vw)] lg:h-[min(520px,42vw)]">
             <HeroVisual />
           </div>
         </div>

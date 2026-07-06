@@ -6,10 +6,13 @@ import { ArrowRight, ArrowUpRight } from "lucide-react";
 import SpaceSection from "@/components/ui/SpaceSection";
 import SectionBlock from "@/components/ui/SectionBlock";
 import { capabilityOfferings } from "@/lib/capabilities-home";
+import { useMotionSafeFade } from "@/lib/motion";
 
 export default function CapabilitiesShowcase() {
+  const motionProps = useMotionSafeFade();
+
   return (
-    <SpaceSection flow="purple" id="capabilities" className="scroll-mt-24">
+    <SpaceSection flow="purple" id="what-we-do" className="scroll-mt-24">
       <SectionBlock
         label="Products & Services"
         title={<>The Full Stack of <span className="text-gradient-amber">Behavioural Intelligence</span></>}
@@ -25,10 +28,14 @@ export default function CapabilitiesShowcase() {
             {capabilityOfferings.map(({ id, title, tag, desc, href, Icon, accent }, i) => (
               <motion.div
                 key={id}
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true, margin: "-40px" }}
-                transition={{ delay: i * 0.05, duration: 0.5 }}
+                initial={motionProps.initial}
+                whileInView={motionProps.whileInView}
+                viewport={motionProps.viewport}
+                transition={
+                  motionProps.transition
+                    ? { ...motionProps.transition, delay: i * 0.05 }
+                    : undefined
+                }
               >
                 <Link href={href} className="feature-card group block h-full">
                   <div className="flex gap-4">

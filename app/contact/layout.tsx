@@ -3,7 +3,7 @@ import type { Metadata } from "next";
 export const metadata: Metadata = {
   title: "Contact Us",
   description:
-    "Get in touch with Elastic Tree. Tell us your business challenge and we'll design the right research approach. Based in Chennai & Bangalore.",
+    "Get in touch with Elastic Tree. Tell us your business challenge and we'll design the right research approach. Offices in Chennai and Bengaluru.",
   openGraph: {
     title: "Contact | Elastic Tree",
     description:

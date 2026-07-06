@@ -15,7 +15,7 @@ export default function ETLogo({
 
   return (
     <Image
-      src="/logo.png"
+      src="/logo.svg"
       alt="Elastic Tree"
       width={width}
       height={height}

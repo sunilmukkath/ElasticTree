@@ -108,11 +108,10 @@ Elastic Tree deployed **AI Gaze™** — our proprietary AI-simulated eye-tracki
     readTime: "1 min read",
     tags: ["Impact"],
     date: "2026-03-01",
-    hasPdf: true,
-    pdfUrl: "/downloads/her-perspective-2026.pdf",
+    hasPdf: false,
     content: `Prevention beats policing—India needs a culture fix, not just a law enforcement fix. 3,414 women across 16 Indian cities mentioned Women's Safety (39%) as the top priority. However, 56% prefer school-based gender training over enforcement.
 
-Read our "Her Perspective 2026" survey to see what women across 16 cities are telling policymakers and brands.`,
+Read our "Her Perspective 2026" survey to see what women across 16 cities are telling policymakers and brands. [Contact us](/contact) for the full report.`,
   },
   {
     slug: "why-custom-marketing-research-matters",

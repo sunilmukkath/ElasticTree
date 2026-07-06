@@ -6,6 +6,7 @@ import { ArrowRight, Clock } from "lucide-react";
 import { getFeaturedPosts } from "@/lib/posts";
 import SpaceSection from "@/components/ui/SpaceSection";
 import SectionBlock from "@/components/ui/SectionBlock";
+import { useMotionSafeFade } from "@/lib/motion";
 
 const featured = getFeaturedPosts(6);
 
@@ -19,6 +20,8 @@ const tagColors: Record<string, { bg: string; color: string }> = {
 };
 
 export default function CaseStudiesPreview() {
+  const motionProps = useMotionSafeFade();
+
   return (
     <SpaceSection flow="amber">
       <SectionBlock
@@ -41,10 +44,14 @@ export default function CaseStudiesPreview() {
             return (
               <motion.article
                 key={post.slug}
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true, margin: "-40px" }}
-                transition={{ delay: i * 0.05, duration: 0.5 }}
+                initial={motionProps.initial}
+                whileInView={motionProps.whileInView}
+                viewport={motionProps.viewport}
+                transition={
+                  motionProps.transition
+                    ? { ...motionProps.transition, delay: i * 0.05 }
+                    : undefined
+                }
                 className="h-full"
               >
                 <Link href={`/casestudies/${post.slug}`} className="study-link group flex flex-col h-full py-6 border-t-2 border-white/[0.06] hover:border-[var(--amber)] transition-colors">

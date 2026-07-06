@@ -99,7 +99,7 @@ export default function TableSharePage() {
           subtitle="Each occasion has different foods, needs, and competitive sets. Table Share® maps them independently — and accurately."
           className="mb-10"
         />
-        <div className="grid grid-cols-2 sm:grid-cols-4 lg:grid-cols-7 gap-x-4 gap-y-8">
+        <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 xl:grid-cols-7 gap-x-4 gap-y-8">
           {tableShareOccasions.map((occ) => (
             <div key={occ.name} className="text-center group">
               <OccasionIcon

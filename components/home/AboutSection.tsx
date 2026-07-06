@@ -9,12 +9,14 @@ import SectionHeader from "@/components/ui/SectionHeader";
 import { aboutStats, companyIntro } from "@/lib/team";
 import { clientNames } from "@/lib/clients";
 import { testimonials } from "@/lib/testimonials";
+import { usePrefersReducedMotion } from "@/lib/useVisibleCanvas";
 
 const doubledClients = [...clientNames, ...clientNames];
 
 export default function AboutSection() {
   const [idx, setIdx] = useState(0);
   const cur = testimonials[idx];
+  const reduced = usePrefersReducedMotion();
 
   return (
     <SpaceSection flow="blue" id="about" className="scroll-mt-24">
@@ -73,9 +75,9 @@ export default function AboutSection() {
             <AnimatePresence mode="wait">
               <motion.div
                 key={idx}
-                initial={{ opacity: 0, x: 20 }}
-                animate={{ opacity: 1, x: 0 }}
-                exit={{ opacity: 0, x: -20 }}
+                initial={reduced ? false : { opacity: 0, x: 20 }}
+                animate={reduced ? undefined : { opacity: 1, x: 0 }}
+                exit={reduced ? undefined : { opacity: 0, x: -20 }}
                 transition={{ duration: 0.35, ease: [0.22, 1, 0.36, 1] }}
                 className="quote-panel"
                 style={{ borderLeftColor: `${cur.accent}60`, borderLeftWidth: 3, borderLeftStyle: "solid" }}
@@ -103,10 +105,17 @@ export default function AboutSection() {
                     key={i}
                     type="button"
                     onClick={() => setIdx(i)}
-                    className="h-1 rounded-full transition-all duration-300"
-                    style={{ width: i === idx ? 28 : 6, background: i === idx ? it.accent : "rgba(255,255,255,0.1)" }}
+                    className="testimonial-dot"
                     aria-label={`Testimonial ${i + 1}`}
-                  />
+                  >
+                    <span
+                      className="testimonial-dot-inner"
+                      style={{
+                        width: i === idx ? 28 : 6,
+                        background: i === idx ? it.accent : "rgba(255,255,255,0.1)",
+                      }}
+                    />
+                  </button>
                 ))}
               </div>
               <div className="flex items-center gap-1 ml-auto">

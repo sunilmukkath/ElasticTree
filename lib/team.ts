@@ -41,7 +41,7 @@ export const aboutStats = [
   { value: "100,000+", label: "Responses Surveyed", desc: "Surveyed and analysed more than 1 lakh responses", accent: "#2dd4bf" },
   { value: "800+", label: "Projects Delivered", desc: "Successfully handled more than 800 projects", accent: "#e8a820" },
   { value: "200+", label: "Clients Worldwide", desc: "Worked with clients across India and overseas", accent: "#38bdf8" },
-  { value: "74%", label: "Repeat Business", desc: "7 out of 10 projects are from repeat clients", accent: "#5eead4" },
+  { value: "74%", label: "Repeat Business", desc: "Nearly 3 in 4 projects are from repeat clients", accent: "#5eead4" },
 ];
 
 export const companyIntro = {

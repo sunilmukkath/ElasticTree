@@ -7,7 +7,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Case Studies | Elastic Tree",
     description:
-      "Research, insights, and case studies from 10+ years of human behaviour research.",
+      "Research, insights, and case studies from 12 years of human behaviour research.",
   },
 };
 
