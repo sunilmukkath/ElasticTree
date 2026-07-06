@@ -15,7 +15,7 @@ const pillars = [
     color: "#e8a820",
     tagline: "Transform complexity into clarity",
     summary:
-      "Advanced quantitative analytics that uncover the 'why' behind consumer choices, enabling data-driven product and communication decisions.",
+      "Advanced quantitative analytics that uncover the 'why' behind human choices, enabling data-driven product and communication decisions.",
     methods: [
       "MaxDiff (Best-Worst Scaling) for feature & claim prioritisation",
       "Conjoint & TURF analysis for product configuration",
@@ -33,7 +33,7 @@ const pillars = [
     color: "#2dd4bf",
     tagline: "Science of taste, texture, and perception",
     summary:
-      "Specialist sensory evaluation using trained panels and affective consumer testing — purpose-built for FMCG, food & beverage, personal care, and fragrance categories.",
+      "Specialist sensory evaluation using trained panels and affective testing with real people — purpose-built for FMCG, food & beverage, personal care, and fragrance categories.",
     methods: [
       "Trained descriptive analysis (QDA / Spectrum method)",
       "Affective testing — central location and home-use tests (HUT)",
@@ -54,7 +54,7 @@ const pillars = [
       "Proprietary multi-client trackers and panels that deliver continuous, cost-efficient intelligence across food-service, media, and FMCG categories.",
     methods: [
       "Table Share® — India's dedicated out-of-home food-service panel (16 cities)",
-      "Monthly FMCG consumer sentiment tracker",
+      "Monthly FMCG household behaviour tracker",
       "Annual media consumption & OTT habits study",
       "Quarterly brand health monitor (sector-specific)",
       "Category trend reports with year-on-year benchmarks",
@@ -84,7 +84,7 @@ const pillars = [
     icon: Search,
     label: "Market Research",
     color: "#a78bfa",
-    tagline: "Full-spectrum consumer understanding",
+    tagline: "Full-spectrum behavioural understanding",
     summary:
       "End-to-end primary research across B2C and B2B sectors — from quick dipstick polls to large-scale multi-market studies, delivered with analytical depth.",
     methods: [
@@ -110,7 +110,7 @@ const gazeOutputs = [
   },
   {
     name: "Gaze Sequence",
-    desc: "Frame-by-frame animation recreating the natural scan path of a consumer's eye, revealing the true order in which elements register.",
+    desc: "Frame-by-frame animation recreating the natural scan path of the human eye, revealing the true order in which elements register.",
   },
   {
     name: "Area of Interest (AoI)",
@@ -134,7 +134,7 @@ const aiPillars = [
     subtitle: "Eye-Tracking Simulation",
     stats: [{ label: "Accuracy", val: "92%" }, { label: "Turnaround", val: "24 hrs" }, { label: "Cost vs. Traditional", val: "–60%" }],
     color: "#e8a820",
-    desc: "Elastic Tree's flagship proprietary tool. Using deep learning models trained on thousands of real eye-tracking sessions, AI Gaze™ predicts consumer visual attention on any uploaded image or design with 92% accuracy — fully remote, no hardware required.",
+    desc: "Elastic Tree's flagship proprietary tool. Using deep learning models trained on thousands of real eye-tracking sessions, AI Gaze™ predicts human visual attention on any uploaded image or design with 92% accuracy — fully remote, no hardware required.",
   },
   {
     icon: Zap,
@@ -150,7 +150,7 @@ const aiPillars = [
     subtitle: "Decision-Ready Forecasts",
     stats: [{ label: "Accuracy", val: "High" }, { label: "Models", val: "MaxDiff, Conjoint" }, { label: "Output", val: "Priority Scores" }],
     color: "#2dd4bf",
-    desc: "Advanced MaxDiff, conjoint analysis, and regression-based driver models translate consumer preference data into ranked, simulation-ready product or communication decisions.",
+    desc: "Advanced MaxDiff, conjoint analysis, and regression-based driver models translate real human preference data into ranked, simulation-ready product or communication decisions.",
   },
   {
     icon: BarChart2,
@@ -172,8 +172,8 @@ export default function CapabilitiesPage() {
     <>
       <PageHero
         eyebrow="Capabilities"
-        title={<>Research That Drives <span className="text-gradient-amber">Strategic Growth</span></>}
-        subtitle="A comprehensive range of custom marketing research services — from product optimisation and brand health to AI-powered visual attention testing — designed to uncover actionable insights for every business question."
+        title={<>Research Rooted in <span className="text-gradient-amber">Human Behaviour</span></>}
+        subtitle="A comprehensive range of custom marketing research services — from product optimisation and brand health to AI-powered visual attention testing — designed to uncover how people really think, choose, and act."
       />
 
       <div className="sticky top-16 z-40 border-b border-white/[0.06] bg-[rgba(10,31,74,0.94)] backdrop-blur-xl">

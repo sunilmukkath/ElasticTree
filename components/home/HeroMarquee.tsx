@@ -1,8 +1,8 @@
 "use client";
 
 const items = [
-  "Analytics", "Sensory Science", "Table Share®", "Syndicated Research",
-  "Impact & CSR", "AI Gaze™", "200+ Brands", "74% Repeat Rate",
+  "Human Behaviour Research", "Analytics", "Sensory Science", "Table Share®",
+  "Syndicated Research", "Impact & CSR", "AI Gaze™", "200+ Brands", "74% Repeat Rate",
 ];
 
 const track = [...items, ...items];

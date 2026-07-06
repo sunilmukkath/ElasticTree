@@ -32,13 +32,13 @@ export default function Hero() {
               variants={staggerItem}
               className="font-display font-black text-display-xl text-white mb-6"
             >
-              Navigate the{" "}
-              <span className="text-gradient-amber text-shimmer">Consumer Universe</span>
+              Research Into{" "}
+              <span className="text-gradient-amber text-shimmer">Human Behaviour</span>
             </motion.h1>
 
             <motion.p variants={staggerItem} className="text-lead mb-10">
-              Sensory science, syndicated intelligence, and deep domain expertise —
-              insights FMCG and food-service brands act on, not just read.
+              We study how people really eat, choose, and act — sensory science,
+              syndicated panels, and behavioural expertise FMCG and food-service brands act on.
             </motion.p>
 
             <motion.div variants={staggerItem} className="flex flex-wrap gap-3">

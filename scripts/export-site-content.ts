@@ -19,21 +19,21 @@ const siteCopy = {
     siteUrl: "https://www.elastictree.com",
     defaultTitle: "Elastic Tree | Market Research — Smart Decisions, Simply Made.",
     defaultDescription:
-      "Elastic Tree is an AI-powered market research firm with 12 years of experience serving 200+ brands. Specialising in analytics, sensory science, syndicated research (Table Share®), impact research, and consumer insights — India & global.",
+      "Elastic Tree is an AI-powered market research firm with 12 years of experience serving 200+ brands. Specialising in human behaviour research, analytics, sensory science, syndicated research (Table Share®), and impact studies — India & global.",
   },
   nav: ["Home", "About", "Capabilities", "Table Share", "Work", "Contact"],
   home: {
     hero: {
       eyebrow: "Market Research · Since 2014",
-      title: "Navigate the Consumer Universe",
+      title: "Research Into Human Behaviour",
       subtitle:
-        "Sensory science, syndicated intelligence, and deep domain expertise — insights FMCG and food-service brands act on, not just read.",
+        "We study how people really eat, choose, and act — sensory science, syndicated panels, and behavioural expertise FMCG and food-service brands act on.",
       buttons: ["Explore Capabilities", "Book a Consultation"],
       scrollCue: "Scroll to explore",
       stats: ["12 Years", "200+ Brands", "800+ Projects", "74% Repeat"],
     },
     marquee:
-      "Analytics · Sensory Science · Table Share® · Syndicated Research · Impact & CSR · AI Gaze™ · 200+ Brands · 74% Repeat Rate",
+      "Human Behaviour Research · Analytics · Sensory Science · Table Share® · Syndicated Research · Impact & CSR · AI Gaze™ · 200+ Brands · 74% Repeat Rate",
     servicePillars: {
       label: "Capabilities",
       title: "Six Research Pillars",
@@ -81,7 +81,7 @@ const siteCopy = {
       subtitle: "Senior researchers from the world's top insights firms — now working for you directly.",
       pedigree: ["Nielsen IQ", "Kantar Worldpanel", "IMRB International", "Ipsos India", "GfK India", "Mintel", "Euromonitor"],
       ctaTitle: "Ready to Turn Data Into Decisions?",
-      ctaBody: "Whether you need a quick consumer pulse or a full-year tracker — let's design the right study for your brief.",
+      ctaBody: "Whether you need a quick behavioural pulse-check or a full-year tracker — let's design the right study for your brief.",
       ctaButtons: ["Talk to an Expert", "See All Capabilities"],
     },
   },

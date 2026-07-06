@@ -47,7 +47,7 @@ export default function LeadershipTeam() {
             <span className="text-gradient-amber text-shimmer">Decisions?</span>
           </h2>
           <p className="text-body-md relative z-10">
-            Whether you need a quick consumer pulse or a full-year tracker — let&apos;s design the right study for your brief.
+            Whether you need a quick behavioural pulse-check or a full-year tracker — let&apos;s design the right study for your brief.
           </p>
           <div className="flex flex-wrap gap-3 pt-2 relative z-10">
             <Link href="/contact" className="btn-primary btn-glow">
