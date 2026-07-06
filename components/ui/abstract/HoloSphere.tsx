@@ -50,6 +50,8 @@ const RINGS = [
   { scale: 1.32, tiltX: 1.15, tiltZ: 0.4, speed: 0.5, color: "232, 168, 32" },
   { scale: 1.5, tiltX: 1.35, tiltZ: -0.55, speed: -0.34, color: "94, 234, 212" },
   { scale: 1.72, tiltX: 1.05, tiltZ: 0.15, speed: 0.22, color: "56, 189, 248" },
+  { scale: 1.42, tiltX: 0.92, tiltZ: 0.82, speed: -0.44, color: "232, 168, 32" },
+  { scale: 1.58, tiltX: 1.48, tiltZ: -0.28, speed: 0.38, color: "45, 212, 191" },
 ];
 
 /** Abstract futuristic hero visual — rotating holographic particle sphere */
@@ -156,27 +158,8 @@ export default function HoloSphere({ className = "" }: { className?: string }) {
         ctx.fill();
       }
 
-      // Orbit rings with comets
+      // Orbiting comets (no visible ring paths)
       for (const ring of RINGS) {
-        const steps = 90;
-        // Faint ring path
-        ctx.beginPath();
-        for (let s = 0; s <= steps; s++) {
-          const a = (s / steps) * Math.PI * 2;
-          const p = {
-            x: Math.cos(a) * ring.scale,
-            y: Math.sin(a) * Math.sin(ring.tiltZ) * ring.scale,
-            z: Math.sin(a) * Math.cos(ring.tiltZ) * ring.scale,
-          };
-          const pr = project(p, R, rotY * 0.15, ring.tiltX);
-          if (s === 0) ctx.moveTo(cx + pr.sx, cy + pr.sy);
-          else ctx.lineTo(cx + pr.sx, cy + pr.sy);
-        }
-        ctx.strokeStyle = `rgba(${ring.color}, 0.1)`;
-        ctx.lineWidth = 0.8;
-        ctx.stroke();
-
-        // Comet + fading trail
         const head = t * ring.speed;
         for (let k = 0; k < 14; k++) {
           const a = head - k * 0.035 * Math.sign(ring.speed);
