@@ -3,7 +3,7 @@
 import Link from "next/link";
 import ETLogo from "./ETLogo";
 import { LinkedInIcon, InstagramIcon, XIcon } from "@/components/ui/SocialIcons";
-import { CONTACT_EMAIL, hqSummary, officeDetails, socialLinks } from "@/lib/contact";
+import { contactChannels, hqSummary, officeDetails, socialLinks } from "@/lib/contact";
 
 const nav = [
   { label: "Capabilities", href: "/capabilities" },
@@ -64,12 +64,32 @@ export default function Footer() {
           <div className="md:col-span-4">
             <p className="text-caption normal-case mb-4">Contact</p>
             <div className="space-y-3">
-              <div>
-                <p className="text-caption normal-case mb-1">Email</p>
-                <a href={`mailto:${CONTACT_EMAIL}`} className="text-body-sm text-slate-300 hover:text-[var(--amber)] transition-colors">
-                  {CONTACT_EMAIL}
-                </a>
-              </div>
+              {contactChannels.map((channel) => (
+                <div key={channel.label}>
+                  <p className="text-caption normal-case mb-1">{channel.label}</p>
+                  {channel.kind === "email" && (
+                    <a href={channel.href} className="text-body-sm text-slate-300 hover:text-[var(--amber)] transition-colors">
+                      {channel.value}
+                    </a>
+                  )}
+                  {channel.kind === "phone" && (
+                    <div className="space-y-0.5">
+                      {channel.numbers.map((n) => (
+                        <a
+                          key={n.href}
+                          href={n.href}
+                          className="block text-body-sm text-slate-300 hover:text-[var(--amber)] transition-colors"
+                        >
+                          {n.display}
+                        </a>
+                      ))}
+                    </div>
+                  )}
+                  {channel.kind === "address" && (
+                    <p className="text-body-sm text-slate-400">{channel.lines[0]}</p>
+                  )}
+                </div>
+              ))}
               <div>
                 <p className="text-caption normal-case mb-1">Offices</p>
                 <p className="text-body-sm text-slate-300">{hqSummary}</p>

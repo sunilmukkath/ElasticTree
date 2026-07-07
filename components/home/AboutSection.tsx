@@ -30,7 +30,7 @@ export default function AboutSection() {
             <p className="text-body-md">{companyIntro.body}</p>
           </div>
 
-          <div className="stat-row mt-12">
+          <div className="stat-row mt-8 sm:mt-12">
             {aboutStats.map((s) => (
               <div key={s.label}>
                 <p className="stat-value" style={{ color: s.accent }}>{s.value}</p>
@@ -41,7 +41,7 @@ export default function AboutSection() {
           </div>
         </SectionBlock>
 
-        <div className="section-stack-md border-t border-white/[0.06] pt-12">
+        <div className="section-stack-md border-t border-white/[0.06] pt-8 sm:pt-12">
           <SectionHeader
             label="Trusted by"
             title={<>200+ <span className="text-gradient-amber">Brands</span> Worldwide</>}
@@ -64,7 +64,7 @@ export default function AboutSection() {
           ))}
         </div>
 
-        <div className="section-stack-md border-t border-white/[0.06] pt-12">
+        <div className="section-stack-md border-t border-white/[0.06] pt-8 sm:pt-12">
           <SectionHeader
             label="Client Voices"
             title={<>What <span className="text-gradient-amber">Clients</span> Say</>}

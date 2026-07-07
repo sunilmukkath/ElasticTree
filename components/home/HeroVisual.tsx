@@ -5,7 +5,7 @@ import HoloSphere from "@/components/ui/abstract/HoloSphere";
 
 export default function HeroVisual() {
   return (
-    <div className="relative w-full max-w-md mx-auto lg:max-w-none lg:mx-0 aspect-square lg:aspect-auto lg:h-[min(520px,42vw)]">
+    <div className="relative w-full h-full">
       <div
         className="absolute inset-[6%] rounded-full blur-3xl opacity-70 pointer-events-none"
         style={{

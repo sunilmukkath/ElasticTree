@@ -1,5 +1,5 @@
 import fs from "fs";
-import { CONTACT_EMAIL, RESPONSE_TIME } from "@/lib/contact";
+import { CONTACT_EMAIL, RESPONSE_TIME, contactChannels } from "@/lib/contact";
 import { posts } from "../lib/posts";
 import { teamMembers, aboutStats, companyIntro, offices } from "../lib/team";
 import {
@@ -271,11 +271,25 @@ const siteCopy = {
       title: "Let's Talk Research",
       subtitle: "Whether you have a specific brief or just want to explore what's possible, our team is happy to have a conversation.",
     },
-    details: [
-      { label: "Email Us", value: CONTACT_EMAIL, sub: `We reply ${RESPONSE_TIME}` },
-      { label: "Chennai", value: "Chennai", sub: offices[0]?.address ?? "" },
-      { label: "Bengaluru", value: "Bengaluru", sub: offices[1]?.address ?? "" },
-    ],
+    details: contactChannels.flatMap((channel) => {
+      if (channel.kind === "email") {
+        return [{ label: channel.label, value: channel.value, sub: channel.sub ?? "" }];
+      }
+      if (channel.kind === "phone") {
+        return channel.numbers.map((n) => ({
+          label: channel.label,
+          value: n.display,
+          sub: "",
+        }));
+      }
+      return [{ label: channel.label, value: channel.lines[0], sub: "" }];
+    }).concat(
+      offices.map((office) => ({
+        label: `${office.city} office`,
+        value: office.city,
+        sub: office.address,
+      })),
+    ),
     form: {
       fields: [
         { label: "Your Name", placeholder: "Your name" },

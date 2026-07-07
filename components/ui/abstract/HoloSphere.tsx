@@ -73,7 +73,8 @@ export default function HoloSphere({ className = "" }: { className?: string }) {
     let h = 0;
 
     const resize = () => {
-      const dpr = Math.min(window.devicePixelRatio || 1, 2);
+      const mobile = window.innerWidth < 640;
+      const dpr = Math.min(window.devicePixelRatio || 1, mobile ? 1.25 : 2);
       w = canvas.offsetWidth;
       h = canvas.offsetHeight;
       canvas.width = w * dpr;
@@ -159,9 +160,10 @@ export default function HoloSphere({ className = "" }: { className?: string }) {
       }
 
       // Orbiting comets (no visible ring paths)
+      const cometSteps = w < 640 ? 8 : 14;
       for (const ring of RINGS) {
         const head = t * ring.speed;
-        for (let k = 0; k < 14; k++) {
+        for (let k = 0; k < cometSteps; k++) {
           const a = head - k * 0.035 * Math.sign(ring.speed);
           const p = {
             x: Math.cos(a) * ring.scale,
@@ -169,7 +171,7 @@ export default function HoloSphere({ className = "" }: { className?: string }) {
             z: Math.sin(a) * Math.cos(ring.tiltZ) * ring.scale,
           };
           const pr = project(p, R, rotY * 0.15, ring.tiltX);
-          const fade = 1 - k / 14;
+          const fade = 1 - k / cometSteps;
           const front = (pr.depth + 1) / 2;
           ctx.beginPath();
           ctx.arc(cx + pr.sx, cy + pr.sy, (2.4 - k * 0.13) * (0.55 + front * 0.6), 0, Math.PI * 2);
@@ -178,18 +180,20 @@ export default function HoloSphere({ className = "" }: { className?: string }) {
         }
       }
 
-      // Scan line — horizontal sweep across the sphere
-      const scanY = cy + Math.sin(t * 0.7) * R * 0.85;
-      const scanGrad = ctx.createLinearGradient(cx - R * 1.15, 0, cx + R * 1.15, 0);
-      scanGrad.addColorStop(0, "rgba(94, 234, 212, 0)");
-      scanGrad.addColorStop(0.5, "rgba(94, 234, 212, 0.22)");
-      scanGrad.addColorStop(1, "rgba(94, 234, 212, 0)");
-      ctx.strokeStyle = scanGrad;
-      ctx.lineWidth = 1;
-      ctx.beginPath();
-      ctx.moveTo(cx - R * 1.15, scanY);
-      ctx.lineTo(cx + R * 1.15, scanY);
-      ctx.stroke();
+      // Scan line — horizontal sweep across the sphere (desktop only)
+      if (w >= 640) {
+        const scanY = cy + Math.sin(t * 0.7) * R * 0.85;
+        const scanGrad = ctx.createLinearGradient(cx - R * 1.15, 0, cx + R * 1.15, 0);
+        scanGrad.addColorStop(0, "rgba(94, 234, 212, 0)");
+        scanGrad.addColorStop(0.5, "rgba(94, 234, 212, 0.22)");
+        scanGrad.addColorStop(1, "rgba(94, 234, 212, 0)");
+        ctx.strokeStyle = scanGrad;
+        ctx.lineWidth = 1;
+        ctx.beginPath();
+        ctx.moveTo(cx - R * 1.15, scanY);
+        ctx.lineTo(cx + R * 1.15, scanY);
+        ctx.stroke();
+      }
 
       raf = requestAnimationFrame(tick);
     };

@@ -48,13 +48,13 @@ export default function SpotlightServices() {
         subtitle="Flagship platforms and tools — explore what Elastic Tree is known for."
         gap="md"
       >
-        <div className="flex flex-wrap gap-2">
+        <div className="spotlight-tabs flex gap-2 overflow-x-auto pb-1 -mx-5 px-5 sm:mx-0 sm:px-0 sm:flex-wrap sm:overflow-visible">
           {spotlightServices.map((s, i) => (
             <button
               key={s.id}
               type="button"
               onClick={() => setIdx(i)}
-              className="px-4 py-2 rounded-full text-sm font-medium transition-all duration-300 border"
+              className="px-4 py-2 rounded-full text-sm font-medium transition-all duration-300 border shrink-0"
               style={{
                 color: i === idx ? active.accent : "rgba(226, 232, 240, 0.75)",
                 background: i === idx ? `${active.accent}18` : "rgba(255,255,255,0.03)",

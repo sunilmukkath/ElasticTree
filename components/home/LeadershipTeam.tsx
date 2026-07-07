@@ -49,11 +49,11 @@ export default function LeadershipTeam() {
           <p className="text-body-md relative z-10">
             Whether you need a quick behavioural pulse-check or a full-year tracker — let&apos;s design the right study for your brief.
           </p>
-          <div className="flex flex-wrap gap-3 pt-2 relative z-10">
-            <Link href="/contact" className="btn-primary btn-glow">
+          <div className="flex flex-col sm:flex-row flex-wrap gap-3 pt-2 relative z-10">
+            <Link href="/contact" className="btn-primary btn-glow justify-center w-full sm:w-auto">
               Talk to an Expert <ArrowRight size={16} />
             </Link>
-            <Link href="/capabilities" className="btn-secondary">
+            <Link href="/capabilities" className="btn-secondary justify-center w-full sm:w-auto">
               See All Capabilities
             </Link>
           </div>

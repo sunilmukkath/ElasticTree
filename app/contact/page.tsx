@@ -1,13 +1,13 @@
 "use client";
 
 import { useState } from "react";
-import { Mail, MapPin, Send, AlertCircle } from "lucide-react";
+import { Mail, MapPin, Send, AlertCircle, Phone } from "lucide-react";
 import PageHero from "@/components/ui/PageHero";
 import { LinkedInIcon, InstagramIcon, XIcon } from "@/components/ui/SocialIcons";
 import {
   CONTACT_EMAIL,
   RESPONSE_TIME,
-  contactEmailDetail,
+  contactChannels,
   officeDetails,
   socialLinks,
 } from "@/lib/contact";
@@ -68,18 +68,49 @@ export default function ContactPage() {
       <div className="page-content section-py">
         <div className="grid grid-cols-1 lg:grid-cols-5 gap-12 lg:gap-16 max-w-5xl">
           <div className="lg:col-span-2 space-y-8">
-            <div className="flex items-start gap-4">
-              <div className="w-10 h-10 rounded-xl flex items-center justify-center bg-[rgba(232,168,32,0.1)] border border-[rgba(232,168,32,0.2)] flex-shrink-0">
-                <Mail size={18} className="text-[#e8a820]" aria-hidden />
-              </div>
-              <div>
-                <p className="label-field !mb-1">{contactEmailDetail.label}</p>
-                <a href={contactEmailDetail.href} className="text-title hover:text-[var(--amber)] transition-colors">
-                  {contactEmailDetail.value}
-                </a>
-                <p className="text-body-sm mt-0.5">{contactEmailDetail.sub}</p>
-              </div>
-            </div>
+            {contactChannels.map((channel) => {
+              const Icon =
+                channel.kind === "email"
+                  ? Mail
+                  : channel.kind === "phone"
+                    ? Phone
+                    : MapPin;
+
+              return (
+                <div key={channel.label} className="flex items-start gap-4">
+                  <div className="w-10 h-10 rounded-xl flex items-center justify-center bg-[rgba(232,168,32,0.1)] border border-[rgba(232,168,32,0.2)] flex-shrink-0">
+                    <Icon size={18} className="text-[#e8a820]" aria-hidden />
+                  </div>
+                  <div>
+                    <p className="label-field !mb-1">{channel.label}</p>
+                    {channel.kind === "email" && (
+                      <>
+                        <a href={channel.href} className="text-title hover:text-[var(--amber)] transition-colors">
+                          {channel.value}
+                        </a>
+                        {channel.sub && <p className="text-body-sm mt-0.5">{channel.sub}</p>}
+                      </>
+                    )}
+                    {channel.kind === "phone" && (
+                      <div className="space-y-1">
+                        {channel.numbers.map((n) => (
+                          <a
+                            key={n.href}
+                            href={n.href}
+                            className="block text-title hover:text-[var(--amber)] transition-colors"
+                          >
+                            {n.display}
+                          </a>
+                        ))}
+                      </div>
+                    )}
+                    {channel.kind === "address" && (
+                      <p className="text-body-sm text-slate-300">{channel.lines.join(", ")}</p>
+                    )}
+                  </div>
+                </div>
+              );
+            })}
 
             {officeDetails.map((office) => (
               <div key={office.label} className="flex items-start gap-4">
@@ -87,7 +118,7 @@ export default function ContactPage() {
                   <MapPin size={18} className="text-[#e8a820]" aria-hidden />
                 </div>
                 <div>
-                  <p className="label-field !mb-1">{office.label}</p>
+                  <p className="label-field !mb-1">{office.label} office</p>
                   <p className="text-title">{office.value}</p>
                   <p className="text-body-sm mt-0.5">{office.sub}</p>
                 </div>

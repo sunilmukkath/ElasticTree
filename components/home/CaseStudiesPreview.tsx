@@ -29,7 +29,7 @@ export default function CaseStudiesPreview() {
         title={<>Research That <span className="text-gradient-amber">Delivers Results</span></>}
         subtitle="Real projects across FMCG, food service, media, and social impact."
         action={
-          <Link href="/casestudies" className="btn-secondary text-sm">
+          <Link href="/casestudies" className="btn-secondary text-sm shrink-0 hidden sm:inline-flex">
             View Case Studies <ArrowRight size={15} />
           </Link>
         }
@@ -85,6 +85,12 @@ export default function CaseStudiesPreview() {
               </motion.article>
             );
           })}
+        </div>
+
+        <div className="flex justify-center sm:hidden pt-2">
+          <Link href="/casestudies" className="btn-secondary text-sm">
+            View all case studies <ArrowRight size={15} />
+          </Link>
         </div>
       </SectionBlock>
     </SpaceSection>
