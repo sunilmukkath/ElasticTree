@@ -3,7 +3,7 @@
 import Link from "next/link";
 import ETLogo from "./ETLogo";
 import { LinkedInIcon, InstagramIcon, XIcon } from "@/components/ui/SocialIcons";
-import { contactChannels, hqSummary, officeDetails, socialLinks } from "@/lib/contact";
+import { contactChannels, hqSummary, socialLinks } from "@/lib/contact";
 
 const nav = [
   { label: "Capabilities", href: "/capabilities" },
@@ -93,13 +93,6 @@ export default function Footer() {
               <div>
                 <p className="text-caption normal-case mb-1">Offices</p>
                 <p className="text-body-sm text-slate-300">{hqSummary}</p>
-                <ul className="mt-2 space-y-1">
-                  {officeDetails.map((office) => (
-                    <li key={office.label} className="text-body-sm text-slate-400">
-                      {office.label}
-                    </li>
-                  ))}
-                </ul>
               </div>
             </div>
           </div>

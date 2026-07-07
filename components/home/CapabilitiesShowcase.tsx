@@ -18,9 +18,11 @@ export default function CapabilitiesShowcase() {
         title={<>The Full Stack of <span className="text-gradient-amber">Behavioural Intelligence</span></>}
         subtitle="Six integrated pillars — from what people eat to what draws their eye — delivered by one specialist team."
         action={
-          <Link href="/capabilities" className="btn-secondary text-sm shrink-0 hidden sm:inline-flex">
-            View all <ArrowRight size={14} />
-          </Link>
+          <div className="hidden sm:block shrink-0">
+            <Link href="/capabilities" className="btn-secondary text-sm">
+              View all <ArrowRight size={14} />
+            </Link>
+          </div>
         }
       >
         <div className="highlight-panel p-5 sm:p-8 lg:p-10">

@@ -1065,24 +1065,21 @@ h1, h2, h3, h4, h5, h6 {
   position: relative;
   overflow: hidden;
   padding: 0.75rem 0;
-}
-.ticker-mask::before,
-.ticker-mask::after {
-  content: "";
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  width: 4rem;
-  z-index: 2;
-  pointer-events: none;
-}
-.ticker-mask::before {
-  left: 0;
-  background: linear-gradient(to right, var(--space, #0a1f4a), transparent);
-}
-.ticker-mask::after {
-  right: 0;
-  background: linear-gradient(to left, var(--space, #0a1f4a), transparent);
+  /* Transparent edge fade that works over any background gradient */
+  -webkit-mask-image: linear-gradient(
+    to right,
+    transparent,
+    black 3rem,
+    black calc(100% - 3rem),
+    transparent
+  );
+  mask-image: linear-gradient(
+    to right,
+    transparent,
+    black 3rem,
+    black calc(100% - 3rem),
+    transparent
+  );
 }
 
 .ambient-art {

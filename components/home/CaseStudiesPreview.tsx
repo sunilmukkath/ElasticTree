@@ -29,9 +29,11 @@ export default function CaseStudiesPreview() {
         title={<>Research That <span className="text-gradient-amber">Delivers Results</span></>}
         subtitle="Real projects across FMCG, food service, media, and social impact."
         action={
-          <Link href="/casestudies" className="btn-secondary text-sm shrink-0 hidden sm:inline-flex">
-            View Case Studies <ArrowRight size={15} />
-          </Link>
+          <div className="hidden sm:block shrink-0">
+            <Link href="/casestudies" className="btn-secondary text-sm">
+              View Case Studies <ArrowRight size={15} />
+            </Link>
+          </div>
         }
       >
         <div className="content-grid-3">
