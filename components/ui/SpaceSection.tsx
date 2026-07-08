@@ -9,8 +9,8 @@ interface Props {
   flow?: FlowTint;
   className?: string;
   id?: string;
-  /** tight = logos strip, default = standard section, loose = hero-adjacent */
-  spacing?: "tight" | "default" | "loose";
+  /** tight | compact = subpage rhythm, default = standard, loose = hero-adjacent */
+  spacing?: "tight" | "compact" | "default" | "loose";
 }
 
 const FLOW: Record<FlowTint, string> = {
@@ -23,6 +23,7 @@ const FLOW: Record<FlowTint, string> = {
 
 const SPACING: Record<NonNullable<Props["spacing"]>, string> = {
   tight:   "section-py-tight",
+  compact: "section-py-compact",
   default: "section-py",
   loose:   "section-py-loose",
 };

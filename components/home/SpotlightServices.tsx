@@ -41,20 +41,20 @@ export default function SpotlightServices() {
   const active = spotlightServices[idx];
 
   return (
-    <SpaceSection flow="teal">
+    <SpaceSection flow="teal" spacing="compact">
       <SectionBlock
         label="Spotlight"
         title={<>Products & Services <span className="text-gradient-amber">in Action</span></>}
         subtitle="Flagship platforms and tools — explore what Elastic Tree is known for."
         gap="md"
       >
-        <div className="spotlight-tabs flex gap-2 overflow-x-auto pb-1 -mx-5 px-5 sm:mx-0 sm:px-0 sm:flex-wrap sm:overflow-visible">
+        <div className="spotlight-tabs">
           {spotlightServices.map((s, i) => (
             <button
               key={s.id}
               type="button"
               onClick={() => setIdx(i)}
-              className="px-4 py-2 rounded-full text-sm font-medium transition-all duration-300 border shrink-0"
+              className="spotlight-tab px-4 py-2 rounded-full text-sm font-medium transition-all duration-300 border shrink-0"
               style={{
                 color: i === idx ? active.accent : "rgba(226, 232, 240, 0.75)",
                 background: i === idx ? `${active.accent}18` : "rgba(255,255,255,0.03)",
@@ -73,7 +73,7 @@ export default function SpotlightServices() {
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: -12 }}
             transition={{ duration: 0.35, ease: [0.22, 1, 0.36, 1] }}
-            className="highlight-panel p-5 sm:p-8 lg:p-10 relative overflow-hidden"
+            className="highlight-panel home-panel relative overflow-hidden"
           >
             <div
               className="absolute top-0 left-0 right-0 h-px opacity-60"
@@ -102,7 +102,7 @@ export default function SpotlightServices() {
                     <li key={f} className="text-body-sm">{f}</li>
                   ))}
                 </ul>
-                <div className="flex flex-wrap gap-3 pt-2">
+                <div className="home-cta-row flex flex-wrap gap-3 pt-2">
                   {active.demo && <TableShareDemoLink size="sm" label="Explore Demo" />}
                   <Link href="/contact" className="btn-secondary text-sm">
                     Book a Demo <ArrowRight size={15} />

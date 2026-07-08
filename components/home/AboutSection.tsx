@@ -19,7 +19,7 @@ export default function AboutSection() {
   const reduced = usePrefersReducedMotion();
 
   return (
-    <SpaceSection flow="blue" id="about" className="scroll-mt-24">
+    <SpaceSection flow="blue" id="about" spacing="compact" className="scroll-mt-24">
       <div className="section-stack">
         <SectionBlock
           label="Who We Are"
@@ -35,7 +35,7 @@ export default function AboutSection() {
               <div key={s.label}>
                 <p className="stat-value" style={{ color: s.accent }}>{s.value}</p>
                 <p className="stat-label">{s.label}</p>
-                <p className="text-body-sm mt-3 max-w-[12rem]">{s.desc}</p>
+                <p className="text-body-sm mt-3">{s.desc}</p>
               </div>
             ))}
           </div>
@@ -49,16 +49,18 @@ export default function AboutSection() {
           />
 
           {[0, 1].map((row) => (
-            <div key={row} className="ticker-mask -mx-5 sm:-mx-8">
-              <div
-                className="ticker-track"
-                style={{ animation: `ticker ${90 + row * 15}s linear infinite ${row ? "reverse" : ""}` }}
-              >
-                {(row ? [...doubledClients].reverse() : doubledClients).map((name, i) => (
-                  <span key={`${row}-${i}`} className="font-mono text-body-sm text-slate-300 px-6">
-                    {name}
-                  </span>
-                ))}
+            <div key={row} className="section-bleed">
+              <div className="ticker-mask">
+                <div
+                  className="ticker-track"
+                  style={{ animation: `ticker ${90 + row * 15}s linear infinite ${row ? "reverse" : ""}` }}
+                >
+                  {(row ? [...doubledClients].reverse() : doubledClients).map((name, i) => (
+                    <span key={`${row}-${i}`} className="font-mono text-body-sm text-slate-300 px-6">
+                      {name}
+                    </span>
+                  ))}
+                </div>
               </div>
             </div>
           ))}

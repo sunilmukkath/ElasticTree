@@ -12,7 +12,7 @@ export default function CapabilitiesShowcase() {
   const motionProps = useMotionSafeFade();
 
   return (
-    <SpaceSection flow="purple" id="what-we-do" className="scroll-mt-24">
+    <SpaceSection flow="purple" id="what-we-do" spacing="compact" className="scroll-mt-24">
       <SectionBlock
         label="Products & Services"
         title={<>The Full Stack of <span className="text-gradient-amber">Behavioural Intelligence</span></>}
@@ -25,7 +25,7 @@ export default function CapabilitiesShowcase() {
           </div>
         }
       >
-        <div className="highlight-panel p-5 sm:p-8 lg:p-10">
+        <div className="highlight-panel home-panel">
           <div className="content-grid-3">
             {capabilityOfferings.map(({ id, title, tag, desc, href, Icon, accent }, i) => (
               <motion.div

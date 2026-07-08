@@ -9,7 +9,7 @@ import { teamMembers, offices } from "@/lib/team";
 
 export default function LeadershipTeam() {
   return (
-    <SpaceSection flow="teal" spacing="loose">
+    <SpaceSection flow="teal" spacing="compact">
       <div className="section-stack">
         <SectionBlock
           label="Meet The Team"
@@ -49,11 +49,11 @@ export default function LeadershipTeam() {
           <p className="text-body-md relative z-10">
             Whether you need a quick behavioural pulse-check or a full-year tracker — let&apos;s design the right study for your brief.
           </p>
-          <div className="flex flex-col sm:flex-row flex-wrap gap-3 pt-2 relative z-10">
-            <Link href="/contact" className="btn-primary btn-glow justify-center w-full sm:w-auto">
+          <div className="home-cta-row pt-2 relative z-10">
+            <Link href="/contact" className="btn-primary btn-glow">
               Talk to an Expert <ArrowRight size={16} />
             </Link>
-            <Link href="/capabilities" className="btn-secondary justify-center w-full sm:w-auto">
+            <Link href="/capabilities" className="btn-secondary">
               See All Capabilities
             </Link>
           </div>

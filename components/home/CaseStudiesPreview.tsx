@@ -23,7 +23,7 @@ export default function CaseStudiesPreview() {
   const motionProps = useMotionSafeFade();
 
   return (
-    <SpaceSection flow="amber">
+    <SpaceSection flow="amber" spacing="compact">
       <SectionBlock
         label="Case Studies"
         title={<>Research That <span className="text-gradient-amber">Delivers Results</span></>}
