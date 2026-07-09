@@ -48,8 +48,16 @@ export default function AboutSection() {
             titleSize="md"
           />
 
+          <div className="grid grid-cols-2 gap-2 sm:hidden">
+            {clientNames.slice(0, 8).map((name) => (
+              <span key={name} className="client-chip">
+                {name}
+              </span>
+            ))}
+          </div>
+
           {[0, 1].map((row) => (
-            <div key={row} className="section-bleed">
+            <div key={row} className="section-bleed hidden sm:block">
               <div className="ticker-mask">
                 <div
                   className="ticker-track"
@@ -120,7 +128,7 @@ export default function AboutSection() {
                   </button>
                 ))}
               </div>
-              <div className="flex items-center gap-1 ml-auto">
+              <div className="hidden sm:flex items-center gap-1 ml-auto">
                 <button
                   type="button"
                   onClick={() => setIdx((idx - 1 + testimonials.length) % testimonials.length)}

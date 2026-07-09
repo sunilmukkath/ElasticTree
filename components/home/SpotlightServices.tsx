@@ -54,7 +54,7 @@ export default function SpotlightServices() {
               key={s.id}
               type="button"
               onClick={() => setIdx(i)}
-              className="spotlight-tab px-4 py-2 rounded-full text-sm font-medium transition-all duration-300 border shrink-0"
+              className="spotlight-tab px-4 py-2 rounded-full text-sm font-medium transition-all duration-300 border"
               style={{
                 color: i === idx ? active.accent : "rgba(226, 232, 240, 0.75)",
                 background: i === idx ? `${active.accent}18` : "rgba(255,255,255,0.03)",
