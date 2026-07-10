@@ -7,7 +7,29 @@ import { ArrowRight } from "lucide-react";
 import SpaceSection from "@/components/ui/SpaceSection";
 import SectionBlock from "@/components/ui/SectionBlock";
 import TableShareDemoLink from "@/components/table-share/TableShareDemoLink";
-import { spotlightServices, type SpotlightStat } from "@/lib/spotlight-services";
+import {
+  spotlightServices,
+  type SpotlightService,
+  type SpotlightStat,
+} from "@/lib/spotlight-services";
+
+function SpotlightTitle({ service }: { service: SpotlightService }) {
+  if (service.id === "table-share") {
+    return (
+      <>
+        Table&nbsp;Share<sup className="text-gradient-amber text-[0.5em] align-super">®</sup>
+      </>
+    );
+  }
+  if (service.id === "pallete") {
+    return (
+      <>
+        Pallete<span className="text-gradient-amber">™</span>
+      </>
+    );
+  }
+  return <>{service.title}</>;
+}
 
 function Counter({ to, suffix = "" }: { to: number; suffix?: string }) {
   const [val, setVal] = useState(0);
@@ -61,7 +83,7 @@ export default function SpotlightServices() {
                 borderColor: i === idx ? `${active.accent}45` : "rgba(255,255,255,0.08)",
               }}
             >
-              {s.title.replace("®", "")}
+              {s.title.replace("®", "").replace("™", "")}
             </button>
           ))}
         </div>
@@ -84,13 +106,7 @@ export default function SpotlightServices() {
             <div className="section-stack-sm mb-8">
               <p className="eyebrow-text">{active.label}</p>
               <h3 className="font-display font-black text-display-md text-white">
-                {active.titleHtml ? (
-                  <>
-                    Table&nbsp;Share<sup className="text-gradient-amber text-[0.5em] align-super">®</sup>
-                  </>
-                ) : (
-                  active.title
-                )}
+                {active.titleHtml ? <SpotlightTitle service={active} /> : active.title}
               </h3>
               <p className="text-lead max-w-3xl">{active.subtitle}</p>
             </div>
