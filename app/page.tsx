@@ -1,7 +1,6 @@
 import type { Metadata } from "next";
 import dynamic from "next/dynamic";
 import Hero from "@/components/home/Hero";
-import HeroMarquee from "@/components/home/HeroMarquee";
 
 export const metadata: Metadata = {
   title: "See What People Actually Do",
@@ -22,7 +21,6 @@ export default function HomePage() {
   return (
     <>
       <Hero />
-      <HeroMarquee />
       <HomeBelowFold />
     </>
   );
