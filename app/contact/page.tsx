@@ -6,7 +6,6 @@ import PageHero from "@/components/ui/PageHero";
 import { LinkedInIcon, InstagramIcon, XIcon } from "@/components/ui/SocialIcons";
 import {
   CONTACT_EMAIL,
-  RESPONSE_TIME,
   contactChannels,
   officeDetails,
   socialLinks,
@@ -155,7 +154,7 @@ export default function ContactPage() {
                 </div>
                 <h2 className="font-display font-black text-display-md text-white mb-2">Message Sent!</h2>
                 <p className="text-body-md">
-                  Thank you for reaching out. We&apos;ll get back to you {RESPONSE_TIME}.
+                  Thank you for reaching out. We&apos;ll get back to you shortly.
                 </p>
               </div>
             ) : (

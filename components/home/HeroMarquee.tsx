@@ -1,15 +1,6 @@
 "use client";
 
-const items = [
-  "Field Research",
-  "Analytics",
-  "Sensory Science",
-  "Table Share®",
-  "Syndicated Research",
-  "Impact & CSR",
-  "AI Gaze™",
-  "74% Repeat Rate",
-];
+const items = ["74% Repeat Rate"];
 
 export default function HeroMarquee() {
   return (
