@@ -1,4 +1,3 @@
-import { palleteFeatures } from "@/lib/pallete";
 import { tableShareFeatures } from "@/lib/table-share";
 
 export type SpotlightStat =
@@ -38,23 +37,6 @@ export const spotlightServices: SpotlightService[] = [
     demo: true,
   },
   {
-    id: "pallete",
-    label: "Sensory Platform",
-    title: "Pallete™",
-    titleHtml: true,
-    subtitle:
-      "Trained descriptive and affective panels for FMCG and F&B — measuring taste, texture, and perception the way people actually experience products.",
-    features: palleteFeatures,
-    stats: [
-      { label: "Methods", accent: "#2dd4bf", val: "QDA·TDS" },
-      { label: "Categories", accent: "#38bdf8", val: "FMCG" },
-      { label: "Panels", accent: "#5eead4", val: "Trained" },
-      { label: "Testing", accent: "#e8a820", val: "HUT+CLT" },
-    ],
-    accent: "#2dd4bf",
-    href: "/pallete",
-  },
-  {
     id: "ai-gaze",
     label: "Proprietary Tool",
     title: "AI Gaze™",
@@ -74,6 +56,27 @@ export const spotlightServices: SpotlightService[] = [
     ],
     accent: "#e8a820",
     href: "/capabilities#advanced-methods",
+  },
+  {
+    id: "sensory",
+    label: "Specialist Panels",
+    title: "Sensory Science",
+    subtitle:
+      "Trained descriptive and affective panels for FMCG and F&B — measuring taste, texture, and perception the way people actually experience products.",
+    features: [
+      "QDA, TDS, CATA, and affective testing protocols",
+      "Central location and home-use test (HUT) designs",
+      "Recipe reformulation and NPD screening",
+      "Fragrance and flavour optimisation with ingredient partners",
+    ],
+    stats: [
+      { label: "Methods", accent: "#2dd4bf", val: "QDA·TDS" },
+      { label: "Categories", accent: "#38bdf8", val: "FMCG" },
+      { label: "Panels", accent: "#5eead4", val: "Trained" },
+      { label: "Testing", accent: "#e8a820", val: "HUT+CLT" },
+    ],
+    accent: "#2dd4bf",
+    href: "/capabilities#sensory",
   },
   {
     id: "agile",

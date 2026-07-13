@@ -21,13 +21,6 @@ function SpotlightTitle({ service }: { service: SpotlightService }) {
       </>
     );
   }
-  if (service.id === "pallete") {
-    return (
-      <>
-        Pallete<span className="text-gradient-amber">™</span>
-      </>
-    );
-  }
   return <>{service.title}</>;
 }
 

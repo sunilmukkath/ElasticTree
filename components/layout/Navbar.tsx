@@ -10,7 +10,6 @@ const links = [
   { href: "/", label: "Home" },
   { href: "/capabilities", label: "Capabilities" },
   { href: "/table-share", label: "Table Share" },
-  { href: "/pallete", label: "Pallete" },
   { href: "/casestudies", label: "Case Studies" },
   { href: "/contact", label: "Contact" },
 ];
