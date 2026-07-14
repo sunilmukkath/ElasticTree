@@ -5,15 +5,22 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import ETLogo from "./ETLogo";
 import AiGazeLogo from "./AiGazeLogo";
+import { AI_GAZE_STUDIO_URL } from "@/lib/ai-gaze";
 import { Menu, X } from "lucide-react";
 
-const links = [
+const siteLinks = [
   { href: "/", label: "Home" },
   { href: "/capabilities", label: "Capabilities" },
   { href: "/table-share", label: "Table Share" },
-  { href: "/ai-gaze", label: "AI Gaze" },
+  // AI Gaze nav tab hidden for now — page remains at /ai-gaze
   { href: "/casestudies", label: "Case Studies" },
   { href: "/contact", label: "Contact" },
+];
+
+const aiGazeLinks = [
+  { href: "/ai-gaze", label: "Overview" },
+  { href: "/ai-gaze#features", label: "Features" },
+  { href: "/ai-gaze#pricing", label: "Pricing" },
 ];
 
 export default function Navbar() {
@@ -21,6 +28,7 @@ export default function Navbar() {
   const [open, setOpen] = useState(false);
   const pathname = usePathname();
   const isAiGaze = pathname === "/ai-gaze" || pathname.startsWith("/ai-gaze/");
+  const links = isAiGaze ? aiGazeLinks : siteLinks;
 
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 20);
@@ -59,7 +67,9 @@ export default function Navbar() {
         <ul className="hidden lg:flex items-center gap-1">
           {links.map((l) => {
             const active =
-              pathname === l.href || (l.href !== "/" && pathname.startsWith(l.href));
+              l.href === "/ai-gaze"
+                ? pathname === "/ai-gaze"
+                : pathname === l.href || (l.href !== "/" && !l.href.includes("#") && pathname.startsWith(l.href));
             return (
               <li key={l.href}>
                 <Link
@@ -76,21 +86,20 @@ export default function Navbar() {
         </ul>
 
         <div className="hidden lg:flex items-center gap-3 shrink-0">
-          {isAiGaze && (
-            <Link
-              href="/"
-              className="flex items-center gap-2 text-slate-400 hover:text-[var(--amber)] transition-colors"
-              title="Elastic Tree"
+          {isAiGaze ? (
+            <a
+              href={AI_GAZE_STUDIO_URL}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="btn-primary text-sm !py-2.5 !px-5"
             >
-              <span className="text-[10px] font-mono uppercase tracking-[0.12em] hidden xl:inline">
-                An Elastic Tree product
-              </span>
-              <ETLogo height={18} />
+              Launch Studio
+            </a>
+          ) : (
+            <Link href="/contact" className="btn-primary text-sm !py-2.5 !px-5">
+              Get in Touch
             </Link>
           )}
-          <Link href="/contact" className="btn-primary text-sm !py-2.5 !px-5">
-            Get in Touch
-          </Link>
         </div>
 
         <button
@@ -115,7 +124,9 @@ export default function Navbar() {
             <ul className="page-content py-3">
               {links.map((l) => {
                 const active =
-                  pathname === l.href || (l.href !== "/" && pathname.startsWith(l.href));
+                  l.href === "/ai-gaze"
+                    ? pathname === "/ai-gaze"
+                    : pathname === l.href || (l.href !== "/" && !l.href.includes("#") && pathname.startsWith(l.href));
                 return (
                   <li key={l.href}>
                     <Link
@@ -129,18 +140,21 @@ export default function Navbar() {
                   </li>
                 );
               })}
-              {isAiGaze && (
-                <li className="py-3 border-b border-white/[0.04]">
-                  <Link href="/" className="flex items-center gap-2 text-slate-300">
-                    <ETLogo height={18} />
-                    <span className="text-body-sm">Elastic Tree</span>
-                  </Link>
-                </li>
-              )}
               <li className="pt-4 pb-2">
-                <Link href="/contact" className="btn-primary w-full justify-center">
-                  Get in Touch
-                </Link>
+                {isAiGaze ? (
+                  <a
+                    href={AI_GAZE_STUDIO_URL}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="btn-primary w-full justify-center"
+                  >
+                    Launch Studio
+                  </a>
+                ) : (
+                  <Link href="/contact" className="btn-primary w-full justify-center">
+                    Get in Touch
+                  </Link>
+                )}
               </li>
             </ul>
           </div>

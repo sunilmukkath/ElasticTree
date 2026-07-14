@@ -1,5 +1,4 @@
 import {
-  Brain,
   Database,
   Layers,
   LineChart,
@@ -64,13 +63,5 @@ export const capabilityOfferings: CapabilityOffering[] = [
     Icon: Layers,
     accent: "#fb923c",
   },
-  {
-    id: "advanced",
-    title: "AI Gaze™ & Agile Research",
-    tag: "Advanced",
-    desc: "Eye-tracking simulation for shelf and packaging studies — plus rapid online qual and quant with rigorous QC.",
-    href: "/ai-gaze",
-    Icon: Brain,
-    accent: "#e8a820",
-  },
+  // AI Gaze home card hidden for now
 ];

@@ -37,29 +37,6 @@ export const spotlightServices: SpotlightService[] = [
     demo: true,
   },
   {
-    id: "ai-gaze",
-    label: "Proprietary Tool",
-    title: "AI Gaze™",
-    titleHtml: true,
-    subtitle:
-      "Predict human visual attention on any packaging, shelf, or ad — 92% accuracy vs. lab eye-tracking, fully remote, no hardware required.",
-    features: [
-      "Heat maps, gaze sequences, and area-of-interest metrics",
-      "Packaging, planogram, and POSM pre-testing in 24 hours",
-      "Trained on thousands of real eye-tracking sessions",
-      "Fraction of the cost of traditional eye-tracking studies",
-    ],
-    stats: [
-      { label: "Accuracy", accent: "#e8a820", val: "92%" },
-      { label: "Turnaround", accent: "#2dd4bf", val: "24 hrs" },
-      { label: "Cost vs. Lab", accent: "#38bdf8", val: "–60%" },
-      { label: "Setup", accent: "#5eead4", val: "Remote" },
-    ],
-    accent: "#e8a820",
-    href: "/ai-gaze",
-    demo: true,
-  },
-  {
     id: "sensory",
     label: "Specialist Panels",
     title: "Sensory Science",

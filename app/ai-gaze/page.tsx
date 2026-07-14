@@ -13,7 +13,7 @@ import {
 import { ArrowRight, Check, Eye, Sparkles } from "lucide-react";
 
 export const metadata: Metadata = {
-  title: "AI Gaze™ | Elastic Tree",
+  title: "AI Gaze™ | Predictive Eye Tracking",
   description:
     "AI Gaze™ predicts visual attention on packaging, shelves, and ads with 92% accuracy — heat maps, gaze path, and branded reports without hardware eye-tracking.",
 };
@@ -44,7 +44,7 @@ export default function AiGazePage() {
         }))}
       />
 
-      <section className="section-py-compact page-content">
+      <section id="features" className="section-py-compact page-content">
         <div className="content-grid-2 items-start gap-10 lg:gap-14">
           <div className="section-stack-sm">
             <SectionHeader
@@ -61,7 +61,7 @@ export default function AiGazePage() {
               ))}
             </ul>
             <p className="text-body-sm italic">
-              Custom pack / shelf studies and insight workshops available via Elastic Tree.
+              Custom pack / shelf studies and insight workshops available on request.
             </p>
           </div>
           <div className="highlight-panel section-stack-sm">
@@ -124,7 +124,7 @@ export default function AiGazePage() {
           <SectionHeader
             label="Pricing"
             title="Choose how your team uses AI Gaze™"
-            subtitle="Transparent SaaS plans · Custom research retainers available via Elastic Tree"
+            subtitle="Transparent SaaS plans · Custom research retainers available on request"
             className="mb-10"
           />
           <div className="content-grid-3 gap-6 items-stretch">
@@ -157,9 +157,9 @@ export default function AiGazePage() {
                   ))}
                 </ul>
                 {plan.name === "Enterprise" ? (
-                  <Link href="/contact" className="btn-secondary w-full justify-center">
+                  <a href="mailto:sunil@elastictree.com" className="btn-secondary w-full justify-center">
                     Talk to Sales
-                  </Link>
+                  </a>
                 ) : (
                   <AiGazeStudioLink
                     variant={plan.featured ? "primary" : "secondary"}
@@ -190,12 +190,12 @@ export default function AiGazePage() {
           </p>
           <div className="flex flex-wrap gap-3 pt-1">
             <AiGazeStudioLink label="Launch Studio" />
-            <Link href="/contact" className="btn-secondary">
-              Book a Demo <ArrowRight size={16} />
-            </Link>
+            <a href="mailto:sunil@elastictree.com" className="btn-secondary">
+              Contact Sales <ArrowRight size={16} />
+            </a>
           </div>
           <p className="text-body-sm text-slate-400">
-            Opens the AI Gaze™ studio in a new tab · or talk to Elastic Tree for a guided study
+            Opens the AI Gaze™ studio in a new tab
           </p>
         </div>
       </section>

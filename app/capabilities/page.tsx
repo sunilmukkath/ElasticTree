@@ -3,7 +3,7 @@ import PageHero from "@/components/ui/PageHero";
 import SectionHeader from "@/components/ui/SectionHeader";
 import {
   BarChart3, FlaskConical, Database, TrendingUp, Search,
-  Eye, Zap, Target, BarChart2, ArrowRight,
+  Zap, Target, BarChart2, ArrowRight,
 } from "lucide-react";
 
 const pillars = [
@@ -100,16 +100,6 @@ const pillars = [
 
 const methodDeliverables = [
   {
-    title: "AI Gaze™",
-    color: "#e8a820",
-    items: [
-      "Heat maps of attention density across the stimulus",
-      "Hot-spot isolation of the most-fixated area",
-      "Gaze-sequence path showing natural scan order",
-      "Area-of-interest metrics for cross-stimulus comparison",
-    ],
-  },
-  {
     title: "AI-Augmented Analytics",
     color: "#0ea5e9",
     items: [
@@ -154,14 +144,6 @@ const useCases = [
 
 const aiPillars = [
   {
-    icon: Eye,
-    title: "AI Gaze™",
-    subtitle: "Eye-Tracking Simulation",
-    stats: [{ label: "Accuracy", val: "92%" }, { label: "Turnaround", val: "24 hrs" }, { label: "Cost", val: "–60%" }],
-    color: "#e8a820",
-    desc: "Elastic Tree's flagship proprietary tool. Using deep learning models trained on thousands of real eye-tracking sessions, AI Gaze™ predicts human visual attention on any uploaded image or design with 92% accuracy — fully remote, no hardware required.",
-  },
-  {
     icon: Zap,
     title: "AI-Augmented Analytics",
     subtitle: "Faster Insights at Scale",
@@ -198,7 +180,7 @@ export default function CapabilitiesPage() {
       <PageHero
         eyebrow="Capabilities"
         title={<>Six Pillars. <span className="text-gradient-amber">One Team.</span></>}
-        subtitle="Custom marketing research — from product optimisation and brand health to AI-powered visual attention — built to show how people think, choose, and act in the real world."
+        subtitle="Custom marketing research — from product optimisation and brand health to predictive analytics — built to show how people think, choose, and act in the real world."
       />
 
       <div className="sticky top-16 z-40 border-b border-white/[0.06] bg-[rgba(10,31,74,0.94)] backdrop-blur-xl">
@@ -268,7 +250,7 @@ export default function CapabilitiesPage() {
           <SectionHeader
             label="Advanced Methods"
             title="Tools That Support Clearer Research"
-            subtitle="We adopt intelligent methods — eye-tracking simulation, text coding, predictive modelling — where they genuinely sharpen insight, not as a default for every project."
+            subtitle="We adopt intelligent methods — text coding, predictive modelling, and advanced analytics — where they genuinely sharpen insight, not as a default for every project."
           />
 
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-x-10 gap-y-14">
@@ -301,7 +283,7 @@ export default function CapabilitiesPage() {
             <SectionHeader
               label="Deliverables"
               title="What These Methods Deliver"
-              subtitle="Concrete outputs across AI Gaze™, analytics, predictive models, and NLP — each built for decisions, not just charts."
+              subtitle="Concrete outputs across analytics, predictive models, and NLP — each built for decisions, not just charts."
             />
 
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-x-8 gap-y-10">
