@@ -1,7 +1,8 @@
 "use client";
 
+import { useState } from "react";
 import { Play } from "lucide-react";
-import Link from "next/link";
+import { AiGazeSignInModal } from "./AiGazeStudioSignIn";
 
 interface Props {
   variant?: "primary" | "secondary";
@@ -9,26 +10,33 @@ interface Props {
   className?: string;
   label?: string;
   showIcon?: boolean;
-  /** Same-page studio section (default). */
+  /** Ignored — Launch Studio always opens the sign-in modal. */
   href?: string;
 }
 
-/** Launches the on-page studio embed — stays on elastictree.com/ai-gaze. */
+/** Opens sign-in; successful auth loads the AI Gaze Streamlit dashboard. */
 export default function AiGazeStudioLink({
   variant = "primary",
   size = "md",
   className = "",
   label = "Launch Studio",
   showIcon = true,
-  href = "/ai-gaze#studio",
 }: Props) {
+  const [open, setOpen] = useState(false);
   const sizeClass = size === "sm" ? "text-sm px-5 py-2.5" : "";
   const variantClass = variant === "primary" ? "btn-primary btn-glow" : "btn-secondary";
 
   return (
-    <Link href={href} className={`${variantClass} ${sizeClass} ${className}`.trim()}>
-      {showIcon && <Play size={size === "sm" ? 14 : 16} fill="currentColor" aria-hidden />}
-      {label}
-    </Link>
+    <>
+      <button
+        type="button"
+        onClick={() => setOpen(true)}
+        className={`${variantClass} ${sizeClass} ${className}`.trim()}
+      >
+        {showIcon && <Play size={size === "sm" ? 14 : 16} fill="currentColor" aria-hidden />}
+        {label}
+      </button>
+      <AiGazeSignInModal open={open} onClose={() => setOpen(false)} />
+    </>
   );
 }

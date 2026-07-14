@@ -196,7 +196,7 @@ export default function AiGazePage() {
             </a>
           </div>
           <p className="text-body-sm text-slate-400">
-            Studio opens on this page below
+            Launch Studio → sign in → AI Gaze dashboard
           </p>
         </div>
       </section>

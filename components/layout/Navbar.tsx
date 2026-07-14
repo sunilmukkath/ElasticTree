@@ -5,6 +5,7 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import ETLogo from "./ETLogo";
 import AiGazeLogo from "./AiGazeLogo";
+import AiGazeStudioLink from "@/components/ai-gaze/AiGazeStudioLink";
 import { Menu, X } from "lucide-react";
 
 const siteLinks = [
@@ -87,9 +88,11 @@ export default function Navbar() {
 
         <div className="hidden lg:flex items-center gap-3 shrink-0">
           {isAiGaze ? (
-            <Link href="/ai-gaze#studio" className="btn-primary text-sm !py-2.5 !px-5">
-              Launch Studio
-            </Link>
+            <AiGazeStudioLink
+              label="Launch Studio"
+              showIcon={false}
+              className="text-sm !py-2.5 !px-5"
+            />
           ) : (
             <Link href="/contact" className="btn-primary text-sm !py-2.5 !px-5">
               Get in Touch
@@ -137,9 +140,11 @@ export default function Navbar() {
               })}
               <li className="pt-4 pb-2">
                 {isAiGaze ? (
-                  <Link href="/ai-gaze#studio" className="btn-primary w-full justify-center">
-                    Launch Studio
-                  </Link>
+                  <AiGazeStudioLink
+                    label="Launch Studio"
+                    showIcon={false}
+                    className="w-full justify-center"
+                  />
                 ) : (
                   <Link href="/contact" className="btn-primary w-full justify-center">
                     Get in Touch
