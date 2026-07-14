@@ -1,7 +1,6 @@
 import Link from "next/link";
 import PageHero from "@/components/ui/PageHero";
 import SectionHeader from "@/components/ui/SectionHeader";
-import GazeDeliverableIcon, { gazeVariantFromName } from "@/components/ui/icons/GazeDeliverableIcon";
 import {
   BarChart3, FlaskConical, Database, TrendingUp, Search,
   Eye, Zap, Target, BarChart2, ArrowRight,
@@ -99,22 +98,46 @@ const pillars = [
   },
 ];
 
-const gazeOutputs = [
+const methodDeliverables = [
   {
-    name: "Heat Map",
-    desc: "Colour-coded overlay showing relative attention density across the entire stimulus — instantly identifies high- and low-engagement zones.",
+    title: "AI Gaze™",
+    color: "#e8a820",
+    items: [
+      "Heat maps of attention density across the stimulus",
+      "Hot-spot isolation of the most-fixated area",
+      "Gaze-sequence path showing natural scan order",
+      "Area-of-interest metrics for cross-stimulus comparison",
+    ],
   },
   {
-    name: "Hot Spot",
-    desc: "Isolates the single most-fixated area on the visual, helping you confirm that the primary message or pack design element is landing where intended.",
+    title: "AI-Augmented Analytics",
+    color: "#0ea5e9",
+    items: [
+      "Automated response-quality and fraud flags",
+      "Open-ended text coded into actionable themes",
+      "Driver maps linking attributes to brand outcomes",
+      "Cleaned datasets ready for analyst interpretation",
+    ],
   },
   {
-    name: "Gaze Sequence",
-    desc: "Frame-by-frame animation recreating the natural scan path of the human eye, revealing the true order in which elements register.",
+    title: "Predictive Modelling",
+    color: "#2dd4bf",
+    items: [
+      "Feature and claim priority rankings (MaxDiff)",
+      "Conjoint utility scores and simulation scenarios",
+      "Regression-based driver and impact estimates",
+      "Decision-ready scorecards for product teams",
+    ],
   },
   {
-    name: "Area of Interest (AoI)",
-    desc: "Quantified fixation metrics per defined zone — time-to-first-fixation, total dwell time, visit count — for rigorous cross-stimulus comparison.",
+    title: "NLP & Text Mining",
+    color: "#7c3aed",
+    items: [
+      "Multi-language verbatim clustering and theming",
+      "Sentiment classification at response and theme level",
+      "Auto-coded categories with analyst QC overlay",
+      "Quote banks tagged for reporting and storytelling",
+    ],
   },
 ];
 
@@ -125,6 +148,8 @@ const useCases = [
   "Website UX and landing page effectiveness",
   "Logo and brand identity review",
   "Menu board and food-service display testing",
+  "Concept and claim prioritisation before launch",
+  "Large-scale open-ended coding across Indian languages",
 ];
 
 const aiPillars = [
@@ -274,29 +299,31 @@ export default function CapabilitiesPage() {
 
           <div className="section-stack pt-4">
             <SectionHeader
-              label="AI Gaze™"
-              title="Four Deliverables"
-              subtitle="When visual attention is the research question, AI Gaze™ delivers four complementary outputs."
+              label="Deliverables"
+              title="What These Methods Deliver"
+              subtitle="Concrete outputs across AI Gaze™, analytics, predictive models, and NLP — each built for decisions, not just charts."
             />
 
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-x-6 gap-y-12">
-              {gazeOutputs.map((output) => (
-                <div key={output.name} className="group section-stack-sm">
-                  <GazeDeliverableIcon
-                    variant={gazeVariantFromName(output.name)}
-                    className="transition-transform duration-300 group-hover:scale-105"
-                  />
-                  <div>
-                    <h3 className="text-title">{output.name}</h3>
-                    <p className="text-body-sm">{output.desc}</p>
-                  </div>
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-x-8 gap-y-10">
+              {methodDeliverables.map((method) => (
+                <div key={method.title} className="section-stack-sm">
+                  <h3 className="text-title" style={{ color: method.color }}>
+                    {method.title}
+                  </h3>
+                  <ul className="list-spaced list-bullet">
+                    {method.items.map((item) => (
+                      <li key={item} className="text-body-sm">
+                        {item}
+                      </li>
+                    ))}
+                  </ul>
                 </div>
               ))}
             </div>
 
             <div className="section-stack-sm pt-2">
               <SectionHeader
-                title="Where Clients Apply AI Gaze™"
+                title="Where Clients Apply Advanced Methods"
                 titleSize="md"
               />
               <div className="content-grid-2 max-w-3xl gap-y-4">
@@ -318,14 +345,14 @@ export default function CapabilitiesPage() {
             Have a research challenge in mind?
           </h2>
           <p className="text-body-md copy-measure">
-            Our team will propose the right methodology — qual, quant, or a hybrid — tailored to your timeline and budget. Send us a visual stimulus and we can run a sample AI Gaze™ analysis too.
+            Our team will propose the right methodology — qual, quant, or a hybrid — tailored to your timeline and budget.
           </p>
           <div className="flex flex-wrap gap-3">
             <Link href="/contact" className="btn-primary">
               Discuss Your Project <ArrowRight size={18} />
             </Link>
             <Link href="/capabilities#advanced-methods" className="btn-secondary">
-              Explore AI Gaze™
+              Explore Advanced Methods
             </Link>
           </div>
         </div>
