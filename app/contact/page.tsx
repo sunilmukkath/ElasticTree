@@ -7,7 +7,6 @@ import { LinkedInIcon, InstagramIcon, XIcon } from "@/components/ui/SocialIcons"
 import {
   CONTACT_EMAIL,
   contactChannels,
-  officeDetails,
   socialLinks,
 } from "@/lib/contact";
 
@@ -66,7 +65,7 @@ export default function ContactPage() {
 
       <div className="page-content section-py">
         <div className="grid grid-cols-1 lg:grid-cols-5 gap-12 lg:gap-16 max-w-5xl">
-          <div className="lg:col-span-2 space-y-8">
+          <div className="lg:col-span-2 flex flex-col gap-10">
             {contactChannels.map((channel) => {
               const Icon =
                 channel.kind === "email"
@@ -76,27 +75,27 @@ export default function ContactPage() {
                     : MapPin;
 
               return (
-                <div key={channel.label} className="flex items-start gap-4">
-                  <div className="w-10 h-10 rounded-xl flex items-center justify-center bg-[rgba(232,168,32,0.1)] border border-[rgba(232,168,32,0.2)] flex-shrink-0">
+                <div key={channel.label} className="grid grid-cols-[2.75rem_minmax(0,1fr)] gap-x-4 items-start">
+                  <div className="w-11 h-11 rounded-xl flex items-center justify-center bg-[rgba(232,168,32,0.1)] border border-[rgba(232,168,32,0.2)]">
                     <Icon size={18} className="text-[#e8a820]" aria-hidden />
                   </div>
-                  <div>
-                    <p className="label-field !mb-1">{channel.label}</p>
+                  <div className="min-w-0 pt-0.5">
+                    <p className="label-field !mb-2">{channel.label}</p>
                     {channel.kind === "email" && (
                       <>
-                        <a href={channel.href} className="text-title hover:text-[var(--amber)] transition-colors">
+                        <a href={channel.href} className="text-title hover:text-[var(--amber)] transition-colors break-words">
                           {channel.value}
                         </a>
-                        {channel.sub && <p className="text-body-sm mt-0.5">{channel.sub}</p>}
+                        {channel.sub && <p className="text-body-sm mt-1.5">{channel.sub}</p>}
                       </>
                     )}
                     {channel.kind === "phone" && (
-                      <div className="space-y-1">
+                      <div className="flex flex-col gap-1.5">
                         {channel.numbers.map((n) => (
                           <a
                             key={n.href}
                             href={n.href}
-                            className="block text-title hover:text-[var(--amber)] transition-colors"
+                            className="text-title hover:text-[var(--amber)] transition-colors"
                           >
                             {n.display}
                           </a>
@@ -104,44 +103,36 @@ export default function ContactPage() {
                       </div>
                     )}
                     {channel.kind === "address" && (
-                      <p className="text-body-sm text-slate-300">{channel.lines.join(", ")}</p>
+                      <p className="text-body-sm text-slate-300 leading-relaxed whitespace-pre-line">
+                        {channel.lines.join("\n")}
+                      </p>
                     )}
                   </div>
                 </div>
               );
             })}
 
-            {officeDetails.map((office) => (
-              <div key={office.label} className="flex items-start gap-4">
-                <div className="w-10 h-10 rounded-xl flex items-center justify-center bg-[rgba(232,168,32,0.1)] border border-[rgba(232,168,32,0.2)] flex-shrink-0">
-                  <MapPin size={18} className="text-[#e8a820]" aria-hidden />
+            <div className="grid grid-cols-[2.75rem_minmax(0,1fr)] gap-x-4 items-start pt-2 border-t border-white/[0.06]">
+              <div aria-hidden className="w-11" />
+              <div className="pt-6">
+                <p className="label-field mb-3">Follow Us</p>
+                <div className="flex gap-3">
+                  {socialLinks.map((s) => {
+                    const Icon = socialIcons[s.label as keyof typeof socialIcons];
+                    return (
+                      <a
+                        key={s.label}
+                        href={s.href}
+                        target="_blank"
+                        rel="noreferrer"
+                        aria-label={s.label}
+                        className="w-10 h-10 rounded-xl flex items-center justify-center border border-white/[0.06] text-slate-300 hover:text-[var(--amber)] hover:border-[var(--amber)]/30 transition-all"
+                      >
+                        <Icon size={17} />
+                      </a>
+                    );
+                  })}
                 </div>
-                <div>
-                  <p className="label-field !mb-1">{office.label} office</p>
-                  <p className="text-title">{office.value}</p>
-                  <p className="text-body-sm mt-0.5">{office.sub}</p>
-                </div>
-              </div>
-            ))}
-
-            <div>
-              <p className="label-field mb-3">Follow Us</p>
-              <div className="flex gap-3">
-                {socialLinks.map((s) => {
-                  const Icon = socialIcons[s.label as keyof typeof socialIcons];
-                  return (
-                    <a
-                      key={s.label}
-                      href={s.href}
-                      target="_blank"
-                      rel="noreferrer"
-                      aria-label={s.label}
-                      className="w-10 h-10 rounded-xl flex items-center justify-center border border-white/[0.06] text-slate-300 hover:text-[var(--amber)] hover:border-[var(--amber)]/30 transition-all"
-                    >
-                      <Icon size={17} />
-                    </a>
-                  );
-                })}
               </div>
             </div>
           </div>

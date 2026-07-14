@@ -23,7 +23,7 @@ export default function LeadershipTeam() {
 
         <SectionBlock
           label="Our Offices"
-          title="Chennai & Bengaluru"
+          title="Chennai"
           titleSize="md"
           gap="md"
         >

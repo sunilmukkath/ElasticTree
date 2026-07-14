@@ -54,8 +54,4 @@ export const offices = [
     city: "Chennai",
     address: "3B, Krshnika Apartments, 1/26, Avenue Rd, Nungambakkam, Chennai, Tamil Nadu 600034",
   },
-  {
-    city: "Bengaluru",
-    address: "Awfis Davanam Plaza, 3rd floor, Opp. Madivala Police Station, Hosur Road, Bengaluru 560068",
-  },
 ];

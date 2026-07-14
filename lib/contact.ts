@@ -45,7 +45,11 @@ export const contactChannels: ContactChannel[] = [
   {
     kind: "address",
     label: "Address",
-    lines: [CHENNAI_ADDRESS],
+    lines: [
+      "3B, Krshnika Apartments",
+      "1/26, Avenue Rd, Nungambakkam",
+      "Chennai, Tamil Nadu 600034",
+    ],
   },
   {
     kind: "email",
@@ -87,4 +91,4 @@ export const officeDetails = offices.map((office) => ({
   href: null as string | null,
 }));
 
-export const hqSummary = "Chennai & Bengaluru, India";
+export const hqSummary = "Chennai, India";
