@@ -3,6 +3,7 @@ import Link from "next/link";
 import PageHero from "@/components/ui/PageHero";
 import SectionHeader from "@/components/ui/SectionHeader";
 import AiGazeStudioLink from "@/components/ai-gaze/AiGazeStudioLink";
+import AiGazeStudioEmbed from "@/components/ai-gaze/AiGazeStudioEmbed";
 import {
   aiGazeStats,
   aiGazeInsights,
@@ -195,8 +196,17 @@ export default function AiGazePage() {
             </a>
           </div>
           <p className="text-body-sm text-slate-400">
-            Opens the AI Gaze™ studio in a new tab
+            Studio opens on this page below
           </p>
+        </div>
+      </section>
+
+      <section
+        id="studio"
+        className="scroll-mt-24 section-py-compact border-t border-white/[0.06] section-flow flow-tint-blue"
+      >
+        <div className="page-content">
+          <AiGazeStudioEmbed autoFocus />
         </div>
       </section>
     </>

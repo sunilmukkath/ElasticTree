@@ -5,7 +5,6 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import ETLogo from "./ETLogo";
 import AiGazeLogo from "./AiGazeLogo";
-import { AI_GAZE_STUDIO_URL } from "@/lib/ai-gaze";
 import { Menu, X } from "lucide-react";
 
 const siteLinks = [
@@ -21,6 +20,7 @@ const aiGazeLinks = [
   { href: "/ai-gaze", label: "Overview" },
   { href: "/ai-gaze#features", label: "Features" },
   { href: "/ai-gaze#pricing", label: "Pricing" },
+  { href: "/ai-gaze#studio", label: "Studio" },
 ];
 
 export default function Navbar() {
@@ -87,14 +87,9 @@ export default function Navbar() {
 
         <div className="hidden lg:flex items-center gap-3 shrink-0">
           {isAiGaze ? (
-            <a
-              href={AI_GAZE_STUDIO_URL}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="btn-primary text-sm !py-2.5 !px-5"
-            >
+            <Link href="/ai-gaze#studio" className="btn-primary text-sm !py-2.5 !px-5">
               Launch Studio
-            </a>
+            </Link>
           ) : (
             <Link href="/contact" className="btn-primary text-sm !py-2.5 !px-5">
               Get in Touch
@@ -142,14 +137,9 @@ export default function Navbar() {
               })}
               <li className="pt-4 pb-2">
                 {isAiGaze ? (
-                  <a
-                    href={AI_GAZE_STUDIO_URL}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="btn-primary w-full justify-center"
-                  >
+                  <Link href="/ai-gaze#studio" className="btn-primary w-full justify-center">
                     Launch Studio
-                  </a>
+                  </Link>
                 ) : (
                   <Link href="/contact" className="btn-primary w-full justify-center">
                     Get in Touch

@@ -6,7 +6,6 @@ import ETLogo from "./ETLogo";
 import AiGazeLogo from "./AiGazeLogo";
 import { LinkedInIcon, InstagramIcon } from "@/components/ui/SocialIcons";
 import { contactChannels, hqSummary, socialLinks } from "@/lib/contact";
-import { AI_GAZE_STUDIO_URL } from "@/lib/ai-gaze";
 
 const siteNav = [
   { label: "Capabilities", href: "/capabilities" },
@@ -20,7 +19,7 @@ const aiGazeNav = [
   { label: "Overview", href: "/ai-gaze" },
   { label: "Features", href: "/ai-gaze#features" },
   { label: "Pricing", href: "/ai-gaze#pricing" },
-  { label: "Studio", href: AI_GAZE_STUDIO_URL, external: true },
+  { label: "Studio", href: "/ai-gaze#studio" },
 ];
 
 const socialIcons = {
@@ -74,20 +73,9 @@ export default function Footer() {
             <ul className="space-y-3">
               {nav.map((l) => (
                 <li key={l.href}>
-                  {"external" in l && l.external ? (
-                    <a
-                      href={l.href}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="text-body-sm text-slate-300 hover:text-[var(--amber)] transition-colors"
-                    >
-                      {l.label}
-                    </a>
-                  ) : (
-                    <Link href={l.href} className="text-body-sm text-slate-300 hover:text-[var(--amber)] transition-colors">
-                      {l.label}
-                    </Link>
-                  )}
+                  <Link href={l.href} className="text-body-sm text-slate-300 hover:text-[var(--amber)] transition-colors">
+                    {l.label}
+                  </Link>
                 </li>
               ))}
             </ul>
