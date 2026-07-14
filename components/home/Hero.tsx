@@ -18,11 +18,11 @@ export default function Hero() {
         eyebrow="Market Research · Since 2014"
         title={
           <>
-            See What People{" "}
-            <span className="text-gradient-amber text-shimmer">Actually Do</span>
+            We Watch. We Ask.{" "}
+            <span className="text-gradient-amber text-shimmer">We Understand.</span>
           </>
         }
-        subtitle="Sensory science, syndicated panels, and field research that reveal how people eat, choose, and act — insight FMCG and food-service brands can move on."
+        subtitle="Where curiosity meets consumer truth."
         actions={
           <>
             <Link href="/capabilities" className="btn-primary btn-glow">

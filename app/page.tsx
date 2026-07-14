@@ -3,13 +3,12 @@ import dynamic from "next/dynamic";
 import Hero from "@/components/home/Hero";
 
 export const metadata: Metadata = {
-  title: "See What People Actually Do",
+  title: "We Watch. We Ask. We Understand.",
   description:
-    "Elastic Tree reveals how people eat, choose, and act — sensory science, syndicated panels, and field research for FMCG and food-service brands. Since 2014.",
+    "Where curiosity meets consumer truth. Elastic Tree — market research for FMCG and food-service brands since 2014.",
   openGraph: {
-    title: "See What People Actually Do | Elastic Tree",
-    description:
-      "Market research grounded in real life. 200+ brands, 800+ projects, 74% repeat rate.",
+    title: "We Watch. We Ask. We Understand. | Elastic Tree",
+    description: "Where curiosity meets consumer truth.",
   },
 };
 

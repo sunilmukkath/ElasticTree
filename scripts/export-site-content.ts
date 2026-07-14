@@ -26,9 +26,8 @@ const siteCopy = {
   home: {
     hero: {
       eyebrow: "Market Research · Since 2014",
-      title: "See What People Actually Do",
-      subtitle:
-        "Sensory science, syndicated panels, and field research that reveal how people eat, choose, and act — insight FMCG and food-service brands can move on.",
+      title: "We Watch. We Ask. We Understand.",
+      subtitle: "Where curiosity meets consumer truth.",
       buttons: ["Explore Capabilities", "Book a Consultation"],
       scrollCue: "Scroll to explore",
       stats: ["12 Years", "200+ Brands", "800+ Projects", "74% Repeat"],
