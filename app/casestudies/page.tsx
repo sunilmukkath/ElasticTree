@@ -1,28 +1,23 @@
 "use client";
 
 import { useState, useMemo } from "react";
-import { motion } from "framer-motion";
 import { Search } from "lucide-react";
-import { postSummaries, type PostTag } from "@/lib/postsIndex";
+import { postSummaries } from "@/lib/postsIndex";
 import PostCard from "@/components/casestudies/PostCard";
 import PageHero from "@/components/ui/PageHero";
 
-const allTags: PostTag[] = [
-  "Analytics", "Sensory Science", "Syndicated", "Impact", "Market Research", "AI",
-];
-
 export default function CaseStudiesPage() {
   const [query, setQuery] = useState("");
-  const [activeTag, setActiveTag] = useState<PostTag | "All">("All");
 
   const filtered = useMemo(() => postSummaries.filter((post) => {
-    const matchesSearch = !query ||
-      post.title.toLowerCase().includes(query.toLowerCase()) ||
-      post.excerpt.toLowerCase().includes(query.toLowerCase()) ||
-      post.client?.toLowerCase().includes(query.toLowerCase());
-    const matchesTag = activeTag === "All" || post.tags.includes(activeTag);
-    return matchesSearch && matchesTag;
-  }), [query, activeTag]);
+    if (!query) return true;
+    const q = query.toLowerCase();
+    return (
+      post.title.toLowerCase().includes(q) ||
+      post.excerpt.toLowerCase().includes(q) ||
+      post.client?.toLowerCase().includes(q)
+    );
+  }), [query]);
 
   return (
     <>
@@ -46,53 +41,29 @@ export default function CaseStudiesPage() {
 
       <div className="page-content section-py">
         <div className="section-stack-md">
-        <motion.div
-          initial={{ opacity: 0, y: 8 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.35 }}
-          className="flex flex-wrap gap-2"
-        >
-          {(["All", ...allTags] as const).map((tag) => {
-            const count = tag === "All" ? postSummaries.length : postSummaries.filter((p) => p.tags.includes(tag)).length;
-            if (tag !== "All" && count === 0) return null;
-            const active = activeTag === tag;
-            return (
+          {query && (
+            <p className="text-body-sm">
+              Showing {filtered.length} of {postSummaries.length} studies
+            </p>
+          )}
+
+          {filtered.length > 0 ? (
+            <div className="content-grid-3">
+              {filtered.map((post) => (
+                <PostCard key={post.slug} post={post} />
+              ))}
+            </div>
+          ) : (
+            <div className="text-center py-20">
+              <p className="text-body-md">No results found for &ldquo;{query}&rdquo;.</p>
               <button
-                key={tag}
-                onClick={() => setActiveTag(tag)}
-                className={`px-4 py-2 rounded-full text-body-sm font-medium border transition-all ${
-                  active
-                    ? "text-[var(--teal)] border-[rgba(45,212,191,0.35)] bg-[rgba(45,212,191,0.1)]"
-                    : "text-slate-300 border-white/8 hover:text-[var(--teal)] hover:border-[rgba(45,212,191,0.2)]"
-                }`}
+                onClick={() => setQuery("")}
+                className="mt-4 text-[var(--teal)] text-body-sm hover:underline"
               >
-                {tag === "All" ? `All (${count})` : `${tag} (${count})`}
+                Clear search
               </button>
-            );
-          })}
-        </motion.div>
-
-        <p className="text-body-sm">
-          Showing {filtered.length} of {postSummaries.length} studies
-        </p>
-
-        {filtered.length > 0 ? (
-          <div className="content-grid-3">
-            {filtered.map((post) => (
-              <PostCard key={post.slug} post={post} />
-            ))}
-          </div>
-        ) : (
-          <div className="text-center py-20">
-            <p className="text-body-md">No results found for &ldquo;{query}&rdquo;.</p>
-            <button
-              onClick={() => { setQuery(""); setActiveTag("All"); }}
-              className="mt-4 text-[var(--teal)] text-body-sm hover:underline"
-            >
-              Clear filters
-            </button>
-          </div>
-        )}
+            </div>
+          )}
         </div>
       </div>
     </>
