@@ -73,7 +73,7 @@ export default function TableSharePage() {
         </div>
       </section>
 
-      <section className="section-py-compact section-flow flow-tint-purple">
+      <section className="section-py-compact section-flow flow-tint-purple !pb-8 md:!pb-10">
         <div className="page-content">
           <SectionHeader
             label="Why Consumption"
@@ -92,7 +92,7 @@ export default function TableSharePage() {
         </div>
       </section>
 
-      <section className="section-py-compact page-content">
+      <section className="section-py-compact page-content !pt-8 md:!pt-10">
         <SectionHeader
           label="Occasions"
           title="India eats 7 times a day"
