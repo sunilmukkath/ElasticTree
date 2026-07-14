@@ -69,7 +69,7 @@ export const capabilityOfferings: CapabilityOffering[] = [
     title: "AI Gaze™ & Agile Research",
     tag: "Advanced",
     desc: "Eye-tracking simulation for shelf and packaging studies — plus rapid online qual and quant with rigorous QC.",
-    href: "/capabilities#advanced-methods",
+    href: "/ai-gaze",
     Icon: Brain,
     accent: "#e8a820",
   },

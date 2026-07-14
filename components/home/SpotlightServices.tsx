@@ -7,6 +7,7 @@ import { ArrowRight } from "lucide-react";
 import SpaceSection from "@/components/ui/SpaceSection";
 import SectionBlock from "@/components/ui/SectionBlock";
 import TableShareDemoLink from "@/components/table-share/TableShareDemoLink";
+import AiGazeStudioLink from "@/components/ai-gaze/AiGazeStudioLink";
 import {
   spotlightServices,
   type SpotlightService,
@@ -18,6 +19,13 @@ function SpotlightTitle({ service }: { service: SpotlightService }) {
     return (
       <>
         Table&nbsp;Share<sup className="text-gradient-amber text-[0.5em] align-super">®</sup>
+      </>
+    );
+  }
+  if (service.id === "ai-gaze") {
+    return (
+      <>
+        AI&nbsp;Gaze<sup className="text-gradient-amber text-[0.5em] align-super">™</sup>
       </>
     );
   }
@@ -112,7 +120,12 @@ export default function SpotlightServices() {
                   ))}
                 </ul>
                 <div className="home-cta-row flex flex-wrap gap-3 pt-2">
-                  {active.demo && <TableShareDemoLink size="sm" label="Explore Demo" />}
+                  {active.id === "table-share" && active.demo && (
+                    <TableShareDemoLink size="sm" label="Explore Demo" />
+                  )}
+                  {active.id === "ai-gaze" && active.demo && (
+                    <AiGazeStudioLink size="sm" label="Launch Studio" />
+                  )}
                   <Link href="/contact" className="btn-secondary text-sm">
                     Book a Demo <ArrowRight size={15} />
                   </Link>

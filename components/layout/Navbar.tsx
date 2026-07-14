@@ -4,12 +4,14 @@ import { useState, useEffect } from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import ETLogo from "./ETLogo";
+import AiGazeLogo from "./AiGazeLogo";
 import { Menu, X } from "lucide-react";
 
 const links = [
   { href: "/", label: "Home" },
   { href: "/capabilities", label: "Capabilities" },
   { href: "/table-share", label: "Table Share" },
+  { href: "/ai-gaze", label: "AI Gaze" },
   { href: "/casestudies", label: "Case Studies" },
   { href: "/contact", label: "Contact" },
 ];
@@ -18,6 +20,7 @@ export default function Navbar() {
   const [scrolled, setScrolled] = useState(false);
   const [open, setOpen] = useState(false);
   const pathname = usePathname();
+  const isAiGaze = pathname === "/ai-gaze" || pathname.startsWith("/ai-gaze/");
 
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 20);
@@ -41,8 +44,16 @@ export default function Navbar() {
       }`}
     >
       <nav className="page-content h-16 flex items-center justify-between gap-4">
-        <Link href="/" className="relative z-10 shrink-0">
-          <ETLogo height={28} priority />
+        <Link
+          href={isAiGaze ? "/ai-gaze" : "/"}
+          className="relative z-10 shrink-0"
+          aria-label={isAiGaze ? "AI Gaze home" : "Elastic Tree home"}
+        >
+          {isAiGaze ? (
+            <AiGazeLogo height={36} priority />
+          ) : (
+            <ETLogo height={28} priority />
+          )}
         </Link>
 
         <ul className="hidden lg:flex items-center gap-1">
@@ -64,7 +75,19 @@ export default function Navbar() {
           })}
         </ul>
 
-        <div className="hidden lg:block shrink-0">
+        <div className="hidden lg:flex items-center gap-3 shrink-0">
+          {isAiGaze && (
+            <Link
+              href="/"
+              className="flex items-center gap-2 text-slate-400 hover:text-[var(--amber)] transition-colors"
+              title="Elastic Tree"
+            >
+              <span className="text-[10px] font-mono uppercase tracking-[0.12em] hidden xl:inline">
+                An Elastic Tree product
+              </span>
+              <ETLogo height={18} />
+            </Link>
+          )}
           <Link href="/contact" className="btn-primary text-sm !py-2.5 !px-5">
             Get in Touch
           </Link>
@@ -106,6 +129,14 @@ export default function Navbar() {
                   </li>
                 );
               })}
+              {isAiGaze && (
+                <li className="py-3 border-b border-white/[0.04]">
+                  <Link href="/" className="flex items-center gap-2 text-slate-300">
+                    <ETLogo height={18} />
+                    <span className="text-body-sm">Elastic Tree</span>
+                  </Link>
+                </li>
+              )}
               <li className="pt-4 pb-2">
                 <Link href="/contact" className="btn-primary w-full justify-center">
                   Get in Touch

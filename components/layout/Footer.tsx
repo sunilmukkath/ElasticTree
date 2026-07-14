@@ -8,6 +8,7 @@ import { contactChannels, hqSummary, socialLinks } from "@/lib/contact";
 const nav = [
   { label: "Capabilities", href: "/capabilities" },
   { label: "Table Share", href: "/table-share" },
+  { label: "AI Gaze", href: "/ai-gaze" },
   { label: "Case Studies", href: "/casestudies" },
   { label: "Contact", href: "/contact" },
 ];

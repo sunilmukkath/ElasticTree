@@ -40,6 +40,7 @@ export const spotlightServices: SpotlightService[] = [
     id: "ai-gaze",
     label: "Proprietary Tool",
     title: "AI Gaze™",
+    titleHtml: true,
     subtitle:
       "Predict human visual attention on any packaging, shelf, or ad — 92% accuracy vs. lab eye-tracking, fully remote, no hardware required.",
     features: [
@@ -55,7 +56,8 @@ export const spotlightServices: SpotlightService[] = [
       { label: "Setup", accent: "#5eead4", val: "Remote" },
     ],
     accent: "#e8a820",
-    href: "/capabilities#advanced-methods",
+    href: "/ai-gaze",
+    demo: true,
   },
   {
     id: "sensory",
