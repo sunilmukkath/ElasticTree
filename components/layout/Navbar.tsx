@@ -58,7 +58,7 @@ export default function Navbar() {
           aria-label={isAiGaze ? "AI Gaze home" : "Elastic Tree home"}
         >
           {isAiGaze ? (
-            <AiGazeLogo height={36} priority />
+            <AiGazeLogo height={48} priority />
           ) : (
             <ETLogo height={28} priority />
           )}

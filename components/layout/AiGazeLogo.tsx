@@ -1,11 +1,11 @@
 import Image from "next/image";
 
-/** Approximate aspect from aigaze-logo.png (1536×1024). */
-const LOGO_ASPECT = 1536 / 1024;
+/** Approximate aspect from aigaze-logo.png (1419×488 cropped lockup). */
+const LOGO_ASPECT = 1419 / 488;
 
 export default function AiGazeLogo({
   className = "",
-  height = 32,
+  height = 48,
   priority = false,
 }: {
   className?: string;

@@ -39,7 +39,7 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-12 gap-10 md:gap-8 mb-12">
           <div className="md:col-span-5">
             {isAiGaze ? (
-              <AiGazeLogo height={36} className="mb-5" />
+              <AiGazeLogo height={48} className="mb-5" />
             ) : (
               <ETLogo height={30} className="mb-5" />
             )}
