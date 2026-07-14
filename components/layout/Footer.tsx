@@ -2,7 +2,7 @@
 
 import Link from "next/link";
 import ETLogo from "./ETLogo";
-import { LinkedInIcon, InstagramIcon, XIcon } from "@/components/ui/SocialIcons";
+import { LinkedInIcon, InstagramIcon } from "@/components/ui/SocialIcons";
 import { contactChannels, hqSummary, socialLinks } from "@/lib/contact";
 
 const nav = [
@@ -15,7 +15,6 @@ const nav = [
 const socialIcons = {
   LinkedIn: LinkedInIcon,
   Instagram: InstagramIcon,
-  "X (Twitter)": XIcon,
 } as const;
 
 export default function Footer() {

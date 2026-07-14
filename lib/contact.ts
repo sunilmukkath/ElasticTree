@@ -81,7 +81,6 @@ export const contactEmailDetail = {
 export const socialLinks = [
   { label: "LinkedIn", href: "https://www.linkedin.com/company/elastic-tree" },
   { label: "Instagram", href: "https://instagram.com/elastictree" },
-  { label: "X (Twitter)", href: "https://twitter.com/elastictree" },
 ] as const;
 
 export const officeDetails = offices.map((office) => ({

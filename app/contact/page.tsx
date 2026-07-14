@@ -3,7 +3,7 @@
 import { useState } from "react";
 import { Mail, MapPin, Send, AlertCircle, Phone } from "lucide-react";
 import PageHero from "@/components/ui/PageHero";
-import { LinkedInIcon, InstagramIcon, XIcon } from "@/components/ui/SocialIcons";
+import { LinkedInIcon, InstagramIcon } from "@/components/ui/SocialIcons";
 import {
   CONTACT_EMAIL,
   contactChannels,
@@ -13,7 +13,6 @@ import {
 const socialIcons = {
   LinkedIn: LinkedInIcon,
   Instagram: InstagramIcon,
-  "X (Twitter)": XIcon,
 } as const;
 
 export default function ContactPage() {
