@@ -148,7 +148,7 @@ const aiPillars = [
     icon: Target,
     title: "Predictive Modelling",
     subtitle: "Decision-Ready Forecasts",
-    stats: [{ label: "Accuracy", val: "High" }, { label: "Models", val: "MaxDiff, Conjoint" }, { label: "Output", val: "Priority Scores" }],
+    stats: [{ label: "Accuracy", val: "High" }, { label: "Models", val: "MaxDiff" }, { label: "Output", val: "Scores" }],
     color: "#2dd4bf",
     desc: "Advanced MaxDiff, conjoint analysis, and regression-based driver models translate real human preference data into ranked, simulation-ready product or communication decisions.",
   },
@@ -259,11 +259,11 @@ export default function CapabilitiesPage() {
                     </div>
                   </div>
                   <p className="text-body-md copy-measure">{pillar.desc}</p>
-                  <div className="stat-row">
+                  <div className="ai-pillar-stats">
                     {pillar.stats.map((s) => (
-                      <div key={s.label}>
-                        <p className="stat-value text-[1.25rem]" style={{ color: pillar.color }}>{s.val}</p>
-                        <p className="stat-label">{s.label}</p>
+                      <div key={s.label} className="ai-pillar-stat">
+                        <p className="ai-pillar-stat__value" style={{ color: pillar.color }}>{s.val}</p>
+                        <p className="ai-pillar-stat__label">{s.label}</p>
                       </div>
                     ))}
                   </div>
