@@ -70,10 +70,10 @@ export const spotlightServices: SpotlightService[] = [
       "Fragrance and flavour optimisation with ingredient partners",
     ],
     stats: [
-      { label: "Methods", accent: "#2dd4bf", val: "QDA·TDS" },
+      { label: "Methods", accent: "#2dd4bf", val: "QDA" },
       { label: "Categories", accent: "#38bdf8", val: "FMCG" },
       { label: "Panels", accent: "#5eead4", val: "Trained" },
-      { label: "Testing", accent: "#e8a820", val: "HUT+CLT" },
+      { label: "Testing", accent: "#e8a820", val: "HUT" },
     ],
     accent: "#2dd4bf",
     href: "/capabilities#sensory",
@@ -92,8 +92,8 @@ export const spotlightServices: SpotlightService[] = [
     ],
     stats: [
       { label: "Turnaround", accent: "#38bdf8", val: "Days" },
-      { label: "Modes", accent: "#2dd4bf", val: "Qual+Quant" },
-      { label: "QC", accent: "#e8a820", val: "Rigorous" },
+      { label: "Modes", accent: "#2dd4bf", val: "Hybrid" },
+      { label: "QC", accent: "#e8a820", val: "Strict" },
       { label: "Languages", accent: "#5eead4", val: "6+" },
     ],
     accent: "#38bdf8",

@@ -123,19 +123,17 @@ export default function SpotlightServices() {
               </div>
 
               <div
-                className="rounded-2xl p-5 sm:p-6 section-stack-sm"
+                className="spotlight-stats rounded-2xl p-5 sm:p-6"
                 style={{ background: `${active.accent}0a`, border: `1px solid ${active.accent}22` }}
               >
-                <div className="stat-row stat-row--inline">
-                  {active.stats.map((s) => (
-                    <div key={s.label}>
-                      <p className="stat-value" style={{ color: s.accent }}>
-                        <StatValue stat={s} />
-                      </p>
-                      <p className="stat-label">{s.label}</p>
-                    </div>
-                  ))}
-                </div>
+                {active.stats.map((s) => (
+                  <div key={s.label} className="spotlight-stat">
+                    <p className="spotlight-stat__value" style={{ color: s.accent }}>
+                      <StatValue stat={s} />
+                    </p>
+                    <p className="spotlight-stat__label">{s.label}</p>
+                  </div>
+                ))}
               </div>
             </div>
           </motion.div>
