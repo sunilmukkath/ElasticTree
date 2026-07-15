@@ -1,22 +1,22 @@
 import type { ReactNode } from "react";
 
 type OccasionVariant =
+  | "before-breakfast"
   | "breakfast"
   | "morning-snack"
   | "lunch"
   | "evening-snack"
   | "dinner"
-  | "late-night"
-  | "celebration";
+  | "late-night";
 
 const ACCENT: Record<OccasionVariant, string> = {
+  "before-breakfast": "#f5c842",
   breakfast:     "#e8a820",
   "morning-snack": "#38bdf8",
   lunch:         "#2dd4bf",
   "evening-snack": "#a78bfa",
   dinner:        "#7c3aed",
   "late-night":  "#94a3b8",
-  celebration:   "#f5c842",
 };
 
 interface Props {
@@ -29,6 +29,22 @@ export default function OccasionIcon({ variant, size = 40, className = "" }: Pro
   const c = ACCENT[variant];
 
   const icons: Record<OccasionVariant, ReactNode> = {
+    "before-breakfast": (
+      <>
+        <path d="M 14 40 Q 32 28 50 40" fill="none" stroke={c} strokeWidth="1.2" strokeOpacity="0.35" />
+        <circle cx="32" cy="30" r="6" fill={c} fillOpacity="0.15" stroke={c} strokeWidth="1.2" strokeOpacity="0.5" />
+        {[0, 1, 2, 3, 4].map((i) => (
+          <line
+            key={i}
+            x1="32" y1="24"
+            x2={32 + Math.cos((Math.PI + (i * Math.PI) / 4)) * 11}
+            y2={24 + Math.sin((Math.PI + (i * Math.PI) / 4)) * 11}
+            stroke={c} strokeWidth="1.4" strokeLinecap="round" strokeOpacity="0.4"
+          />
+        ))}
+        <ellipse cx="32" cy="44" rx="10" ry="3" fill={c} fillOpacity="0.2" />
+      </>
+    ),
     breakfast: (
       <>
         <circle cx="32" cy="28" r="10" fill={c} fillOpacity="0.15" stroke={c} strokeWidth="1.2" strokeOpacity="0.5" />
@@ -86,16 +102,6 @@ export default function OccasionIcon({ variant, size = 40, className = "" }: Pro
         <circle cx="48" cy="28" r="1" fill={c} opacity="0.4" />
       </>
     ),
-    celebration: (
-      <>
-        <line x1="32" y1="44" x2="32" y2="28" stroke={c} strokeWidth="1.5" strokeOpacity="0.4" />
-        <path d="M 32 28 L 26 36 L 32 34 L 38 36 Z" fill={c} fillOpacity="0.25" stroke={c} strokeWidth="1" strokeOpacity="0.4" />
-        <circle cx="22" cy="24" r="1.5" fill={c} opacity="0.6" />
-        <circle cx="42" cy="22" r="1" fill={c} opacity="0.5" />
-        <path d="M 18 30 L 20 34 L 16 34 Z" fill={c} opacity="0.35" />
-        <path d="M 46 32 L 48 36 L 44 36 Z" fill={c} opacity="0.35" />
-      </>
-    ),
   };
 
   return (
@@ -117,13 +123,13 @@ export default function OccasionIcon({ variant, size = 40, className = "" }: Pro
 
 export function occasionVariantFromName(name: string): OccasionVariant {
   const map: Record<string, OccasionVariant> = {
+    "Before Breakfast": "before-breakfast",
     Breakfast: "breakfast",
     "Morning Snack": "morning-snack",
     Lunch: "lunch",
     "Evening Snack": "evening-snack",
     Dinner: "dinner",
     "Late Night": "late-night",
-    Celebration: "celebration",
   };
   return map[name] ?? "lunch";
 }

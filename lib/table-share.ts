@@ -27,13 +27,13 @@ export const tableShareInsights = [
 ] as const;
 
 export const tableShareOccasions = [
+  { name: "Before Breakfast", desc: "Early morning tea, coffee, and light bites" },
   { name: "Breakfast", desc: "Morning meals at home, cafes, and hotels" },
   { name: "Morning Snack", desc: "Mid-morning bite at QSRs and kiosks" },
   { name: "Lunch", desc: "Primary meal including corporate canteens" },
   { name: "Evening Snack", desc: "Tea-time snacking and street food" },
   { name: "Dinner", desc: "Restaurants, takeaway, and food delivery" },
   { name: "Late Night", desc: "Post-event dining and late-night delivery" },
-  { name: "Celebration", desc: "Special occasions, parties, and events" },
 ] as const;
 
 export const tableShareBusinessUses = [

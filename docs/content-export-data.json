@@ -785,6 +785,10 @@
   ],
   "tableShareOccasions": [
     {
+      "name": "Before Breakfast",
+      "desc": "Early morning tea, coffee, and light bites"
+    },
+    {
       "name": "Breakfast",
       "desc": "Morning meals at home, cafes, and hotels"
     },
@@ -807,10 +811,6 @@
     {
       "name": "Late Night",
       "desc": "Post-event dining and late-night delivery"
-    },
-    {
-      "name": "Celebration",
-      "desc": "Special occasions, parties, and events"
     }
   ],
   "tableShareCities": [
