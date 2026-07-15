@@ -23,7 +23,7 @@ export default function AboutSection() {
       <div className="section-stack">
         <SectionBlock
           label="Who We Are"
-          title={<>A Trusted Research Partner Since <span className="text-gradient-amber">2014</span></>}
+          title={<>Insights. Impact. Since <span className="text-gradient-amber">2014</span>.</>}
           subtitle={companyIntro.lead}
         >
           <div className="max-w-3xl copy-flow">
